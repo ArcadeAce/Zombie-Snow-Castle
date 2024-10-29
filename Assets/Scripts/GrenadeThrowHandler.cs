@@ -1,6 +1,34 @@
 using UnityEngine;
 using TMPro;
 
+/* The `GrenadeThrowHandler` script in your Unity project manages the player's ability to pick up and throw grenades.
+It is attached to the player character and interacts with other components to handle grenade-related actions.
+
+The script begins by defining several public variables, including references to the grenade prefab, the throw point,
+and UI elements for displaying the grenade count.
+
+In the `Start` method, the script initializes the grenade count UI by calling `UpdateGrenadeUI`.
+
+The `PickUpGrenade` method increases the player's grenade count when a grenade is picked up, provided the player has
+not reached the maximum number of grenades. It also updates the UI to reflect the new grenade count.
+
+When the grenade button is pressed, the `OnGrenadeButtonPressed` method checks if the player has grenades available and
+if a grenade is not already being thrown. If these conditions are met, it sets a flag to indicate a grenade is being
+thrown and schedules the `ThrowGrenade` method to be called after a delay.
+
+The `ThrowGrenade` method handles the actual throwing of the grenade. It instantiates the grenade prefab at the throw
+point, applies a force to the grenade to simulate throwing, and decreases the player's grenade count. It also updates
+the UI and schedules the `ResetGrenadeThrow` method to reset the throwing flag after a delay.
+
+The `ResetGrenadeThrow` method resets the flag to allow the player to throw another grenade.
+
+Finally, the `UpdateGrenadeUI` method updates the UI elements to display the current grenade count and show or hide the
+grenade button based on whether the player has grenades available.
+
+In summary, this script manages the player's grenade inventory, handles the logic for picking up and throwing grenades,
+and updates the UI to reflect the current grenade count.
+*/
+
 namespace StarterAssets
 {
     public class GrenadeThrowHandler : MonoBehaviour
