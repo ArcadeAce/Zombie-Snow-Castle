@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 /* The `GrenadeThrowHandler` script in your Unity project manages the player's ability to pick up and throw grenades.
 It is attached to the player character and interacts with other components to handle grenade-related actions.
@@ -37,19 +38,32 @@ namespace StarterAssets
         public Transform throwPoint; // Transform for the grenade throw position
         public float throwForce = 15f; // Force applied to the thrown grenade
         public float grenadeResetDelay = 0.5f; // Delay before resetting the grenade throw
-
-        public int maxGrenades = 2; // Maximum number of grenades the player can hold
-        //public int PlayerManager.Instance.numberOfGrenades = 0; // Initialize to 0//
-
+        public Animator armAnimator;
+        public Animator twinTurboAnimator;
+        public int maxGrenades = 30; // Maximum number of grenades the player can hold
+        public GameObject weaponholder;
+        // public int PlayerManager.Instance.numberOfGrenades = 0; // Initialize to 0
 
         public TextMeshProUGUI grenadeCountText; // Reference to the TextMeshPro for grenade count display
         public GameObject grenadeButton; // Reference to the grenade button GameObject
 
         private bool isGrenadeThrown = false;
 
+        private void Awake()
+        {
+            weaponholder = GameObject.Find("Weapon Holder");
+
+            if (armAnimator == null || twinTurboAnimator == null)
+            {
+                Debug.LogError("One of the animator references is missing!");
+                Debug.Log($"arm: {armAnimator}  {twinTurboAnimator}");
+
+            }
+        }
+
+
         private void Start()
         {
-           
             UpdateGrenadeUI();
         }
 
@@ -71,8 +85,9 @@ namespace StarterAssets
             if (PlayerManager.Instance.numberOfGrenades > 0 && !isGrenadeThrown)
             {
                 isGrenadeThrown = true;
-                Invoke(nameof(ThrowGrenade), 1.1f); // Delay to allow for animation must be actual seconds not like 0.5 seconds, and around 1.1 seconds seems perfect to look good with the Hand for grenade animation timing.
-                Debug.Log("ThrowGrenade will be invoked after 0.5 seconds.");
+                StartCoroutine(PlayTwinTurboDownThenGrenadeThrow());
+                Invoke(nameof(ThrowGrenade), 1.1f); // Delay to allow for animation timing
+                Debug.Log("ThrowGrenade will be invoked after 1.1 seconds.");
             }
             else if (PlayerManager.Instance.numberOfGrenades == 0)
             {
@@ -132,6 +147,7 @@ namespace StarterAssets
             isGrenadeThrown = false;
         }
 
+
         // Update the grenade count UI
         private void UpdateGrenadeUI()
         {
@@ -161,5 +177,37 @@ namespace StarterAssets
                 Debug.LogError("GrenadeCountText or GrenadeButton reference is not assigned!");
             }
         }
+        public IEnumerator PlayTwinTurboDownThenGrenadeThrow()
+        {
+            twinTurboAnimator = weaponholder.transform.GetComponentInChildren<Animator>();
+            twinTurboAnimator.Play("Twin turbos weapon down");
+            Debug.Log("Twin Turbos weapon down animation triggered.");
+            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("Twin turbos weapon down"));
+            yield return new WaitForSeconds(twinTurboAnimator.GetCurrentAnimatorStateInfo(0).length);
+
+            armAnimator.Play("Hand for grenade");
+            Debug.Log("Hand for grenade animation triggered.");
+            yield return new WaitUntil(() => armAnimator.GetCurrentAnimatorStateInfo(0).IsName("Hand for grenade"));
+            Debug.Log("finished hand for grenade animation");
+            yield return new WaitForSeconds(armAnimator.GetCurrentAnimatorStateInfo(0).length);
+            Debug.Log("Twin turbos weapon up should be here");
+
+            twinTurboAnimator.Play("Twin turbos weapon up");
+            Debug.Log("Twin Turbos weapon up animation triggered.");
+            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("Twin turbos weapon up"));
+            yield return new WaitForSeconds(twinTurboAnimator.GetCurrentAnimatorStateInfo(0).length);
+
+            isGrenadeThrown = false;
+
+            armAnimator.Play("New State");
+            twinTurboAnimator.Play("New State");
+            Debug.Log("Animation states reset for next grenade throw.");
+
+        }
     }
 }
+
+
+
+
+
