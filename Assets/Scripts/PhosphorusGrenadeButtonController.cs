@@ -30,7 +30,7 @@ namespace StarterAssets
             else
             {
                 isPhosphorusGrenadeThrown = true;
-                StartCoroutine(_PhosphorusGrenadeThrowHandler.PlayTwinTurboDownThenPhosphorousGrenadeThrow());
+                StartCoroutine(_PhosphorusGrenadeThrowHandler.PlayTwinTurboDownThenPhosphorusGrenadeThrow());
             }
         }
 
