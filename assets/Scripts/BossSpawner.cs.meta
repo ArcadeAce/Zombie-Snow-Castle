@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42f08e39e1e1a47469285b3f8b4038fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ZombieBoss: {fileID: 8413770026117912439, guid: 6a7946be02a70e941b1fcda85a2683fc,
+      type: 3}
+  - BossRoomCaveDoorOpen: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
