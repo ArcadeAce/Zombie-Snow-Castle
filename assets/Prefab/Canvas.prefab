@@ -2249,12 +2249,12 @@ GameObject:
   - component: {fileID: 6103112641125633260}
   - component: {fileID: 6103112641125633261}
   m_Layer: 5
-  m_Name: Weapon Switch Button
+  m_Name: Weapon Switch Button keep turned off until know what is going on.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6103112641125633262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3560,8 +3560,8 @@ MonoBehaviour:
   Separator: {fileID: 0}
   TotalBullets: {fileID: 0}
   ShotgunCurrentBullets: {fileID: 0}
-  ShotgunTotalBullets: {fileID: 0}
   SeperatorForShotgunNumbers: {fileID: 0}
+  ShotgunTotalBullets: {fileID: 0}
 --- !u!223 &6103112642897466908
 Canvas:
   m_ObjectHideFlags: 0

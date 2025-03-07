@@ -1337,9 +1337,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 635792197187060576}
+  - component: {fileID: 635792197187060666}
   - component: {fileID: 635792197187060600}
   - component: {fileID: 635792197187060665}
-  - component: {fileID: 635792197187060666}
   m_Layer: 5
   m_Name: Floating Joystick
   m_TagString: Untagged
@@ -1367,6 +1367,25 @@ RectTransform:
   m_AnchoredPosition: {x: 497, y: 19.400146}
   m_SizeDelta: {x: 1091.2, y: 713.1}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &635792197187060666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635792197187060519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handleRange: 0.1
+  deadZone: 0
+  axisOptions: 0
+  snapX: 0
+  snapY: 0
+  background: {fileID: 635792197187060578}
+  handle: {fileID: 635792197187060577}
 --- !u!222 &635792197187060600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1405,25 +1424,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &635792197187060666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635792197187060519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handleRange: 0.1
-  deadZone: 0
-  axisOptions: 0
-  snapX: 0
-  snapY: 0
-  background: {fileID: 635792197187060578}
-  handle: {fileID: 635792197187060577}
 --- !u!1 &635792197187060520
 GameObject:
   m_ObjectHideFlags: 0

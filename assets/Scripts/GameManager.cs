@@ -6,11 +6,7 @@ public class GameManager : MonoBehaviour // Declaring a public class named GameM
     public static GameManager Instance; // Declaring a public static variable named Instance to hold a reference to the GameManager instance.
     // Declaring public static properties to provide global access to UIManager and PlayerController instances.
     public static UIManager UIManager { get; set; }
-    public static PlayerController FPSController { get; internal set; }
-
-
-
-
+    
 
 
 
@@ -22,8 +18,6 @@ public class GameManager : MonoBehaviour // Declaring a public class named GameM
             DontDestroyOnLoad(gameObject); // Preventing the GameManager object from being destroyed when loading a new scene.
         }
     }
-
-
 
 
 

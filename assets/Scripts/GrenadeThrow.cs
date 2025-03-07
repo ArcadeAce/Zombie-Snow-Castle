@@ -19,7 +19,7 @@ public class GrenadeThrow : MonoBehaviour
         Grenade _grenade=Instantiate(_Grenade,SpawnPos,Quaternion.identity);
         Rigidbody grenadeRb = _grenade.GetComponent<Rigidbody>();
 
-        Vector3 target = GameManager.FPSController.cam.transform.position;
+        Vector3 target = PlayerController.Instance.cam.transform.position;
         Vector3 direction = target - SpawnPos;
         Debug.DrawRay(SpawnPos, direction, Color.green);
         float height = direction.y;

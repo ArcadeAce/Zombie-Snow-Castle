@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
     private bool Boss;
 
     // Property to check if the player is in the enemy's chase range
-    protected bool playerInRange => Vector3.Distance(transform.position, GameManager.FPSController.cam.transform.position) <= chaseDistance;
+    protected bool playerInRange => Vector3.Distance(transform.position, PlayerController.Instance.cam.transform.position) <= chaseDistance;
 
     // Property to check if the enemy is currently chasing the player
     public bool IsChasing { get; private set; }
@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
         if (playerInRange)
         {
             // If the player is in range, set the destination to the player's position
-            agent.SetDestination(GameManager.FPSController.cam.transform.position);
+            agent.SetDestination(PlayerController.Instance.cam.transform.position);
             IsChasing = true;
         }
 

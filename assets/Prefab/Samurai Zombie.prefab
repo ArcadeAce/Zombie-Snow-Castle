@@ -19650,12 +19650,10 @@ MonoBehaviour:
   deathExplosion: {fileID: 8611940247248511460}
   hitEffect: {fileID: 8871576043405554056}
   rigidBody: {fileID: 2615837013234420011}
-  damage: 10
   health: 10
-  delay: 1
-  impactForce: 0
+  damage: 10
   chaseDistance: 200
-  deathSound: {fileID: 0}
+  delay: 1
 --- !u!195 &3230626057738953757
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73936,7 +73934,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.11774653, g: 0.9245283, b: 0.4780206, a: 0.16862746}
+      maxColor: {r: 0.8828217, g: 0.11764706, b: 0.9254902, a: 0.16862746}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -88816,7 +88814,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.08877714, g: 0.8962264, b: 0.44063663, a: 1}
+      maxColor: {r: 0.37352508, g: 0.09019609, b: 0.8980392, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

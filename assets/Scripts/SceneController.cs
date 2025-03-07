@@ -6,7 +6,7 @@ using UnityEngine;
 public class SceneController : MonoBehaviour
 {
     public static SceneController Instance;
-    public PlayerController PlayerController;
+    
 
     void Start()
     {

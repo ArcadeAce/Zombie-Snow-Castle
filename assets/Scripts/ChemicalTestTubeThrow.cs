@@ -19,7 +19,7 @@ public class ChemicalTestTubeThrow : MonoBehaviour
         ChemicalZombieTestTube chemicalZombieTestTube = Instantiate(ChemicalZombieTestTube, SpawnPos, Quaternion.identity);
         Rigidbody grenadeRb = chemicalZombieTestTube.GetComponent<Rigidbody>();
 
-        Vector3 target = GameManager.FPSController.cam.transform.position;
+        Vector3 target = PlayerController.Instance.cam.transform.position;
         Vector3 direction = target - SpawnPos;
         Debug.DrawRay(SpawnPos, direction, Color.green);
         float height = direction.y;

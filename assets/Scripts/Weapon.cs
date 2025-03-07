@@ -33,13 +33,14 @@ public class Weapon : MonoBehaviour
     private bool Firing;
 
     public string weaponType;
+    internal int weaponIndex;
 
     // Called when the script is enabled (e.g., when the weapon becomes active)
     private void OnEnable()
     {
         // Get the Animator component and the camera from the FPS Controller
         _animator = GetComponent<Animator>();
-        fpsCam = SceneController.Instance.PlayerController.cam.transform;
+        fpsCam = PlayerController.Instance.cam.transform;
 
         // Set the weapon as active
         Active = true;

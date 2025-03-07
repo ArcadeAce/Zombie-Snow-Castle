@@ -46,7 +46,8 @@ public class WeaponSwitcher : MonoBehaviour
 
     private void InstantiateWeapon(Weapon prefab, bool isSlot1, bool chest)
     {
-        Weapon weapon = Instantiate(prefab, SceneController.Instance.PlayerController.WeaponHolder);
+        Debug.Log("entering instaniate weapon");
+        Weapon weapon = Instantiate(prefab, PlayerController.Instance.WeaponHolder);
         if (isSlot1)
         {
             slot1 = weapon;
@@ -114,7 +115,7 @@ public class WeaponSwitcher : MonoBehaviour
         if (!slot1Occupied && !slot2Occupied)
             return;
 
-        if (slot1Occupied)
+     /*   if (slot1Occupied)
         {
             InstantiateWeapon(GameAssets.Instance.Weaponprefabs[slot1index], true, false);
             slot1.gameObject.SetActive(true);
@@ -122,7 +123,7 @@ public class WeaponSwitcher : MonoBehaviour
         if (slot2Occupied)
         {
             InstantiateWeapon(GameAssets.Instance.Weaponprefabs[slot2index], false, false);
-        }
+        }*/
 
         if (activeisslot1)
         {
