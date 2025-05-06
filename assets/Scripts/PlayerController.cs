@@ -13,20 +13,21 @@ public class PlayerController : MonoBehaviour
         get;
         private set;
     }
-   
- private void Awake()
-{
-     Debug.Log("Player Controller"  + SceneManager.GetActiveScene().name);
-    // If there is an instance, and it's not me, delete myself.
-    if (Instance != null && Instance != this)
-    {         Destroy(gameObject);
-     }
-   else
+
+    private void Awake()
     {
-     Instance = this; 
-      DontDestroyOnLoad(gameObject);
+        Debug.Log("Player Controller" + SceneManager.GetActiveScene().name);
+        // If there is an instance, and it's not me, delete myself.
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
-}
 }
 
 

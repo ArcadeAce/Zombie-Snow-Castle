@@ -5095,6 +5095,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638990605}
   m_Mesh: {fileID: -462981019419857548, guid: b0b47562173afe047a3004ea4a924877, type: 3}
+--- !u!65 &1740795665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2734422538945873733}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.88, z: 1}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!1 &1752701840
 GameObject:
   m_ObjectHideFlags: 0
@@ -8181,7 +8202,7 @@ Transform:
   m_GameObject: {fileID: 2734422538945873733}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 125.8, y: 0.42, z: -85.5}
+  m_LocalPosition: {x: 167.58, y: 6.76, z: -85.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8958,6 +8979,7 @@ GameObject:
   - component: {fileID: 2123548925647197653}
   - component: {fileID: 4301105732284086148}
   - component: {fileID: 3702611191391556127}
+  - component: {fileID: 1740795665}
   m_Layer: 0
   m_Name: FPS Controller working for smartphone
   m_TagString: Player
@@ -16264,6 +16286,7 @@ GameObject:
   - component: {fileID: 4301105732284086151}
   - component: {fileID: 4301105732284086145}
   - component: {fileID: 4301105732284086146}
+  - component: {fileID: 6898534404178168167}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -20211,6 +20234,27 @@ MonoBehaviour:
   weaponholder: {fileID: 4301105732284086244}
   phosphorusGrenadeCountText: {fileID: 8991858778611485536}
   phosphorusGrenadeButton: {fileID: 5291710303591458424}
+--- !u!65 &6898534404178168167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301105732284086267}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.19, z: 1}
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!224 &6898839125131185773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24259,7 +24303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d63d010fc4597b46a321e795b219a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerController: {fileID: 4301105732284086148}
 --- !u!1 &9206245279617150177
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.040128842, g: 0.57790977, b: 0.5934161, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,13 +98,13 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,9 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -241,12 +243,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845149310}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 174.48264, y: -471.24112, z: 1927.5953}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358220097
 GameObject:
@@ -278,10 +281,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2084588827}
   m_Father: {fileID: 1652894330}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -327,6 +330,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1358220101
 Canvas:
   m_ObjectHideFlags: 0
@@ -344,7 +348,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -401,9 +407,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -437,12 +451,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412537435}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1652894329
 GameObject:
@@ -468,13 +483,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652894329}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 108.20655, y: 8.691513, z: 187.65204}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1358220098}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1652894331
 MonoBehaviour:
@@ -519,6 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -548,12 +565,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735581098}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084588826
 GameObject:
@@ -583,9 +601,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1358220098}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -607,136 +625,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r\nApp Icon:\r\n<a href=\"https://www.flaticon.com/free-icons/snow\"
-    title=\"snow icons\">Snow icons created by Freepik - Flaticon</a>\r\n\r\nProps:\r\n\r\nDiving
-    Zombies Hoodie:\r\n\"Hoodie\" (https://skfb.ly/WzMr) by Pieter Ferreira is licensed
-    under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\nChanges
-    were made.\r\n\r\nGrenade throwing zombies grenade:\r\nChanges were made, some
-    things deleted.\r\n\"MK2 Grenade\" (https://skfb.ly/Lo8H) by Pixel is licensed
-    under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nGrenade
-    Throwing Zombies Helmet:\r\nChanges were made, some things deleted.\r\n\"Fox
-    X Supreme Helmet\" (https://skfb.ly/op9YU) by Muhammad Seno Aji is licensed under
-    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nChemical
-    Zombies lab coat:\r\n\"Doctor - Sketchfab Weekly - 13 Mar'23\" (https://skfb.ly/oFrH9)
-    by BrushDip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
-    Hit Zombie Bosses Baseball Cap:\r\n\r\n\"Baseball Cap\" (https://skfb.ly/6sEqr)
-    by Scott VanArsdale is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
-    Hit Zombie bosses Baseball Bat:\r\n\r\n\"Aluminum Baseball Bat\" (https://skfb.ly/6CuNG)
-    by Peter Primini is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
-    Hit Zombies Baseball:\r\n\r\nCombination Boxing Zombies boxing gloves:\r\n\"Boxing
-    Gloves - Left Handed\" (https://skfb.ly/6XOUS) by Gohar.Munir is licensed under
-    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\"Boxing
-    Gloves - Right Handed\" (https://skfb.ly/6XPGF) by Gohar.Munir is licensed under
-    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\nWide
-    Receiver Zombies helmet:\r\n\"Helmet\" (https://skfb.ly/6VBKz) by osha22 is licensed
-    under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nWide
-    Receiver Zombies Helmet:\r\n\"Helmet\" (https://skfb.ly/6VBKz) by osha22 is licensed
-    under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n(1)
-    American Football - Download Free 3D model by Rodrigo.Alarcao (@Rodrigo.Alarcao)
-    [77e549b] (sketchfab.com) American Football.\r\n\r\nSlider Zombies baseball.\r\nCurveball
-    zombies baseball.\r\n(2) 8K Realistic Baseball (By Polyhaven) - Download Free
-    3D model by NintendObi-Wan (@NOW3D) [1a7346e] (sketchfab.com)\r\n\r\nSamurai
-    Zombies sword:\r\n(delete later, have saved need to add as a prop in unity the
-    sword does not go through mixamo)\r\nMirage Ninja Zombies sword:\r\nHave saved
-    need to add)\r\nMirage Ninja Zombies Shurikens:\r\nHave saved need to add)\r\nBlazer
-    Ninja Zombies Sword:\r\nHave saved need to add)\r\nDragon Zombie model:\r\n\r\nMecha
-    Zombie bosses mecha:\r\n\r\n\r\n\r\nZombies voice, and attacks:\r\n\r\nhttps://pixabay.com/sound-effects/growl-96998/
-    Great zombie voice for attack voice.\r\nhttps://pixabay.com/sound-effects/lorenc-fx10-zombie-94914/
-    zombie voice, modify.\r\nYou searched for Male cartoon character high pitched
-    funny sneaky laugh | ZapSplat - Download free sound effects modify.\r\nYou searched
-    for Male cartoon character high pitched disapproving vocalisation | ZapSplat
-    - Download free sound effects zombie voice.\r\nhttps://pixabay.com/sound-effects/strange-creature-talks-96872/
-    zombie voice.\r\nhttps://pixabay.com/sound-effects/growling-zombie-104988/ Zombie
-    growl.\r\nhttps://pixabay.com/sound-effects/zombie-roar-104542/ Zombie roar.\r\nhttps://pixabay.com/sound-effects/cartoon-jump-6462/
-    For Poison Zombies spit attack.\r\nFireball Whoosh 5 | Royalty-free Music - Pixabay
-    Big Hit Zombies bat attack, slider/curveball zombies super baseball pitch, Blazer
-    Ninja Zombies fiery sword attack.\r\nhttps://pixabay.com/sound-effects/kung-fu-scream-43668/
-    Juijitsu Zombie.\r\nhttps://pixabay.com/sound-effects/koto-hit-106066/ Juijitsu
-    Zombie/Taekwando Zombie.\r\nhttps://pixabay.com/sound-effects/growl-2-36818/
-    Rock or magma zombie voice.\r\n\r\nhttps://pixabay.com/sound-effects/time-warp-effect-83543/
-    Zombie attack sound.\r\nhttps://pixabay.com/sound-effects/charged-laser-7125/
-    For zombie attack maybe.\r\nhttps://pixabay.com/sound-effects/distant-explosion-80398/
-    For zombie attack maybe.\r\n\r\nhttps://www.zapsplat.com/music/designed-huge-fireball-bomb-or-explosion-3/
-    Dragon zombies blue or red ball flame attack great\r\nhttps://www.zapsplat.com/music/big-fireball-explosion-1/
-    Dragon zombies blue or red ball flame attack.\r\nhttps://www.zapsplat.com/music/bomb-hit-and-explode-2/
-    Dragon zombies fireball shotgun attack sound\r\n\r\nZombie Explosion\r\n\r\n\r\nGame
-    music:\r\nTitle screen:\r\nhttps://www.zapsplat.com/music/game-tone-retro-laser-repeat-level-complete-1/
-    Play button start music, or for something else  \r\n\r\n\r\nSnowy Level:\r\nhttps://www.zapsplat.com/music/cinematic-trailer-music-fairytale-style-melody-celesta-only/  
-    For snowy scene (maybe)\r\nLevel:\r\nhttps://www.zapsplat.com/music/black-fedora-sneaky-jazz/
-    level music maybe, but need something more cave like.\r\nhttps://www.zapsplat.com/music/never-late-ver-2-smooth-jazz-loop-with-electric-piano-bass-and-percussion-2/
-    May have used this.\r\n\r\nBoss room music:\r\nhttps://www.zapsplat.com/music/game-music-action-skill-fast-paced-energetic-electronica/
-    Slow Moving Zombie boss and for some other zombie bosses.\r\n\r\nGhosts Walk
-    Here \u2013 weird, haunting, slow paced electric piano driven music, with acoustic
-    guitar, bass and warm synthesizer pads and drums Sound Effect - Download FREE
-    - ZapSplat Poison Zombie boss music and for other zombie bosses after.\r\n\r\nhttps://pixabay.com/music/beats-floating-abstract-142819/ 
-    Crazy Zombie boss music.\r\n\r\nhttps://www.zapsplat.com/music/sunset-in-zhangjiajie-traditional-chinese-erhu-and-dizi-melody-over-sombre-strings-bring-together-this-beautiful-piece/\r\nMartial
-    Arts zombies.\r\n\r\nFortune 500 \u2013 heavyweight, motivational music with
-    strong brass, strings and drums, conveys a sense of perseverance and winning
-    Sound Effect - Download FREE - ZapSplat Combination boxing zombie music.\r\n\r\nhttps://www.zapsplat.com/music/maelstrom-sinister-electric-piano-melody-with-airy-choir-and-synthesised-pads-drive-a-sense-of-dark-mystery/
-    Secret zombie boss music.\r\nhttps://www.zapsplat.com/music/dramatic-climax-an-orchestral-dramatic-piece-that-evokes-a-strong-sense-of-tension-and-drama-great-for-an-end-scene/
-    great boss  music maybe for Armoured zombie boss.\r\n\r\nhttps://www.zapsplat.com/music/festival-celebration-asian-themed-music-with-an-festive-feel/\r\nSamurai
-    Zombie boss music\r\n \r\nhttps://www.zapsplat.com/?s=Easy+cheesy&post_type=music&sound-effect-category-id=
-    Title screen or boss music.\r\n\r\nhttps://www.zapsplat.com/music/epic-seamless-music-loop-fast-driving-dramatic-orchestral-driven-track-with-drums-good-for-action-and-high-adrenaline-etc-1/
-    Title screen, or boss music.\r\n\r\n\r\nGameshow Quiz Music Bed \u2013 dark and
-    tense electronica with atmospheric synth pads and arpeggio Sound Effect - Download
-    FREE - ZapSplat Good boss music.\r\n\r\nGameshow Quiz Music Bed \u2013 electronic,
-    dark and tense with a bright melody and airy atmospheric pads Sound Effect -
-    Download FREE - ZapSplat boss music 2\r\n\r\nPolice Pursuit \u2013 TV or film
-    music, fast paced action good for police chase, high octane etc Sound Effect
-    - Download FREE - ZapSplat Boss music 3\r\n\r\nhttps://www.zapsplat.com/music/game-music-action-mildly-aggressive-electro-breakbeat-growling-bass-synth-electronic-rhythms/
-    Boss music 4, may use.\r\n\r\n\r\nhttps://www.zapsplat.com/music/on-the-job-gritty-modern-jazz-piece-suited-to-late-night-detective-cop-style-drama-drums-upright-bass-piano-trumpets-and-alto-saxophone/
-    Boss music for zombie boss way after level 20.\r\n\r\nEnding music:\r\nhttps://www.zapsplat.com/music/lifes-a-breeze-electric-piano-piano-strings-driving-bass-and-drums-give-this-positive-and-motivational-music-a-sense-of-perseverance-and-success/
-    \r\n\r\nOther types of music:\r\nhttps://www.zapsplat.com/music/retro-game-tone-musical-level-complete-6/
-    Zombie gets destroyed reward music.\r\nhttps://www.zapsplat.com/music/alert-tone-wooden-mallet-and-a-bright-chime-complete-sound-1/
-    Zombies defeated percentage notification music.\r\nhttps://www.zapsplat.com/music/alert-chime-short-musical-notification-5/
-    Zombies defeated percentage notification music 2.\r\n\r\n\r\nWeapons:\r\nTwin
-    Turbos\r\nhttps://freesound.org/people/EFlexMusic/sounds/370220/ great pistol
-    shot, modified.\r\nhttps://pixabay.com/sound-effects/9mm-pistol-shot-6349/ good
-    pistol shot modified.\r\nFreesound - \"explosion_big_02.ogg\" by derplayer Time
-    crisis gunshot sound.\r\nReload:\r\ntangcomplete | Royalty-free Music - Pixabay
-    Reload, and ammo pick up sound.\r\n\r\nDa Blasta Shotgun\r\n<div> Icons made
-    by <a href=\"https://www.freepik.com/\" title=\"Freepik\"> Freepik </a> from
-    <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com'</a></div>\r\nExplosion
-    icon for Da Blasta shotgun.\r\n\r\nhttps://pixabay.com/sound-effects/shotgun-firing-4-6746/
-    shotgun sound 4 effect, modified\r\nhttps://pixabay.com/sound-effects/080902-shotgun-39753/
-    shotgun sound effect 5, modified\r\nReload:\r\nhttps://pixabay.com/sound-effects/shotgun-fire-and-cock-sound-for-gaming-85529/
-    shotgun and cocking for modify\r\nhttps://pixabay.com/sound-effects/realistic-shotgun-cocking-sound-38640/
-    great shotgun reload, modify\r\nNo need for Barrel spin\r\n\r\nAlien gun blue
-    plasma\r\n<a href=\"https://www.flaticon.com/free-icons/alien\" title=\"alien
-    icons\">Alien icons created by Bharat Icons - Flaticon</a> Icon for alien gun
-    weapon switch.\r\n\r\nhttps://pixabay.com/sound-effects/laser-zap-90575/ alien
-    gun shot great.\r\nFreesound - \"ClassicLaser.WAV\" by Snipperbes alien gun shot,
-    modified\r\nBLASTER 2 | Royalty-free Music - Pixabay  alien gun.\r\nReload\r\nhttps://pixabay.com/sound-effects/charging-laser-106217/
-    Alien gun reload, modify \r\n\r\nAlien gun green plasma\r\nexplosion Icon - Free
-    PNG & SVG 394990 - Noun Project (thenounproject.com)\r\n\r\nNinja knife (is Mirage
-    ninja zombies sword)\r\n \r\n\r\nBaseball bat\r\n<div> Icons made by <a href=\"https://www.flaticon.com/authors/nikita-golubev\"
-    title=\"Nikita Golubev\"> Nikita Golubev </a> from <a href=\"https://www.flaticon.com/\"
-    title=\"Flaticon\">www.flaticon.com'</a></div>\r\nAssualt Rifle\r\n\r\n \r\n\r\n\r\nGrenades:\r\n\r\nGrenade\r\nhttps://pixabay.com/sound-effects/hq-explosion-6288/
-    Grenade explosion, modify\r\nhttps://www.zapsplat.com/music/explosion-large-distant/
-    poor grenade sound\r\n\r\n\r\nPhosphorus Grenade\r\nPhosphorous grenade:\r\nMilitary
-    Icons & Symbols (flaticon.com) for Phospherous sprite icon\r\n\r\nhttps://freesound.org/people/Robinhood76/sounds/94762/
-    very weak sounding phosphorous sound, modify.\r\n\r\nhttps://pixabay.com/sound-effects/muffled-distant-explosion-7104/
-    maybe old phosphorous explosion, modify\r\n\r\nhttps://www.zapsplat.com/music/claymore-antipersonnel-mine-one-sharp-low-blast-with-echo-roll-off-and-debris-fall-at-tail-close-up-perspective-explosion/\r\nGood
-    phosphorous sound with after effects sound.\r\nGrenade pick up:\r\nhttps://www.zapsplat.com/music/game-tone-science-fiction-style-pick-up-or-collect-item-version-2/
-    grenade pick up sound \r\nCave wall falling in level:\r\nhttps://www.zapsplat.com/music/8bit-medium-explosion-bomb-boom-or-blast-cannon-retro-old-school-classic-cartoon/\r\nCave
-    door regular, and zombie castle titles sound.\r\nBoss room cave wall falling:\r\nhttps://pixabay.com/sound-effects/distant-explosion-47562/
-    Boss room cave door closing great.\r\nhttps://www.zapsplat.com/music/big-powerful-internal-explosion-1/ 
-    Cave door closing sound 2\r\nhttps://www.zapsplat.com/music/gas-explosion-airy-designed-boom-1/ 
-    Boss room cave door closing sound 3\r\nHealth pick up:\r\nhttps://freesound.org/people/AbbasGamez/sounds/411443/
-    health pick up used\r\nhttps://freesound.org/people/MATRIXXX_/sounds/523651/
-    health pick up sound 2 (may have used)\r\n\r\n\r\nWeapon and ammo pick up sounds:
-    \r\nhttps://www.fesliyanstudios.com/royalty-free-sound-effects-download/clothing-foley-63
-    \r\nPicking Up Clothing A4 Sound Effect  weapon pick up sound.\r\n\r\nSpecial
-    effects:\r\n\r\n\r\nhttps://pixabay.com/sound-effects/dream-sound-effect-downscale-7134/
-    secret room\r\n\r\nhttps://pixabay.com/sound-effects/swoosh-142322/ Special attack\r\n\r\nhttps://pixabay.com/sound-effects/woosh-low-long01-98755/
-    Speacial attack 2\r\n\r\nMaybe used these:\r\n\r\nhttps://www.zapsplat.com/music/benelli-nova-shotgun-pump-action-12-gauge-full-cycle-loaded-mag/
-    old shot gun reload if needed, maybe not gonna use.\r\n\r\nhttps://www.zapsplat.com/music/brown-paper-bag-with-a-single-small-item-inside-pick-up-1/
-    old weapon pick up sound if needed.\r\n\r\n\rSpecial thanks to ENO Games, and
-    Timps from Game Dev Bits with Timps for helping me with this game.\n"
+  m_text: add when have all sound right!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -813,3 +707,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084588826}
   m_CullTransparentMesh: 0
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1735581101}
+  - {fileID: 1412537438}
+  - {fileID: 1652894330}
+  - {fileID: 845149312}

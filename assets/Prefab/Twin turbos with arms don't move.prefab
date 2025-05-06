@@ -1906,9 +1906,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5215224972181360006}
-  - component: {fileID: 1751801160655961021}
   - component: {fileID: 8102276050003611290}
   - component: {fileID: 8501851598697772449}
+  - component: {fileID: 1751801160655961021}
   m_Layer: 6
   m_Name: Twin turbos with arms don't move
   m_TagString: Untagged
@@ -1936,27 +1936,6 @@ Transform:
   - {fileID: 5758566832455680161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1751801160655961021
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4840212739381892924}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b3685e3ef60482043bce971bad77b60d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8102276050003611290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1992,6 +1971,27 @@ MonoBehaviour:
   Sounds:
   - {fileID: 5359159919943927267}
   - {fileID: 5734396539078871865}
+--- !u!95 &1751801160655961021
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840212739381892924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3685e3ef60482043bce971bad77b60d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4884306526975441032
 GameObject:
   m_ObjectHideFlags: 0
