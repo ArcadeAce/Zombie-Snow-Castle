@@ -1948,12 +1948,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172bd9e65d2825d46989abcb7cff709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
-  chestweapon: 1
   damage: 10
   clipSize: 20
-  totalBullets: 200
+  totalBullets: 20
   index: 0
+  Active: 1
+  chestweapon: 1
   _animator: {fileID: 0}
   weaponType: TwinTurbos
 --- !u!114 &8501851598697772449

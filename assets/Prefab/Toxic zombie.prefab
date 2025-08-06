@@ -5600,7 +5600,7 @@ Transform:
   m_GameObject: {fileID: 3001065204055420489}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.63, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11329,7 +11329,7 @@ Transform:
   m_GameObject: {fileID: 7162535964695140178}
   serializedVersion: 2
   m_LocalRotation: {x: -0.08748228, y: 0.078317575, z: 0.25537318, w: 0.9596863}
-  m_LocalPosition: {x: -1, y: -5.3, z: 8.7}
+  m_LocalPosition: {x: -1.22, y: 1.07, z: 2.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11418,8 +11418,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 3.05
+      minScalar: 0.12
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11489,7 +11489,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.122041896, g: 0.5283019, b: 0.08721964, a: 1}
+      maxColor: {r: 0.06741722, g: 0.9528302, b: 0.90906096, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -16172,12 +16172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 2445981760385029122}
-  hitEffect: {fileID: 8169255439618609829}
-  rigidBody: {fileID: 3971691178896299270}
   health: 100
-  damage: 10
-  chaseDistance: 200
+  zombieBossDamage: 0
+  hitEffect: {fileID: 8169255439618609829}
+  deathExplosion: {fileID: 2445981760385029122}
+  rigidBody: {fileID: 3971691178896299270}
+  zombieBossesChasingDistanceToFollowThePlayer: 0
   delay: 1
 --- !u!195 &2667640339194488154
 NavMeshAgent:

@@ -31889,15 +31889,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 4439564863789048540}
-  hitEffect: {fileID: 380082399427049986}
-  rigidBody: {fileID: 4150635816903032693}
-  damage: 1
   health: 100
+  zombieBossDamage: 10
+  hitEffect: {fileID: 380082399427049986}
+  deathExplosion: {fileID: 4439564863789048540}
+  rigidBody: {fileID: 4150635816903032693}
+  zombieBossesChasingDistanceToFollowThePlayer: 0.03
   delay: 1
-  impactForce: 0
-  chaseDistance: 200
-  deathSound: {fileID: 0}
 --- !u!195 &7771672455746600796
 NavMeshAgent:
   m_ObjectHideFlags: 0

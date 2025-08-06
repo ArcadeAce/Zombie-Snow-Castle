@@ -1865,9 +1865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 1610165148217068672, guid: d2a89847080dfdf4b8c063f4c90d3f65, type: 3}
-  bossMusic: 
-  distance: 5
   BossRoomCaveDoorOpen: {fileID: 7400347598001206349}
+  bossMusic: 
+  DistanceZombieBossAppearsFromThePlayer: 0
 --- !u!65 &2967160248081552243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2835,8 +2835,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.13
-  m_Range: 170
+  m_Intensity: 0.5
+  m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2929,8 +2929,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.7
-  m_Range: 115.52
+  m_Intensity: 0.5
+  m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3043,8 +3043,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 61.8
+  m_Intensity: 0.5
+  m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

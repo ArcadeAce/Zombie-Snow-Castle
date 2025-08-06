@@ -5270,6 +5270,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7479096436823617896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &879104681205282728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6525477094676627632}
+  m_Layer: 0
+  m_Name: Wide receiver zombie bosses skull logo no need to prefab to save space
+    2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6525477094676627632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879104681205282728}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.398688, y: -0.5451085, z: 0.3638775, w: -0.641481}
+  m_LocalPosition: {x: 0.052, y: 1.49, z: 0.201}
+  m_LocalScale: {x: 0.030379912, y: 0.023214346, z: 0.024687864}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1310054975722217850}
+  m_Father: {fileID: 6284471441180461992}
+  m_LocalEulerAnglesHint: {x: -245.259, y: -102.11099, z: -184.41}
 --- !u!1 &933814015108965193
 GameObject:
   m_ObjectHideFlags: 0
@@ -5330,7 +5363,8 @@ Transform:
   m_LocalPosition: {x: -0.06870275, y: -0.24161135, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6525477094676627632}
   m_Father: {fileID: 5507722363409674398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &683161655725999688
@@ -5400,6 +5434,89 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.4949944, y: 3.7552629, z: 0.5246713}
     m_Extent: {x: 4.7305593, y: 4.120765, z: 3.294987}
   m_DirtyAABB: 0
+--- !u!1 &1092349055523358999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1310054975722217850}
+  - component: {fileID: 8190647454950413797}
+  - component: {fileID: 38526657784697488}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1310054975722217850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092349055523358999}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.9532529, y: 0.058135517, z: -0.081235476, w: 0.28518414}
+  m_LocalPosition: {x: 0.35, y: -1.03, z: 0.48}
+  m_LocalScale: {x: 0.39045784, y: 1.3219343, z: 1.2048105}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6525477094676627632}
+  m_LocalEulerAnglesHint: {x: -147.706, y: -12.85199, z: 10.714996}
+--- !u!33 &8190647454950413797
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092349055523358999}
+  m_Mesh: {fileID: -5495902117074765545, guid: 0d01a5791aa169b4aabccc2ab793672e, type: 3}
+--- !u!23 &38526657784697488
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092349055523358999}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -876546973899608171, guid: 0d01a5791aa169b4aabccc2ab793672e, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1100209682453957673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,6 +5644,38 @@ Transform:
   - {fileID: 6624083902270110265}
   m_Father: {fileID: 722290208821990128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1834245020382022496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4770134364691951274}
+  m_Layer: 0
+  m_Name: Wide receiver zombie bosses skull logo no need to prefab to save space
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4770134364691951274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834245020382022496}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.31076926, y: -0.77755976, z: -0.5230072, w: -0.15901797}
+  m_LocalPosition: {x: 0.00143, y: -0.03341, z: -0.0061}
+  m_LocalScale: {x: 0.0023392, y: 0.0016645426, z: 0.0019816298}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2229679377777031518}
+  m_Father: {fileID: 2785657774669099549}
+  m_LocalEulerAnglesHint: {x: -134.397, y: -54.893982, z: -111.79599}
 --- !u!1 &1839555484586197270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6484,7 +6633,8 @@ Transform:
   m_LocalPosition: {x: -0.024483966, y: 18.339602, z: -0.6304878}
   m_LocalScale: {x: 102.55679, y: 101.79354, z: 111.11244}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4770134364691951274}
   m_Father: {fileID: 5507722363409674398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &656989023410213178
@@ -16883,7 +17033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5498651808558718967}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16905,15 +17055,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 908554574346161570}
-  hitEffect: {fileID: 3650858735808298203}
-  rigidBody: {fileID: 591458531688993515}
-  damage: 30
   health: 100
+  zombieBossDamage: 0
+  hitEffect: {fileID: 3650858735808298203}
+  deathExplosion: {fileID: 908554574346161570}
+  rigidBody: {fileID: 591458531688993515}
+  zombieBossesChasingDistanceToFollowThePlayer: 0
   delay: 1
-  impactForce: 0
-  chaseDistance: 200
-  deathSound: {fileID: 0}
 --- !u!195 &890037382748616204
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17039,6 +17187,89 @@ Transform:
   - {fileID: 7635725370497333533}
   m_Father: {fileID: 6586490449919598365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5724208501417936520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2229679377777031518}
+  - component: {fileID: 7430736456024715458}
+  - component: {fileID: 8488608563513146477}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2229679377777031518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724208501417936520}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.9828614, y: 0.11317695, z: -0.023747781, w: 0.14356358}
+  m_LocalPosition: {x: 0.39, y: 0.26, z: 0.13}
+  m_LocalScale: {x: 0.24277675, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4770134364691951274}
+  m_LocalEulerAnglesHint: {x: -163.929, y: -4.726013, z: 13.804993}
+--- !u!33 &7430736456024715458
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724208501417936520}
+  m_Mesh: {fileID: -5495902117074765545, guid: 0d01a5791aa169b4aabccc2ab793672e, type: 3}
+--- !u!23 &8488608563513146477
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724208501417936520}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -876546973899608171, guid: 0d01a5791aa169b4aabccc2ab793672e, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5871700916633354969
 GameObject:
   m_ObjectHideFlags: 0

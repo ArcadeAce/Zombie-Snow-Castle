@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 412893489}
   - component: {fileID: 412893488}
   m_Layer: 5
-  m_Name: QuitGame
+  m_Name: QuitGame test 46035B in text mesh pro vertex color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14556454, g: 0.0012014981, b: 0.254717, a: 1}
+  m_Color: {r: 0.19031459, g: 0.003025995, b: 0.6415094, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 683628027}
   - component: {fileID: 683628026}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image around 140043 on smartphone for the color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15917991, g: 0, b: 0.2830189, a: 1}
+  m_Color: {r: 0.13333334, g: 0, b: 0.4509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weaponprefabs:
   - {fileID: 8102276050003611290, guid: d96e1bf557b7e5245ae34566af50258e, type: 3}
-  - {fileID: 37016895318392094, guid: fd8d6793fde0c64469849d8449557cd3, type: 3}
+  - {fileID: 7509740353873073301, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
 --- !u!1 &761184556
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 761184559}
   - component: {fileID: 761184558}
   m_Layer: 5
-  m_Name: Options Button
+  m_Name: 'Options Button test numbers changing was 170B41 in image '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,7 +676,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.26063868, g: 0.0038714774, b: 0.2735849, a: 1}
+    m_NormalColor: {r: 0.8573684, g: 0.07262372, b: 0.9056604, a: 1}
     m_HighlightedColor: {r: 0.3113207, g: 0, b: 0.3962264, a: 1}
     m_PressedColor: {r: 0.45621863, g: 0.07440368, b: 0.8301887, a: 1}
     m_SelectedColor: {r: 0.43818343, g: 0.07271269, b: 0.8113208, a: 1}
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3971104, g: 0.09122462, b: 0.7735849, a: 1}
+  m_Color: {r: 0.09209112, g: 0.04205233, b: 0.254717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 948451459}
   - component: {fileID: 948451458}
   m_Layer: 5
-  m_Name: 'Secrets button '
+  m_Name: Secrets button 5F45F8 is the button color in image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12553547, g: 0.008098972, b: 0.24528301, a: 1}
+  m_Color: {r: 0.3730506, g: 0.2704254, b: 0.9716981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -944,10 +944,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9dcb83ca0d1a2d54183c5ab7a83a1955, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c84a8f492aa8e6c4196a2dbd6987ce98, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.15
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1044,6 +1044,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1122435601}
   delayInSeconds: 2.1
+--- !u!1 &1159944170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159944171}
+  m_Layer: 0
+  m_Name: 'Note: make sure the shotgun is in the Game Assets script on Manager'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159944171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159944170}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235642998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,8 +1205,8 @@ Transform:
   m_GameObject: {fileID: 1263190794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 323, y: 151, z: 54}
-  m_LocalScale: {x: 793.8347, y: 419.75613, z: 1}
+  m_LocalPosition: {x: 300, y: 200, z: 50}
+  m_LocalScale: {x: 1500, y: 1500, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1295,7 +1326,7 @@ GameObject:
   - component: {fileID: 1354437519}
   - component: {fileID: 1354437521}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image 4301E2 is the color try to make castle word a different color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1334,7 +1365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14556454, g: 0.0012014981, b: 0.254717, a: 1}
+  m_Color: {r: 0.2419813, g: 0.025231415, b: 0.764151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1392,7 +1423,7 @@ GameObject:
   - component: {fileID: 1653775599}
   - component: {fileID: 1653775598}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Play 8F86E7 is it, make sure outline is what it is
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1446,8 +1477,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283565883
-  m_fontColor: {r: 0.23125002, g: 0.0257209, b: 0.3207547, a: 1}
+    rgba: 4292123517
+  m_fontColor: {r: 0.48949805, g: 0.6089901, b: 0.8301887, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
@@ -1527,7 +1558,7 @@ GameObject:
   - component: {fileID: 1724956303}
   - component: {fileID: 1724956302}
   m_Layer: 5
-  m_Name: Quit Button
+  m_Name: Quit Button test 2F00FF in image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1622,7 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3971104, g: 0.09122462, b: 0.7735849, a: 1}
+  m_Color: {r: 0.18292665, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1734,7 +1765,7 @@ GameObject:
   - component: {fileID: 1779133278}
   - component: {fileID: 1779133277}
   m_Layer: 5
-  m_Name: Secrets
+  m_Name: Secrets test 6700DD in text mesh pro vertex color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1790,8 +1821,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284154694
-  m_fontColor: {r: 0.2731456, g: 0.01183696, b: 0.3584906, a: 1}
+    rgba: 4292673639
+  m_fontColor: {r: 0.40220895, g: 0, b: 0.8679245, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1870,7 +1901,7 @@ GameObject:
   - component: {fileID: 1799746454}
   - component: {fileID: 1799746453}
   m_Layer: 5
-  m_Name: Options
+  m_Name: Options test 4405CA in textmeshpro vertex color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1924,8 +1955,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288294519
-  m_fontColor: {r: 0.46766132, g: 0.17942329, b: 0.6037736, a: 1}
+    rgba: 4291429700
+  m_fontColor: {r: 0.26668122, g: 0.018689923, b: 0.7924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2039,10 +2070,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1949293898}
   - component: {fileID: 1949293901}
-  - component: {fileID: 1949293900}
   - component: {fileID: 1949293899}
+  - component: {fileID: 1949293900}
   m_Layer: 5
-  m_Name: Play Button
+  m_Name: Play Button is A015A8 was 19035B in image has both
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2089,7 +2120,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.26063868, g: 0.0038714774, b: 0.2735849, a: 1}
+    m_NormalColor: {r: 0.6269703, g: 0.08410467, b: 0.6603774, a: 1}
     m_HighlightedColor: {r: 0.35610217, g: 0, b: 0.3962264, a: 1}
     m_PressedColor: {r: 0.43703678, g: 0.035243843, b: 0.8301887, a: 1}
     m_SelectedColor: {r: 0.44558147, g: 0, b: 0.8301887, a: 1}
@@ -2137,7 +2168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3971104, g: 0.09122462, b: 0.7735849, a: 1}
+  m_Color: {r: 0.09624009, g: 0.01183696, b: 0.3584906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2222,14 +2253,17 @@ MonoBehaviour:
   - audioclip: {fileID: 8300000, guid: 2e7ab9efc8a3a7947a6d85c5f8a0c566, type: 3}
     pitch: 1
     threeD: 1
-  - audioclip: {fileID: 8300000, guid: c7b10a9573e55b1499c55d56fbd3779e, type: 3}
+  - audioclip: {fileID: 8300000, guid: c84a8f492aa8e6c4196a2dbd6987ce98, type: 3}
     pitch: 1
     threeD: 1
   - audioclip: {fileID: 8300000, guid: f7e44587eb1f33e48a2939570b295e87, type: 3}
     pitch: 1
     threeD: 1
+  - audioclip: {fileID: 8300000, guid: c84a8f492aa8e6c4196a2dbd6987ce98, type: 3}
+    pitch: 0.7
+    threeD: 1
   - audioclip: {fileID: 8300000, guid: 3df2c36b013e60343be88ca3244977d7, type: 3}
-    pitch: 1
+    pitch: 0.7
     threeD: 1
   musics:
   - audioclip: {fileID: 8300000, guid: b54fb7fda49121f41b21d6ed649ebf6c, type: 3}
@@ -2245,6 +2279,9 @@ MonoBehaviour:
     pitch: 1
     threeD: 0
   - audioclip: {fileID: 8300000, guid: c007c078501b72e4db4cae21fccc586e, type: 3}
+    pitch: 1
+    threeD: 0
+  - audioclip: {fileID: 8300000, guid: 7b7311cec82fe784ba4fb297eb90b886, type: 3}
     pitch: 1
     threeD: 0
 --- !u!1 &2048816670
@@ -2354,7 +2391,7 @@ GameObject:
   - component: {fileID: 2070196288}
   - component: {fileID: 2070196289}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image 220073 is the color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2393,7 +2430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15917991, g: 0, b: 0.2830189, a: 1}
+  m_Color: {r: 0.13517329, g: 0, b: 0.4528302, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2548,6 +2585,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2077020911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077020912}
+  m_Layer: 0
+  m_Name: 'Note: To change the grenade sound effect change and drag the new sound
+    into the field in the audio source on the Grenade Explosion in the prefabs folder.
+    Grenade Throwing Zombie bosses grenade explosion is the same sound as the grenade
+    beacuse you are using the same explosion particle system with the Audio Source
+    on the explosion.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077020912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077020911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1393, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2082513152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,12 +2670,14 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2077020912}
   - {fileID: 1235642999}
+  - {fileID: 1159944171}
   - {fileID: 199325967}
   - {fileID: 982277138}
-  - {fileID: 2038861789}
   - {fileID: 732270119}
   - {fileID: 1324772199}
+  - {fileID: 2038861789}
   - {fileID: 2082513154}
   - {fileID: 1122435600}
   - {fileID: 2048816673}

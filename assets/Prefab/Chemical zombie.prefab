@@ -4986,15 +4986,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 171f21a910207f3469c081c5ce3080d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 1339693468594836431}
+  health: 400
+  zombieBossDamage: 40
   hitEffect: {fileID: 1006852916944345764}
+  deathExplosion: {fileID: 1339693468594836431}
   rigidBody: {fileID: 7397749930702461342}
-  damage: 10
-  health: 10
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
-  impactForce: 0
-  chaseDistance: 40
-  deathSound: {fileID: 0}
   grenadeholder: {fileID: 5985249940391547288}
   throwdistance: 20
 --- !u!195 &7753930670532800211
@@ -9941,7 +9939,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 455d9beda8a1a4fddb5c283861efccb0, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14761,7 +14758,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29915,7 +29911,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30333,13 +30329,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 593990222274388757}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3217248815206660405}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6859221241331611789}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 593990222274388757}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3714920838220989409}
@@ -30357,27 +30353,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 05448831d20bb824a8bc79c8ade4b70d, type: 3}
   m_PrefabInstance: {fileID: 7813545100448865013}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &593990222274388757
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6966540922665478052}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 138501fc6ffadc14ea4e3c25d84eadaf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &3217248815206660405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30403,6 +30378,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChemicalZombieTestTube: {fileID: 6281702002104742056, guid: e668f44c807e83240884af1aff8f0282, type: 3}
+--- !u!95 &593990222274388757
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6966540922665478052}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 138501fc6ffadc14ea4e3c25d84eadaf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &3714920838220989409
 MonoBehaviour:
   m_ObjectHideFlags: 0

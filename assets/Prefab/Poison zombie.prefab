@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 134476560163769061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.76, z: 0}
+  m_LocalPosition: {x: 0, y: 1.86, z: 0.1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -318,7 +318,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.06
+      scalar: 0.08
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4878,8 +4878,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10342,12 +10341,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91e07fceb93a8047b6ac9bf0abcf4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 2113454666579949163}
+  health: 400
+  zombieBossDamage: 40
   hitEffect: {fileID: 7064966710420698343}
+  deathExplosion: {fileID: 2113454666579949163}
   rigidBody: {fileID: 369303094249147604}
-  health: 1
-  damage: 10
-  chaseDistance: 200
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
   Poisonspitholder: {fileID: 7900386958825225588}
   spitdistance: 8
@@ -10440,10 +10439,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.56260437
+  m_Radius: 0.70111066
   m_Height: 2.611368
   m_Direction: 1
-  m_Center: {x: 0.012529433, y: 1.5467016, z: 0.18668461}
+  m_Center: {x: 0.012529433, y: 1.5467016, z: 0.07636839}
 --- !u!1 &2377747578103283008
 GameObject:
   m_ObjectHideFlags: 0

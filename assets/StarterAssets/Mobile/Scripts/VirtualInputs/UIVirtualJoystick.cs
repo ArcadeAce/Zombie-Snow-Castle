@@ -135,3 +135,4 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
         return -value;
     }
 }
+// This script is both on the UI_Virtual_Joystick_Move and the UI_Virtual_Joystick_Look that is a child of the UI_Canvas_StarterAssetsInputs_Joysticks, on the Unity Starter Assets FPS Controller

@@ -51,12 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 4926205011471522714}
+  health: 300
+  zombieBossDamage: 20
   hitEffect: {fileID: 5614901743633953848}
+  deathExplosion: {fileID: 4926205011471522714}
   rigidBody: {fileID: 4443523756681988101}
-  health: 1
-  damage: 10
-  chaseDistance: 150
+  zombieBossesChasingDistanceToFollowThePlayer: 200
   delay: 1
 --- !u!195 &1183070322483348591
 NavMeshAgent:
@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6692330662267566600, guid: db8a5533533627540a476f19c9d6204f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6527670528093515950, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -395,7 +399,7 @@ PrefabInstance:
     - target: {fileID: -3347090507751969436, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6b28ced5c7c051746b31c8b70c585160, type: 2}
+      objectReference: {fileID: 2100000, guid: d8fe7c750be35e04eaaf42e5e7e529dc, type: 2}
     - target: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       propertyPath: m_Name
       value: Slow moving zombie model

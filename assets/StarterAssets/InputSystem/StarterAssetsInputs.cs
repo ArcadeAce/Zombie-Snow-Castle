@@ -43,7 +43,7 @@ namespace StarterAssets
 
             }
 
-			look = new Vector2(joystick.Horizontal * camSpeed * Time.deltaTime, joystick.Vertical * -1 * camSpeed * Time.deltaTime);
+			look = new Vector2(joystick.Horizontal * camSpeed * Time.deltaTime, joystick.Vertical * 1 * camSpeed * Time.deltaTime);
 
 
 		}

@@ -5087,7 +5087,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3c0f27b3aaf077e42a136e5ea33c1a15, type: 2}
+  - {fileID: 2100000, guid: bb566c246a6fe8b4d8e102a10be0aefa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5234,7 +5234,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &152786351
@@ -19908,7 +19908,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &236233120
@@ -19992,7 +19992,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &254917761
@@ -29880,7 +29880,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &434275964
@@ -34895,7 +34895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &565005416
 Light:
   m_ObjectHideFlags: 0
@@ -34908,7 +34908,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.4
+  m_Intensity: 0.68
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -39898,7 +39898,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &681451072
@@ -45130,7 +45130,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &836476992
@@ -45150,7 +45150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &836476993
 AudioListener:
   m_ObjectHideFlags: 0
@@ -60048,7 +60048,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1037666592
@@ -60132,7 +60132,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1045044133
@@ -99582,7 +99582,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1775576657
@@ -99771,7 +99771,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1817486692
@@ -104630,7 +104630,7 @@ GameObject:
   - component: {fileID: 1908592915}
   m_Layer: 0
   m_Name: Use this for music test it crashes when you rename it, need fps controller
-    in scene to hear sound
+    in scene to hear sound or camera turned on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104646,10 +104646,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f69d7f5467dad36448818eaf9dae7881, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c84a8f492aa8e6c4196a2dbd6987ce98, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 0.43
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -109730,7 +109730,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &134664586900606195
@@ -109960,6 +109960,67 @@ RectTransform:
   m_AnchoredPosition: {x: -113, y: 12}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!1001 &2830846244586899186
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388269, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388275, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_Name
+      value: Magma zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900223220101388275, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd29e17970f464d4c9271e8183a3a43b, type: 3}
 --- !u!224 &2846486994246675270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110642,19 +110703,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 4755599179960933928}
-  nametext: {fileID: 3755976309404967647}
   pauseDisplay: {fileID: 0}
+  ForZombieBossNameCurrentlyFighting: {fileID: 0}
+  TwinTurbosCurrentBullets: {fileID: 0}
+  TwinTurbosTotalBullets: {fileID: 0}
+  ShotgunCurrentBullets: {fileID: 0}
+  ShotgunTotalBullets: {fileID: 0}
+  TwinTurbosBulletsGoingDownWhenFired: {fileID: 0}
+  ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 0}
   twinTurbosButton: {fileID: 0}
   shotgunButton: {fileID: 0}
-  switchbutton: {fileID: 3755976309842758269}
-  bulletsInClipText: {fileID: 3755976309272464527}
-  bulletsRemainingText: {fileID: 3755976309624457623}
-  AmmoValue: {fileID: 0}
-  Separator: {fileID: 0}
-  TotalBullets: {fileID: 0}
-  ShotgunCurrentBullets: {fileID: 0}
-  SeperatorForShotgunNumbers: {fileID: 0}
-  ShotgunTotalBullets: {fileID: 0}
 --- !u!223 &3755976309534216332
 Canvas:
   m_ObjectHideFlags: 0
@@ -113496,6 +113554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toxic zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 7208628489748266633, guid: a191e8943aa0558498add8dc94f9c9bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -113604,3 +113666,4 @@ SceneRoots:
   - {fileID: 681451074}
   - {fileID: 3755976309534216335}
   - {fileID: 7972628869222232295}
+  - {fileID: 2830846244586899186}
