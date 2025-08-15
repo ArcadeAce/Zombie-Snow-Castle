@@ -15372,7 +15372,7 @@ GameObject:
   - component: {fileID: 5394241616277913768}
   - component: {fileID: 3605834595409402319}
   - component: {fileID: 7626607134905037274}
-  - component: {fileID: 2768362296988330642}
+  - component: {fileID: 1178186997285695855}
   m_Layer: 0
   m_Name: Super combo zombie model
   m_TagString: Untagged
@@ -15440,7 +15440,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2768362296988330642
+--- !u!114 &1178186997285695855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15452,7 +15452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4153ede0b7dcd54b9fd9ccef081e3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systemleft: {fileID: 0}
+  systemleft: {fileID: 6384254935712288111}
   systemright: {fileID: 2228017488120138309}
 --- !u!1 &2799543595700355307
 GameObject:
@@ -25500,7 +25500,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d9d1d49f709eb34787b827d5e7131f3, type: 2}
+  - {fileID: 2100000, guid: 4d2c158bcc2f2bd44b7f6c326cf61152, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35491,7 +35491,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d9d1d49f709eb34787b827d5e7131f3, type: 2}
+  - {fileID: 2100000, guid: 4d2c158bcc2f2bd44b7f6c326cf61152, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36743,7 +36743,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.06
+      scalar: 0.07
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -41303,7 +41303,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51710,7 +51710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
   zombieBossDamage: 10
   hitEffect: {fileID: 3836588609890891284}
   deathExplosion: {fileID: 7691008900101118192}
@@ -51727,7 +51727,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.28
-  m_Speed: 5
+  m_Speed: 4
   m_Acceleration: 200
   avoidancePriority: 50
   m_AngularSpeed: 200
@@ -51785,8 +51785,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.81915, y: 0.22598529, z: 2.4407415}
-  m_Center: {x: -0.11043894, y: 0.5864886, z: 0.7203703}
+  m_Size: {x: 1.81915, y: 0.22598529, z: 2.5114942}
+  m_Center: {x: -0.11043894, y: 0.5864886, z: 0.7557466}
 --- !u!136 &4745175602922010848
 CapsuleCollider:
   m_ObjectHideFlags: 0

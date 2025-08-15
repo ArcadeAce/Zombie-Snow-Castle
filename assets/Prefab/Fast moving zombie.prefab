@@ -9949,8 +9949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  zombieBossDamage: 10
+  health: 600
+  zombieBossDamage: 40
   hitEffect: {fileID: 954447369132642815}
   deathExplosion: {fileID: 6385468872516001201}
   rigidBody: {fileID: 569519927727538332}
@@ -19797,7 +19797,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

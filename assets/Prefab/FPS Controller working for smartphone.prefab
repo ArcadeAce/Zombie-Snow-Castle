@@ -2456,7 +2456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 14
-  SprintSpeed: 6
+  SprintSpeed: 6.5
   RotationSpeed: 3
   SpeedChangeRate: 10
   minHorizontalAngle: -55
@@ -2487,7 +2487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
-  look: {x: 8.7, y: -8.7}
+  look: {x: 0, y: 0}
   jump: 0
   sprint: 0
   camSpeed: 1000
@@ -2736,7 +2736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635792197187060537}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.6427877, z: -0, w: -0.7660444}
   m_LocalPosition: {x: 0, y: 1.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3847,6 +3847,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563962612333161904, guid: fa70d540ad536874da5a6b2638f0cae5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332829295581708480, guid: fa70d540ad536874da5a6b2638f0cae5, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7806779840799273924, guid: fa70d540ad536874da5a6b2638f0cae5, type: 3}

@@ -11511,6 +11511,7 @@ GameObject:
   - component: {fileID: 5624139027083612541}
   - component: {fileID: 4409249033850298592}
   - component: {fileID: 5686931833556061606}
+  - component: {fileID: 3929120838155293337}
   m_Layer: 0
   m_Name: Poison Zombie model
   m_TagString: Untagged
@@ -11707,6 +11708,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3929120838155293337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438453473847165813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5798474285997788847
 GameObject:
   m_ObjectHideFlags: 0

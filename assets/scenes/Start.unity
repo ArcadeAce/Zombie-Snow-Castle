@@ -6427,7 +6427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
-  look: {x: 8.7, y: -8.7}
+  look: {x: 0, y: 0}
   jump: 0
   sprint: 0
   camSpeed: 1000
@@ -11759,7 +11759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
+  sceneIndex: 16
 --- !u!1 &3914799472379590322
 GameObject:
   m_ObjectHideFlags: 0
@@ -16560,8 +16560,8 @@ GameObject:
   - component: {fileID: 3866028168422046076}
   m_Layer: 0
   m_Name: Scene Trigger to all scenes in the game Slow Moving3, Diving4, Grenade5,
-    Poision6, Chemical7, Fast Moving8, Ninja Zombie9, Big Hit10, crazy12, fist of
-    fury13, Taekwando14,Boxing15, Magma Zombie 17
+    Poision6, Chemical7, Fast Moving8, Ninja Zombie9, Big Hit10, fist smasher11,
+    crazy12, fist of fury13, Taekwando14,Boxing15, Magma Zombie 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

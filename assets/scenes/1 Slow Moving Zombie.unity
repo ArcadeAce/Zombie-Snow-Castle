@@ -7171,7 +7171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
-  look: {x: 8.7, y: -8.7}
+  look: {x: 0, y: 0}
   jump: 0
   sprint: 0
   camSpeed: 1000
@@ -14600,10 +14600,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1776488425993933178}
   - component: {fileID: 4807861456417826869}
-  - component: {fileID: 2262555929079884665}
   - component: {fileID: 5680167367314446228}
   - component: {fileID: 4807861456417826875}
   - component: {fileID: 4807861456417826870}
+  - component: {fileID: 2262555929079884665}
   m_Layer: 0
   m_Name: Falling cave door boss room one model
   m_TagString: Untagged
