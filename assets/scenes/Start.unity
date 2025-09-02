@@ -11759,7 +11759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 16
+  sceneIndex: 23
 --- !u!1 &3914799472379590322
 GameObject:
   m_ObjectHideFlags: 0
@@ -16559,9 +16559,10 @@ GameObject:
   - component: {fileID: 7904452616428868835}
   - component: {fileID: 3866028168422046076}
   m_Layer: 0
-  m_Name: Scene Trigger to all scenes in the game Slow Moving3, Diving4, Grenade5,
-    Poision6, Chemical7, Fast Moving8, Ninja Zombie9, Big Hit10, fist smasher11,
-    crazy12, fist of fury13, Taekwando14,Boxing15, Magma Zombie 17
+  m_Name: Scene Trigger to all scenes in the game Slow Moving3 Diving4 Grenade5 Poision6
+    Chemical7 Fast Moving8 Ninja9 Big Hit10 fist smasher11 crazy12 fist of fury13
+    Taekwando14 Boxing15 supercombo16 Magma Zombie17 slider18 Juijitsu19 Blazer20
+    curveball21 Samurai22 wide receiver24 plasma25 knunchuck26 burning fist22 toxic23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16586,8 +16587,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2839416, y: 1, z: 0.054819066}
-  m_Center: {x: -0.040288318, y: 2.6256574e-19, z: 0.08843887}
+  m_Size: {x: 1.2839416, y: 0.99999976, z: 4.199491}
+  m_Center: {x: -0.040288325, y: 0, z: 3.5662627}
 --- !u!4 &7904452616428868860
 Transform:
   m_ObjectHideFlags: 0

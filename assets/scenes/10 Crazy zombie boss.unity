@@ -686,6 +686,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 530.928}
+--- !u!1 &1385087983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385087986}
+  - component: {fileID: 1385087985}
+  - component: {fileID: 1385087984}
+  m_Layer: 0
+  m_Name: Zombie boss removed message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1385087984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385087983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.40821633, y: 4.1604533, z: 1.281552}
+  m_Center: {x: 0.14234565, y: 0.38791358, z: 0.18872364}
+--- !u!114 &1385087985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385087983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7b0a3617a77944ea8f237f490fc6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 6103112641953863611}
+  customMessage: Zombie bosses removed 9
+--- !u!4 &1385087986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385087983}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.009436376, y: 0.7070438, z: 0.7070438, w: 0.009436376}
+  m_LocalPosition: {x: 81.2, y: 2.1, z: -2.1}
+  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1762135462
 GameObject:
   m_ObjectHideFlags: 0
@@ -11695,7 +11763,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Zombie bosses removed \n4"
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14900,8 +14970,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2839416, y: 1, z: 0.054819066}
-  m_Center: {x: -0.040288318, y: 2.6256574e-19, z: 0.08843887}
+  m_Size: {x: 1.2839417, y: 1, z: 3.1069098}
+  m_Center: {x: -0.040288303, y: 0, z: -1.4376069}
 --- !u!1 &8259413531533961078
 GameObject:
   m_ObjectHideFlags: 0
@@ -16033,6 +16103,7 @@ SceneRoots:
   - {fileID: 497904525099910649}
   - {fileID: 2974628315530707991}
   - {fileID: 1318452086}
+  - {fileID: 1385087986}
   - {fileID: 1762135466}
   - {fileID: 1783144685}
   - {fileID: 4372149320017988868}

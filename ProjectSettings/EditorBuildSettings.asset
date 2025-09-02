@@ -60,6 +60,24 @@ EditorBuildSettings:
     path: Assets/Scenes/15 Magma zombie boss.unity
     guid: 99d25e999b3ece34f921fcebc153e6b5
   - enabled: 1
+    path: Assets/Scenes/16 Slider Zombie boss.unity
+    guid: d29ace966cabfe74a91c3fab6b748220
+  - enabled: 1
+    path: Assets/Scenes/17 Jujitsu zombie boss.unity
+    guid: 1a007897ea6771146bddf8ad4cb7c096
+  - enabled: 1
+    path: Assets/Scenes/23 Samurai zombie boss.unity
+    guid: a3415c0ab2d671d41919fc63ae4d3458
+  - enabled: 1
+    path: Assets/Scenes/24 Wide receiver zombie boss.unity
+    guid: 907272b1488443d4b92054dbd65119e2
+  - enabled: 1
+    path: Assets/Scenes/25 Burning fist zombie boss.unity
+    guid: 4a179c78f2a5f454f9b4b185ecc2b47c
+  - enabled: 1
+    path: Assets/Scenes/26 Toxic Zombie boss.unity
+    guid: e935e01d9d097ee4d97bd709a6146df7
+  - enabled: 1
     path: Assets/Scenes/Ending Scene.unity
     guid: 42702e31d9f637e4c86191cd96a828d4
   - enabled: 1

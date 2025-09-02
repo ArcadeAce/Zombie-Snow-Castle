@@ -31593,7 +31593,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31890,11 +31890,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  zombieBossDamage: 10
+  zombieBossDamage: 1
   hitEffect: {fileID: 380082399427049986}
   deathExplosion: {fileID: 4439564863789048540}
   rigidBody: {fileID: 4150635816903032693}
-  zombieBossesChasingDistanceToFollowThePlayer: 0.03
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
 --- !u!195 &7771672455746600796
 NavMeshAgent:

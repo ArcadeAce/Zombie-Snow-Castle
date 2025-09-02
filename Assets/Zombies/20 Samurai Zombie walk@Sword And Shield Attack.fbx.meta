@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: 4e087da657f78cb459c65595466c59ff
+guid: cdaaf461634f73a4cadf96b351c1b021
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Samurai Zombie sword punch
+    second: Sword And Shield Attack (1)
+  - first:
+      74: 2199109622961172852
+    second: Samurai Zombie sword attack
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,11 +38,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Samurai Zombie sword punch
+      name: Samurai Zombie sword attack
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 30
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -59,7 +62,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.60714746
+      - time: 0.5875576
         functionName: DealDamage
         data: 
         objectReferenceParameter: {instanceID: 0}

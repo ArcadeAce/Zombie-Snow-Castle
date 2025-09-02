@@ -14,7 +14,7 @@ AnimatorStateMachine:
     m_Position: {x: 310, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6869834899838001265}
-    m_Position: {x: 295.31647, y: 75.75949, z: 0}
+    m_Position: {x: 370, y: 100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 2257009173414669030}
@@ -61,7 +61,7 @@ AnimatorController:
   m_Name: Scene switch closing cave door fourteen
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Close door
+  - m_Name: CloseDoor
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -115,7 +115,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Close door
+    m_ConditionEvent: CloseDoor
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6869834899838001265}
