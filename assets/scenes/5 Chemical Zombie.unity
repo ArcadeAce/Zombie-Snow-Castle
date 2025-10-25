@@ -4777,6 +4777,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &635792197791267038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14102,7 +14103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 10
+  sceneIndex: 15
 --- !u!4 &6250529308878982672
 Transform:
   m_ObjectHideFlags: 0

@@ -24,16 +24,25 @@ public class SceneController : MonoBehaviour
 
 
         if (PlayerManager.Instance != null)// if → Checks a condition before running any code. Think of it like asking a YES or NO question before proceeding. ( & ) (Parentheses) → Hold the condition being checked—everything inside must result in either true or false. PlayerManager.Instance != null →
-                                           //Checks if the PlayerManager exists(Instance).
+                     
+        //Checks if the PlayerManager exists(Instance).
                                            //!= means "NOT equal to", so this line is asking: "Is there a PlayerManager currently active?"
                                            //If YES, move to the next check.
                                            //If NO, log an error(Debug.LogError("PlayerManager.Instance is not initialized.");).
+
         {
+     
+
+
+
             if (PlayerManager.Instance.WeaponSwitcher != null)//if → This checks a condition before running any code. Think of it like asking a YES or NO question before proceeding. ( & ) (Parentheses) → Hold the condition being checked—everything inside must result in either true or false.  PlayerManager → Refers to the PlayerManager class, which manages the player’s health, ammo, lives, and weapons.
                                                               //. (Dot Operator) → Used to access variables or functions inside PlayerManager. Instance → A static reference to the one and only PlayerManager that exists in the game. . (Dot Operator Again) → Used to access WeaponSwitcher inside PlayerManager. WeaponSwitcher → This is the player’s weapon system, responsible for handling weapon changes and setups. != → Means "NOT equal to". null → Means "Nothing exists." What This Line Is Asking: "Is the WeaponSwitcher system available inside PlayerManager?"
             {
                 Debug.Log("Setting up weapons...");//Debug.Log("Setting up weapons..."); → Prints a message in Unity's console → Helps confirm that the weapon setup process is starting. ➡️ Think of it like a status update before loading weapons.
                 PlayerManager.Instance.WeaponSwitcher.SetupWeapons();// PlayerManager.Instance.WeaponSwitcher.SetupWeapons(); → Calls the SetupWeapons() function inside the WeaponSwitcher script. This ensures that the player's weapons are correctly set up after switching scenes. ➡️ If the player already has weapons assigned, it reloads them into the correct slots.
+                PlayerManager.Instance.WeaponSwitcher.SyncWeaponVisibility();
+
+      
             }
             else
             {
@@ -44,6 +53,7 @@ public class SceneController : MonoBehaviour
         {
             Debug.LogError("PlayerManager.Instance is not initialized.");//else { Debug.LogError("PlayerManager.Instance is not initialized."); } → If PlayerManager.Instance is null, this logs another error. Prevents game-breaking bugs by confirming that PlayerManager is correctly loaded. ➡️ Think of this as a last checkpoint to ensure PlayerManager is working.
         }
+
     }
 }
 

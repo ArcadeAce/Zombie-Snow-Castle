@@ -3146,6 +3146,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &2018072006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4654,6 +4655,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &635792198879819039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9877,14 +9879,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.27450982}
+  m_Color: {r: 1, g: 0.7914926, b: 0, a: 0.27450982}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7ae04d867037a64e96876fd54737180, type: 3}
+  m_Sprite: {fileID: 21300048, guid: 309ac3eb4cc441349b63128366ca98b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11759,7 +11761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 23
+  sceneIndex: 5
 --- !u!1 &3914799472379590322
 GameObject:
   m_ObjectHideFlags: 0
@@ -12866,8 +12868,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -465.4, y: 191.3}
-  m_SizeDelta: {x: 66.2, y: 50.4}
+  m_AnchoredPosition: {x: -456.9, y: 193.1}
+  m_SizeDelta: {x: 50.7, y: 78.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4613818592269056343
 GameObject:
@@ -13271,7 +13273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9.9}
+  m_AnchoredPosition: {x: 5, y: 9.9}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!64 &5151510789928336946
@@ -13703,7 +13705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 9.9}
+  m_AnchoredPosition: {x: 0, y: 9.9}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5665946870628423545
@@ -14268,6 +14270,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112641442124878}
   twinTurbosButton: {fileID: 635792198879819019}
   shotgunButton: {fileID: 34455066694569495}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!114 &6103112641490292052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15963,7 +15966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 9.9}
+  m_AnchoredPosition: {x: -5, y: 9.9}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!33 &7379299628588058756
@@ -16377,7 +16380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: 20}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 300, y: 120}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &7762894679851045143

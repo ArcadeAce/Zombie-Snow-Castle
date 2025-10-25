@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3293fd4316338f34ea7c2478d1f65a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 840
+  health: 1
   zombieBossDamage: 70
   hitEffect: {fileID: 1432723002589257120}
   deathExplosion: {fileID: 9117819134017355889}
@@ -19989,7 +19989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5031865750126629840
 Transform:
   m_ObjectHideFlags: 0

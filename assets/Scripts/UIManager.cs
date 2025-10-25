@@ -22,6 +22,11 @@ public class UIManager : MonoBehaviour
     public Button twinTurbosButton; // Button reference for Twin Turbos
     public Button shotgunButton; // Button reference for Shotgun
 
+    // to find new lines easy put these lines/////////////////////new line added below
+    public GameObject lookSensitivityPanel;
+    // //////////////////////////////////////////////////////////
+
+
 
 
     public static object Instance { get; internal set; }
@@ -79,6 +84,13 @@ public class UIManager : MonoBehaviour
     // What is bool? bool (short for Boolean) is a data type in C# that can only have two possible values:true ✅ → Something is ON, active, or happening false ❌ → Something is OFF, inactive, or not happening
     public void PauseGame()
     {
+        // ////////////////////////////// new line added below
+         gamePaused = !gamePaused; // Flip the pause state first// ////////////////////////////////////////
+
+         // ////////////////////////////
+
+
+
         if (gamePaused) // Check if the game is currently paused.
         {
             Time.timeScale = 0.0f;// Stop all game movement and physics by setting time scale to 0 (paused state).
@@ -88,7 +100,18 @@ public class UIManager : MonoBehaviour
             Time.timeScale = 1.0f;// Resume normal game speed by setting time scale back to 1 (unpaused state).
         }
 
-        gamePaused = !gamePaused;// Toggle the gamePaused flag (true becomes false, false becomes true).
+        // new line added////////////////////////////////////////////////
+       
+
+       
+        // /////////////////new line added below
+        Debug.Log("Pause button clicked");
+
+        // //////////////////////////////////////////////////
+
+
+         lookSensitivityPanel.SetActive(gamePaused);
+       
     }
 
 

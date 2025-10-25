@@ -2150,7 +2150,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2653,7 +2653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicClip1: {fileID: 8300000, guid: a52026784b58f144895654f2931d99ae, type: 3}
-  musicClip2: {fileID: 8300000, guid: d4379be559bd0df478dbcb425f6158ca, type: 3}
+  musicClip2: {fileID: 8300000, guid: 4fe93e5ce4de456488e6effbcd10bdc7, type: 3}
 --- !u!4 &2082513154
 Transform:
   m_ObjectHideFlags: 0

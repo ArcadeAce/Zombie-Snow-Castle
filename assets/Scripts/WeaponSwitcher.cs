@@ -21,7 +21,6 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
 
 
 
-
     public bool Switchable() // 🔄 Checks if **weapon switching is allowed**.
     {
         return slot1Occupied && slot2Occupied;
@@ -31,33 +30,44 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
 
 
 
+    // ******************** for twin turbos appearing in posion zombie boss scene
 
 
-    public void Pickup(Weapon prefab, bool ischest = false)// 🔄 Handles weapon pickups when the player grabs a new weapon.
+    public void Pickup(Weapon prefab, bool ischest = false)
+{
+    if (!slot1Occupied)
     {
-        if (!slot1Occupied)// If slot 1 is empty, place the weapon there.
-        {
-            InstantiateWeapon(prefab, true, ischest);// 🛠️ Creates a new weapon in slot 1 (from prefab).
-            slot1.gameObject.SetActive(true);// Activates slot 1 weapon, making it visible.
-            activeWeapon = slot1;// Sets the **picked-up weapon as the active weapon**.
-            activeisslot1 = true;// Marks that slot 1 is currently being used.
-            slot1Occupied = true;// Confirms **slot 1 is now occupied**.
-        }
-        else if (!slot2Occupied)// If both slots are occupied, drop the weapon in slot 2 and replace it.
-        {
-            InstantiateWeapon(prefab, false, ischest);// 🛠️ Creates a new weapon in slot 2.
-            slot2.gameObject.SetActive(false); // ❌ Keeps slot 2 weapon **inactive** until switched.
-            slot2Occupied = true;// Confirms **slot 2 is now occupied**
-        }
-        else// If both slots are occupied, drop the weapon in slot 2 and replace it.
-        {
+        InstantiateWeapon(prefab, true, ischest);
+        slot1.gameObject.SetActive(true);
+        activeWeapon = slot1;
+        activeisslot1 = true;
+        slot1Occupied = true;
 
-            DropCurrentWeapon(slot2);// Drops the weapon currently in slot 2.
-            InstantiateWeapon(prefab, false, ischest);// 🛠️ Creates the new weapon in slot 2.
-            slot2.gameObject.SetActive(false);// ❌ Keeps slot 2 weapon inactive until switched.
-            slot2Occupied = true;// Confirms **slot 2 now has the new weapon**.
-        }
+        PlayerManager.Instance.selectedWeaponType = prefab.weaponType; // ✅ Only update when weapon is equipped
     }
+    else if (!slot2Occupied)
+    {
+        InstantiateWeapon(prefab, false, ischest);
+        slot2.gameObject.SetActive(false);
+        slot2Occupied = true;
+        // ❌ Do NOT update selectedWeaponType here
+    }
+    else
+    {
+        DropCurrentWeapon(slot2);
+        InstantiateWeapon(prefab, false, ischest);
+        slot2.gameObject.SetActive(false);
+        slot2Occupied = true;
+        // ❌ Do NOT update selectedWeaponType here
+    }
+}
+
+    // ******************** for twin turbos appearing in posion zombie boss scene
+
+
+
+
+
 
 
 
@@ -81,8 +91,6 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
 
 
         ///////////////////////////////////////////////////////////////////////////////////////////
-
-
         //THIS LINE (BELOW) HAS BEEN COMMENTED OUT BECAUSE IT IS ADDING 20 BULLETS TO THE TOTL BULLETS EACH TIME THE PLAYER GOES TO EACH SCENE!
         //PlayerManager.Instance.AddAmmo(prefab.weaponType, chest ? prefab.totalBullets : prefab.clipSize);
         // Determines how much ammo to add based on whether the weapon came from a chest.
@@ -104,6 +112,10 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
         MeshCollider meshCollider = droppedWeapon.GetComponent<MeshCollider>() ?? droppedWeapon.AddComponent<MeshCollider>();// Adds a MeshCollider component if the weapon doesn’t already have one.
                                                                                                                              // Ensures the weapon has physical collision, preventing it from falling through the ground.
         meshCollider.convex = true;// Allows proper physics interaction (necessary for objects that will move).
+
+
+
+
     }
 
 
@@ -136,10 +148,7 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
         activeWeapon = newweapon;// Updates the `activeWeapon` variable to **track the new equipped weapon**.
 
     }
-
-
-
-
+    
 
     public void SwitchWeaponTo(string weaponName)// Switches to a specific weapon **based on its name**.
     {
@@ -154,6 +163,8 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
             StartCoroutine(Switch(slot2, slot1));// Starts the transition **from slot 2 (Shotgun) to slot 1 (TwinTurbos)**.
             activeisslot1 = true;// 🔄 Updates tracking → **TwinTurbos is now the active weapon**.
             activeWeapon = slot1;// Marks TwinTurbos as the currently equipped weapon.
+
+      
         }
     }
 
@@ -184,9 +195,32 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
         {
             activeWeapon = slot2;// Keep Slot 2 weapon active.
             SwitchWeapon();// Switch if needed, ensuring correct weapon setup.
+
         }
     }
+    // **********************************************************For twin turbos to show by themselves no shotgun in poison zombie boss scene
+    public void SyncWeaponVisibility()
+{
+    if (PlayerManager.Instance.selectedWeaponType == "TwinTurbos")
+    {
+        if (slot1 != null) slot1.gameObject.SetActive(true);  // Show Twin Turbos
+        if (slot2 != null) slot2.gameObject.SetActive(false); // Hide Shotgun
+        activeWeapon = slot1;
+        activeisslot1 = true;
+    }
+    else if (PlayerManager.Instance.selectedWeaponType == "Shotgun")
+    {
+        if (slot1 != null) slot1.gameObject.SetActive(false); // Hide Twin Turbos
+        if (slot2 != null) slot2.gameObject.SetActive(true);  // Show Shotgun
+        activeWeapon = slot2;
+        activeisslot1 = false;
+    }
+  }
+    // **********************************************************For twin turbos to show by themselves no shotgun in poison zombie boss scene
 }
+
+
+
 
 
 // ===================== WEAPON SWITCHER SUMMARY =====================
@@ -212,17 +246,3 @@ public class WeaponSwitcher : MonoBehaviour// 🎮 Defines a class that handles 
 // ❌ It does NOT generate weapons automatically—**weapons must be picked up** in-game.
 //
 // 🔹 Think of **WeaponSwitcher as the player's inventory manager**, keeping the player's weapons organized and allowing dynamic switching while maintaining a smooth gameplay experience! 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

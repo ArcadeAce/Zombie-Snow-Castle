@@ -8249,6 +8249,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &635792197680081071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11128,7 +11129,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7ae04d867037a64e96876fd54737180, type: 3}
+  m_Sprite: {fileID: 21300048, guid: 309ac3eb4cc441349b63128366ca98b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13833,8 +13834,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -465.4, y: 191.3}
-  m_SizeDelta: {x: 66.2, y: 50.4}
+  m_AnchoredPosition: {x: -455.7, y: 190.5}
+  m_SizeDelta: {x: 54.1, y: 71.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4623444031222561037
 GameObject:
@@ -15343,6 +15344,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112641241361390}
   twinTurbosButton: {fileID: 635792197680081086}
   shotgunButton: {fileID: 34455065764254626}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!114 &6103112641150989044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18971,7 +18973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: 20}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 300, y: 120}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &7762894678383856802
