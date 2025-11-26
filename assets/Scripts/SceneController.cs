@@ -94,4 +94,3 @@ public class SceneController : MonoBehaviour
 //
 // Think of these singletons as the backbone of your game, keeping everything stable 
 
-
