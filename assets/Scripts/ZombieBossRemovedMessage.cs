@@ -37,7 +37,7 @@ public class ZombieBossRemovedMessage : MonoBehaviour
         }
 
         // Wait for 5 seconds
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(12f);
 
         // Slowly move the message back up
         elapsedTime = 0f;

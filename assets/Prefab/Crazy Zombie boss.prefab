@@ -4847,8 +4847,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14852,15 +14851,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 7095392635915751431}
+  health: 180
+  zombieBossDamage: 40
   hitEffect: {fileID: 8298174878127848054}
+  deathExplosion: {fileID: 7095392635915751431}
   rigidBody: {fileID: 5336485785273462047}
-  damage: 30
-  health: 100
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
-  impactForce: 0
-  chaseDistance: 100
-  deathSound: {fileID: 0}
 --- !u!195 &5336485785273462040
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14929,8 +14926,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.297236, y: 0.46600124, z: 2.4476469}
-  m_Center: {x: -1.6113193, y: 0.6557295, z: 0.07757294}
+  m_Size: {x: 2.6396313, y: 0.46600127, z: 2.4476469}
+  m_Center: {x: -0.7825167, y: 0.6557295, z: 0.07757294}
 --- !u!136 &5336485785273462045
 CapsuleCollider:
   m_ObjectHideFlags: 0

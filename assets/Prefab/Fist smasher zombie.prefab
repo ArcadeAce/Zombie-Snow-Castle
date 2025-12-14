@@ -5900,6 +5900,7 @@ GameObject:
   - component: {fileID: 8672402212208962370}
   - component: {fileID: 5968421114842874750}
   - component: {fileID: 2568252829658615721}
+  - component: {fileID: 3258550426888262184}
   m_Layer: 0
   m_Name: Fist smasher zombie model
   m_TagString: Untagged
@@ -6083,6 +6084,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3258550426888262184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4847783681610986166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5591362117208886689
 GameObject:
   m_ObjectHideFlags: 0
@@ -21084,7 +21097,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: 2100000, guid: dbf898c9f9c4a2d46aa6336e23caeb61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21366,15 +21379,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 2901841190029140639}
+  health: 1
+  zombieBossDamage: 40
   hitEffect: {fileID: 500652540849775555}
+  deathExplosion: {fileID: 2901841190029140639}
   rigidBody: {fileID: 8223837570721173793}
-  damage: 10
-  health: 500
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
-  impactForce: 0
-  chaseDistance: 300
-  deathSound: {fileID: 0}
 --- !u!195 &6257308373592100802
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21443,8 +21454,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7169628, y: 0.07806897, z: 5.263772}
-  m_Center: {x: 0.12607837, y: 0.41409457, z: 1.2594075}
+  m_Size: {x: 1.7169628, y: 0.38423085, z: 4.632374}
+  m_Center: {x: 0.12607837, y: 0.56717557, z: 0.9437084}
 --- !u!136 &8092537158220434223
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21467,7 +21478,7 @@ CapsuleCollider:
   m_Radius: 0.561144
   m_Height: 1.8569982
   m_Direction: 1
-  m_Center: {x: 0.14324616, y: 1.401457, z: 0.43296695}
+  m_Center: {x: 0.14324616, y: 1.401457, z: -0.36}
 --- !u!1 &7649365078581486310
 GameObject:
   m_ObjectHideFlags: 0

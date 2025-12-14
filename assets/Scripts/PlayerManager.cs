@@ -1,21 +1,33 @@
 ﻿using System;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
 
-    public float PlayerHealth;
+    // 🔫 Weapon memory
+    public bool hasShotgun;
+    public static string lastHeldWeaponType = "TwinTurbos";
+    public string selectedWeaponType = "TwinTurbos";
+
+    // ❤️ Health and lives
+    public float PlayerHealth = 100f;
     public float curHealth;
-    public int lives;
+    public int lives = 3;
+
+    // 🔫 Ammo tracking
     public int bulletsInClip;
+    public int totalBullets = 20;
     public int shotgunShells;
     public int remainingBullets;
     public int remainingShotgunShells;
-    public int totalBullets = 20;
+
+    // 💣 Grenades
     public int numberOfGrenades;
     public int numberOfPhosphorusGrenades;
 
+    // 🔄 Weapon system reference
     public WeaponSwitcher WeaponSwitcher { get; private set; }
 
     private void Awake()
@@ -28,56 +40,30 @@ public class PlayerManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
 
-        if (curHealth == 0)
-        {
-            curHealth = PlayerHealth;
-        }
+        // ✅ Weapon memory functions
+        curHealth = PlayerHealth;
+        lives = lives == 0 ? 3 : lives;
 
-        if (lives == 0)
-        {
-            lives = 3;
-        }
-
-        // Ensure WeaponSwitcher is assigned correctly
         WeaponSwitcher = GetComponent<WeaponSwitcher>();
         if (WeaponSwitcher == null)
         {
-            Debug.LogError("WeaponSwitcher component not found on PlayerManager.");
+            //Debug.LogError("WeaponSwitcher component not found on PlayerManager.");
         }
 
-        bulletsInClip = 10;
         remainingBullets = totalBullets - (bulletsInClip * 2);
-    }
-
-    public void AddAmmo(string ammoType, int ammoToAdd)
-    {
-        Debug.Log($"{ammoType} {ammoToAdd} reloadingammo");
-
-        switch (ammoType)
-        {
-            case "TwinTurbos":
-
-                remainingBullets += ammoToAdd;
-                GameManager.UIManager.ReloadGun(ammoType, bulletsInClip, remainingBullets);
-                break;
-            case "Shotgun":
-                remainingShotgunShells += ammoToAdd;
-                GameManager.UIManager.ReloadGun(ammoType, shotgunShells, remainingShotgunShells);
-                break;
-        }
-       
-    }
-
-    public void Activate(bool activate)
-    {
-        // Logic to activate or deactivate the player
     }
 
     private void Start()
     {
         GameManager.UIManager.UpdateHealthBar(curHealth / PlayerHealth, lives);
+    }
+
+    public void Activate(bool activate)
+    {
+        // Reserved for future use
     }
 
     public void TakeDamage(int damage)
@@ -114,9 +100,26 @@ public class PlayerManager : MonoBehaviour
         Destroy(this);
     }
 
+    public void AddAmmo(string ammoType, int ammoToAdd)
+    {
+       
+
+        switch (ammoType)
+        {
+            case "TwinTurbos":
+                remainingBullets += ammoToAdd;
+                GameManager.UIManager.ReloadGun(ammoType, bulletsInClip, remainingBullets);
+                break;
+
+            case "Shotgun":
+                remainingShotgunShells += ammoToAdd;
+                GameManager.UIManager.ReloadGun(ammoType, shotgunShells, remainingShotgunShells);
+                break;
+        }
+    }
+
     internal void SetBulletsInClip(string weaponType, int clipSize)
     {
-        
         switch (weaponType)
         {
             case "TwinTurbos":
@@ -125,14 +128,47 @@ public class PlayerManager : MonoBehaviour
 
             case "Shotgun":
                 shotgunShells = clipSize;
-
                 break;
+
             default:
-                Debug.Log("don't have a ammo assigned");
+            
                 return;
         }
     }
+
+    // ✅ Weapon memory functions
+    public void AcquireTwinTurbos()
+    {
+        selectedWeaponType = "TwinTurbos";
+        lastHeldWeaponType = "TwinTurbos";
+    }
+
+    public void AcquireShotgun()
+    {
+        hasShotgun = true;
+        selectedWeaponType = "Shotgun";
+        lastHeldWeaponType = "Shotgun";
+    }
+
+    public void AcquireKnife()
+    {
+        selectedWeaponType = "Knife";
+        lastHeldWeaponType = "Knife";
+    }
+
+    public void AcquireBat()
+    {
+        selectedWeaponType = "Bat";
+        lastHeldWeaponType = "Bat";
+    }
+
+    public void SetActiveWeapon(string weaponType)
+    {
+        selectedWeaponType = weaponType;
+        lastHeldWeaponType = weaponType;
+    }
 }
+
 
 
 

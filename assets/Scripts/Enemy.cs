@@ -4,52 +4,36 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    // Particle systems for death explosion and hit effect
-    public ParticleSystem deathExplosion;
-    public ParticleSystem hitEffect;
+    public int health; // Current health of the enemy
+    public int zombieBossDamage; // Damage inflicted by the enemy
+    public ParticleSystem hitEffect; // For the particle system to go off when the zombie boss is hit when shot
+    public ParticleSystem deathExplosion; // Particle systems for death explosion when the zombie boss dies.
+    public Rigidbody rigidBody; // Reference to the enemy's rigid body
+    public float zombieBossesChasingDistanceToFollowThePlayer; // Distance at which the enemy chases the player
+    public float delay; // Delay before actions used?
 
-    // Reference to the enemy's rigid body
-    public Rigidbody rigidBody;
-
-    // Animator for enemy animations
-    protected Animator Animator;
-
-    // NavMesh agent for enemy movement
-    protected NavMeshAgent agent;
-
-    // Reference to the boss spawner (if this enemy is a boss)
-    private BossSpawner spawner;
-
-    // Current health of the enemy
-    public int health;
-
-
-    // Damage inflicted by the enemy
-    public int damage;
-
-    // Distance at which the enemy starts chasing the player
-    public float chaseDistance;
-
-
-
-    // Delay before actions (not currently used)
-    public float delay;
-
+    protected Animator Animator; // Animator for enemy animations
+    protected NavMeshAgent agent; // NavMesh agent for enemy movement
  
+    private BossSpawner spawner; // Reference to the boss spawner (if this enemy is a boss)
+    private bool particlePlaying; // Flag to prevent multiple hit effects
+    private bool Boss;// Flag to check if this enemy is a boss
 
-    // Flag to prevent multiple hit effects
-    private bool particlePlaying;
 
 
 
-    // Flag to check if this enemy is a boss
-    private bool Boss;
+
+
 
     // Property to check if the player is in the enemy's chase range
-    protected bool playerInRange => Vector3.Distance(transform.position, PlayerController.Instance.cam.transform.position) <= chaseDistance;
+    protected bool playerInRange => Vector3.Distance(transform.position, PlayerController.Instance.cam.transform.position) <= zombieBossesChasingDistanceToFollowThePlayer;
 
-    // Property to check if the enemy is currently chasing the player
-    public bool IsChasing { get; private set; }
+    
+    public bool IsChasing { get; private set; }// Property to check if the enemy is currently chasing the player
+
+
+
+
 
 
 
@@ -76,11 +60,6 @@ public class Enemy : MonoBehaviour
         spawner = bossSpawner;
     }
 
-    internal void Patrol(Vector3 position)
-    {
-        // Set the destination for patrolling
-        agent.SetDestination(position);
-    }
 
     public virtual void Update()
     {
@@ -107,10 +86,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
+
+
+
+
+
     public void DealDamage()
     {
         // Deal damage to the player
-        PlayerManager.Instance.TakeDamage(damage);
+        PlayerManager.Instance.TakeDamage(zombieBossDamage);
     }
 
     public void TakeDamage(int amount, RaycastHit hit)
@@ -136,6 +121,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
+
+
+
+
+
     private void ShowEffects(RaycastHit hit)
     {
         // Position the hit effect at the hit point and play it
@@ -144,6 +135,11 @@ public class Enemy : MonoBehaviour
 
 
     }
+
+
+
+
+
 
     private void Die()
     {
@@ -157,10 +153,11 @@ public class Enemy : MonoBehaviour
             // If this enemy is a boss, handle boss-related actions
             GameManager.UIManager.TurnNameOff();
             AudioManager.Instance.StopMusic("Boss music");
-            //TODO in the Audio Manager in element 7, in Audio Manager, This grenade explosion sound is temporaray and replace with better sound later, and rewrite the name in the in the quotes below, use AudioManager.Instance.PlayEffect("Grenade explosion, pixabay, hq-explosion-6288"); for adding all sounds.
-            AudioManager.Instance.PlayEffect("Grenade explosion new");
-            AudioManager.Instance.PlayEffect("Boss death music");
 
+            //use AudioManager.Instance.PlayEffect("example"); for adding all sounds.
+            
+            AudioManager.Instance.PlayEffect("Boss death music");
+            AudioManager.Instance.PlayEffect("Grenade explosion sound and zombie exploding sound");
 
             spawner.OpenDoor();
             Invoke("PlaySceneMusic", 10f);
@@ -173,12 +170,35 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+
+
+
+
+
     private void PlaySceneMusic()
     {
         // Play the scene music (e.g., after the boss fight)
         AudioManager.Instance.PlayMusic("Cave music");
     }
 }
+// ===================== ENEMY SCRIPT SUMMARY =====================
+// 🔹 The Enemy script controls **zombie AI behavior**, including movement, attacking, and death mechanics.
+//
+// ✅ Core Responsibilities:
+// ✅ Uses **NavMeshAgent** for intelligent navigation and chasing the player.
+// ✅ Tracks health (`health`) → Manages enemy damage and death conditions.
+// ✅ Handles **player detection & chasing** → Moves toward the player when in range.
+// ✅ Manages attack animation (`Animator.SetTrigger("Attack")`) when the player enters the trigger zone.
+// ✅ Plays **hit effects (`ShowEffects()`)** when the enemy gets damaged.
+// ✅ Handles death behavior (`Die()`) → Plays explosion effects and destroys the enemy object.
+// ✅ Special logic for **boss zombies** → Stops boss music, triggers explosions, and opens doors upon defeat.
+//
+// ❌ What It Does NOT Do:
+// ❌ Does NOT spawn enemies → Spawning is handled separately by **BossSpawner**.
+// ❌ Does NOT control player health → It only **deals damage** to the player, but the actual health system is managed by **PlayerManager**.
+//
+// 🔹 Think of the Enemy script as **the AI system controlling zombies**, ensuring they chase, attack, take damage, and trigger special events when defeated!
 
 
 

@@ -6298,7 +6298,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
-        key0: {r: 0.8783407, g: 0.9245283, b: 0.11774653, a: 1}
+        key0: {r: 0.91563696, g: 0.9245283, b: 0.7718939, a: 1}
         key1: {r: 0.8783407, g: 0.9245283, b: 0.11774653, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}

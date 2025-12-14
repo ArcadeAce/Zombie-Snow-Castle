@@ -281,7 +281,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Radius: 21.9463
+  m_Radius: 20.8
   m_Center: {x: 0.23004545, y: 1.8910347, z: -0.39043736}
 --- !u!1 &1069594918619579517
 GameObject:
@@ -519,12 +519,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3293fd4316338f34ea7c2478d1f65a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 9117819134017355889}
+  health: 1
+  zombieBossDamage: 70
   hitEffect: {fileID: 1432723002589257120}
+  deathExplosion: {fileID: 9117819134017355889}
   rigidBody: {fileID: 3141733627583131449}
-  health: 20
-  damage: 10
-  chaseDistance: 250
+  zombieBossesChasingDistanceToFollowThePlayer: 400
   delay: 1
   grenadeholder: {fileID: 9040210131540172795}
   throwdistance: 0.5
@@ -537,7 +537,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1298587330894110241}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 5.81
+  m_Radius: 6.6
   m_Speed: 1.3
   m_Acceleration: 200
   avoidancePriority: 50
@@ -596,8 +596,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.961179, y: 1.4988382, z: 18.384377}
-  m_Center: {x: -0.33294517, y: 1.6547257, z: 4.278175}
+  m_Size: {x: 6.961179, y: 1.0518569, z: 18.384377}
+  m_Center: {x: -0.33294517, y: 3.150701, z: 4.278175}
 --- !u!136 &3790505579155945917
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1192,6 +1192,7 @@ GameObject:
   - component: {fileID: 5685558394099182787}
   - component: {fileID: 6449070502915143963}
   - component: {fileID: 6901428993221063464}
+  - component: {fileID: 1936669578222971625}
   m_Layer: 0
   m_Name: Grenade Throwing Zombie model
   m_TagString: Untagged
@@ -1208,7 +1209,7 @@ Transform:
   m_GameObject: {fileID: 2217155979135849821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1402,6 +1403,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1936669578222971625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2217155979135849821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2318317669026306565
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,7 +12974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5516512008241376819
 Transform:
   m_ObjectHideFlags: 0
@@ -19670,7 +19683,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
+  - {fileID: -6527670528093515950, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

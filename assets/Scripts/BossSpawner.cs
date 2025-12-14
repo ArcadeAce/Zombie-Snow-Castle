@@ -6,11 +6,11 @@ using UnityEngine;
 public class BossSpawner : MonoBehaviour
 {
     public Enemy ZombieBoss; // Reference to the Enemy prefab
-    public string bossMusic; // Boss music ID
-    public float distance; // Distance from player to spawn the boss
-    private BoxCollider _collider; // Reference to BoxCollider component
-
     public BossRoomCaveDoorOpen BossRoomCaveDoorOpen; // Reference to BossRoomCaveDoorOpen script
+    public string bossMusic; // Boss music ID
+    public float DistanceZombieBossAppearsFromThePlayer; // Distance from player to spawn the boss
+
+    private BoxCollider _collider; // Reference to BoxCollider component
 
     private void Awake()
     {
@@ -29,7 +29,7 @@ public class BossSpawner : MonoBehaviour
             AudioManager.Instance.PlayMusic(bossMusic); // Play Poison Zombie boss music
 
             // Instantiate zombie boss
-            Enemy boss = Instantiate(ZombieBoss, player.position + player.forward * -distance, Quaternion.identity);
+            Enemy boss = Instantiate(ZombieBoss, player.position + player.forward * -DistanceZombieBossAppearsFromThePlayer, Quaternion.identity);
             boss.Register(this);
             Destroy(_collider);
 

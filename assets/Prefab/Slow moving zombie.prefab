@@ -51,12 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 4926205011471522714}
+  health: 300
+  zombieBossDamage: 20
   hitEffect: {fileID: 5614901743633953848}
+  deathExplosion: {fileID: 4926205011471522714}
   rigidBody: {fileID: 4443523756681988101}
-  health: 1
-  damage: 10
-  chaseDistance: 150
+  zombieBossesChasingDistanceToFollowThePlayer: 200
   delay: 1
 --- !u!195 &1183070322483348591
 NavMeshAgent:
@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6692330662267566600, guid: db8a5533533627540a476f19c9d6204f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6527670528093515950, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -395,7 +399,7 @@ PrefabInstance:
     - target: {fileID: -3347090507751969436, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6b28ced5c7c051746b31c8b70c585160, type: 2}
+      objectReference: {fileID: 2100000, guid: d8fe7c750be35e04eaaf42e5e7e529dc, type: 2}
     - target: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       propertyPath: m_Name
       value: Slow moving zombie model
@@ -429,6 +433,9 @@ PrefabInstance:
       addedObject: {fileID: 6554068922719058688}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2799746372251788022}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 5784626121893287389}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       insertIndex: -1
@@ -436,9 +443,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6097755720768993849}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2799746372251788022}
   m_SourcePrefab: {fileID: 100100000, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}
 --- !u!1 &8461627970974382839 stripped
 GameObject:
@@ -455,6 +459,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8203015f27e7eab43800ef263c4b5b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2799746372251788022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461627970974382839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &5784626121893287389
@@ -587,18 +603,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2799746372251788022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8461627970974382839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &9090073166874648653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 927232ed48cd6f440b5d0e01918a7d14, type: 3}

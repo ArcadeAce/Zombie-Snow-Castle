@@ -1,26 +1,24 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
 namespace StarterAssets
 {
     public class GrenadeThrowHandler : MonoBehaviour
     {
+        public TextMeshProUGUI grenadeCountText; // Reference to the TextMeshPro for grenade count display
         public GameObject grenadePrefab; // Prefab of the grenade
+        public GameObject grenadeButton; // Reference to the grenade button GameObject
+
         public Transform throwPoint; // Transform for the grenade throw position
+        public int maxGrenades = 30; // Maximum number of grenades the player can hold
+                                     // public int PlayerManager.Instance.numberOfGrenades = 0; // Initialize to 0
         public float throwForce = 15f; // Force applied to the thrown grenade
         public float grenadeResetDelay = 0.5f; // Delay before resetting the grenade throw
         public Animator armAnimator;
         public Animator twinTurboAnimator;
-        public int maxGrenades = 30; // Maximum number of grenades the player can hold
-                                     // public int PlayerManager.Instance.numberOfGrenades = 0; // Initialize to 0
+     
         public GameObject weaponholder;
-        public TextMeshProUGUI grenadeCountText; // Reference to the TextMeshPro for grenade count display
-        public GameObject grenadeButton; // Reference to the grenade button GameObject
-
-
-
-
+      
 
         private bool isGrenadeThrown = false;
 

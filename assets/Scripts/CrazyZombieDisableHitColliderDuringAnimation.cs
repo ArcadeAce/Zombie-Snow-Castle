@@ -11,6 +11,11 @@ public class CrazyZombieDisableHitColliderDuringAnimation : MonoBehaviour
         "Crazy zombie hip hop robot dance",
         "Crazy zombie fall flat",
         "Crazy zombie dancing running man",
+        "Crazy zombie headspin start",
+        "Crazy zombie head spinning",
+        "Crazy zombie head spinnin 0",
+        "Crazy zombie headspin end",
+
         "Crazy zombie arm wave"
     };
 

@@ -7,16 +7,21 @@ namespace StarterAssets
 {
     public class PhosphorusGrenadeThrowHandler : MonoBehaviour
     {
+        public TextMeshProUGUI phosphorusGrenadeCountText; // Reference to the TextMeshPro for Phosphorus grenade count display
         public GameObject phosphorusGrenadePrefab; // Prefab of the phosphorus grenade
+        
+        public GameObject phosphorusGrenadeButton; // Reference to the Phosphorus grenade button GameObject
+
         public Transform phosphorusGrenadeThrowPoint; // Transform for the phosphorus grenade throw position
+        public int maxPhosphorusGrenades = 30; // Maximum number of grenades the player can hold
         public float throwForce = 15f; // Force applied to the thrown grenade
         public float grenadeResetDelay = 0.5f; // Delay before resetting the grenade throw
+
         public Animator phosphorusArmAnimator; // Animator for the arm holding the phosphorus grenade
         public Animator twinTurboAnimator; // Animator for the twin turbo weapon
-        public int maxPhosphorusGrenades = 30; // Maximum number of grenades the player can hold
+       
         public GameObject weaponholder; // Reference to the weapon holder object
-        public TextMeshProUGUI phosphorusGrenadeCountText; // Reference to the TextMeshPro for Phosphorus grenade count display
-        public GameObject phosphorusGrenadeButton; // Reference to the Phosphorus grenade button GameObject
+       
 
 
 

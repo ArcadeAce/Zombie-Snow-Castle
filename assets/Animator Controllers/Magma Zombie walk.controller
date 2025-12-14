@@ -55,7 +55,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Magma zombie fist fight b
-  m_Speed: 1
+  m_Speed: 1.3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -9094894484017296848}
@@ -427,7 +427,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Magma zombie quad punch
-  m_Speed: 1
+  m_Speed: 1.45
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6667590808800598510}

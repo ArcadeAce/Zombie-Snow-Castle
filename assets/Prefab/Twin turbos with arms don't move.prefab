@@ -1906,9 +1906,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5215224972181360006}
-  - component: {fileID: 1751801160655961021}
   - component: {fileID: 8102276050003611290}
   - component: {fileID: 8501851598697772449}
+  - component: {fileID: 1751801160655961021}
   m_Layer: 6
   m_Name: Twin turbos with arms don't move
   m_TagString: Untagged
@@ -1936,6 +1936,41 @@ Transform:
   - {fileID: 5758566832455680161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8102276050003611290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840212739381892924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172bd9e65d2825d46989abcb7cff709c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  clipSize: 20
+  totalBullets: 20
+  index: 0
+  Active: 1
+  chestweapon: 1
+  _animator: {fileID: 0}
+  weaponType: TwinTurbos
+--- !u!114 &8501851598697772449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840212739381892924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb384f6462a6b864a97673513c47a202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - {fileID: 5359159919943927267}
+  - {fileID: 5734396539078871865}
 --- !u!95 &1751801160655961021
 Animator:
   serializedVersion: 5
@@ -1957,41 +1992,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8102276050003611290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4840212739381892924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172bd9e65d2825d46989abcb7cff709c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  chestweapon: 1
-  damage: 10
-  clipSize: 20
-  totalBullets: 200
-  index: 0
-  _animator: {fileID: 0}
-  weaponType: TwinTurbos
---- !u!114 &8501851598697772449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4840212739381892924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb384f6462a6b864a97673513c47a202, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Sounds:
-  - {fileID: 5359159919943927267}
-  - {fileID: 5734396539078871865}
 --- !u!1 &4884306526975441032
 GameObject:
   m_ObjectHideFlags: 0

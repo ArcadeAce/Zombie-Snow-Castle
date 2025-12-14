@@ -1,215 +1,279 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Weapon : MonoBehaviour
+public class Weapon : MonoBehaviour// Declares a Weapon class inheriting from MonoBehaviour (giving it access to Unity functions).
 {
-    // Indicates if the weapon is currently active, the current weapon like the Twin Turbos
-    public bool Active;
+   
+    public int damage;// Defines the amount of damage this weapon inflicts on enemies.
+    public int clipSize;// Determines the max bullets the weapon can hold before reloading.
+    public int totalBullets;// Tracks the **total number of bullets the player has** for this weapon.
+    protected Transform fpsCam;// Stores a reference to the **FPS Controller's camera** for aiming and shooting.
 
-    // Flag to indicate if the weapon is obtained from a chest, only the Twin Turbos are found in a wooden chest in the whole game.
-    public bool chestweapon;
-    // Damage inflicted by the weapon, put the damage amount in the box in the Inpector
-    public int damage;
+    public int index;// Identifies the weapon by **index number** (used for weapon switching logic).
+    public bool Active;// Indicates whether the weapon is **currently equipped and active**.
+    public bool chestweapon;// Tracks whether this weapon was obtained from a chest (**only Twin Turbos start in a wooden chest**)
 
-    // Reference to the camera attached to the FPS Controller, for the Raycasting of the gun.
-    protected Transform fpsCam;
+    [HideInInspector] public Animator _animator;// Stores the **weapon's Animator**, handling firing and reload animations.
 
-    // Size of the weapon's magazine or clip
-    public int clipSize;
+    private bool Firing;// Flags whether the weapon is **currently being fired**.
 
-    // Total number of bullets the player has for this weapon
-    public int totalBullets;
+    public string weaponType;// Holds the **weapon's name/type** (e.g., "TwinTurbos", "Shotgun").
 
-    // Index to identify the weapon (used for setup and switching) Put in index Twin Turbos 1 and Da Blasta 2
-    public int index;
+    internal int weaponIndex;// Stores **internal weapon indexing** for further setup logic.
 
-    // Reference to the Animator component attached to the weapon
-    [HideInInspector] public Animator _animator;
 
-    // Flag to track if the player is currently firing the weapon
-    private bool Firing;
 
-    public string weaponType;
-    internal int weaponIndex;
 
-    // Called when the script is enabled (e.g., when the weapon becomes active)
-    private void OnEnable()
+
+
+
+
+
+    private void OnEnable()// 🔄 Called when the weapon object becomes active (e.g., when switching weapons).
     {
-        // Get the Animator component and the camera from the FPS Controller
-        _animator = GetComponent<Animator>();
-        fpsCam = PlayerController.Instance.cam.transform;
+      
+        _animator = GetComponent<Animator>();// Retrieves and stores a reference to the weapon's Animator component.
+                                             // This allows the weapon to trigger animations (shooting, reloading, etc.).
+        fpsCam = PlayerController.Instance.cam.transform;// Gets a reference to the player's FPS camera.
+                                                         // This is important for aiming and performing Raycast-based shooting.
 
-        // Set the weapon as active
-        Active = true;
 
-        // Update the UI to display bullets in the clip and remaining bullets
+        Active = true;// Marks the weapon as currently active.
+                      // This ensures it can be used by the player.
+
+
+        GameManager.UIManager.ReloadGun(weaponType, PlayerManager.Instance.bulletsInClip, PlayerManager.Instance.remainingBullets);// Updates the UI to display current bullet count.
+                                                                                                                                   // Calls UIManager to refresh ammo values for the selected weapon.
+    }
+
+
+    public virtual void Start()// 🔄 Virtual Start function (meant for child classes to override if needed).
+    {
+        // This function is intentionally left empty.
+        // Child weapon classes (like Shotgun or TwinTurbos) can override this function
+        // To implement custom behavior when the weapon initializes.
+    }
+
+
+
+
+
+
+
+
+
+
+    public void Setup(bool chest)// 🔄 Sets up the weapon when picked up, adjusting ammo values if obtained from a chest.
+    {
+        if (chest)// Checks if the weapon was picked up from a chest.
+                  // If true, it adjusts the bullets inside the clip and remaining ammo count.
+        {
+
+            //PlayerManager.Instance.bulletsInClip = clipSize - 10;// Reduces the bullets inside the weapon's clip when taken from a chest.
+                                                                 // This ensures that chest weapons don't start fully loaded.
+            //PlayerManager.Instance.remainingBullets = totalBullets - 20;// Adjusts the total ammo available when the weapon is obtained from a chest.
+                                                                        // Limits available bullets when picking up weapons from storage.
+        }
+
+        // Calls UIManager to refresh the displayed ammo count.
+        // Ensures the player sees the correct values after picking up the weapon.
         GameManager.UIManager.ReloadGun(weaponType, PlayerManager.Instance.bulletsInClip, PlayerManager.Instance.remainingBullets);
     }
 
-    // Called when the script starts
-    public virtual void Start()
+
+    internal void Drop()// 🔄 Placeholder function for dropping a weapon (can be expanded later).
     {
-        // Custom setup logic can be added here
+        // This function is currently empty, meaning it **does not perform any action**.
+
+        // Intended for future implementation → Can be used to **make the player drop weapons**.
+
+        // Possible future behaviors:
+        // - Remove the weapon from the player's inventory.
+        // - Make the weapon fall to the ground using **Rigidbody physics**.
+        // - Allow other players/enemies to pick up dropped weapons.
+
+        // 💡 Since it's marked as `internal`, this function **can only be accessed within the same assembly**.
+        // This means it **cannot be called from external scripts** outside of the main project.
     }
 
 
-    // Setup the weapon, called when obtained from a chest or a weapon pickup.
-    public void Setup(bool chest)
+    public void Reload()// 🔄 Handles weapon reloading, ensuring the correct ammo type is updated.
     {
-        if (chest)
+        Debug.Log("reload problem");// Logs a debug message when the reload function is called.
+                                    // This helps in identifying potential reload issues during gameplay.
+        int remainingBullets, bulletsInClip;// Declares two integer variables to store ammo data:
+        switch (weaponType)// Uses a switch statement to determine which weapon is being reloaded.
         {
-            // Adjust the bullets in the clip and remaining bullets for chest weapons
-            PlayerManager.Instance.bulletsInClip = clipSize - 10;
-            PlayerManager.Instance.remainingBullets = totalBullets - 20;
-        }
-
-        // Update the UI to display bullets in the clip and remaining bullets
-        GameManager.UIManager.ReloadGun(weaponType, PlayerManager.Instance.bulletsInClip, PlayerManager.Instance.remainingBullets);
-    }
-
-    // Drop the weapon (placeholder, can be implemented if needed)
-    internal void Drop()
-    {
-        // Implement drop logic if necessary
-    }
-
-    // Reload the weapon
-    public void Reload()
-    {
-        Debug.Log("reload problem");
-        int remainingBullets, bulletsInClip;
-        switch (weaponType)
-        {
-            case "TwinTurbos":
-                remainingBullets = PlayerManager.Instance.remainingBullets;
-                bulletsInClip = PlayerManager.Instance.bulletsInClip;
+            case "TwinTurbos":// 🔫 Case 1: The player is reloading Twin Turbos.
+                remainingBullets = PlayerManager.Instance.remainingBullets;// Retrieves the remaining Twin Turbos bullets from PlayerManager.
+                bulletsInClip = PlayerManager.Instance.bulletsInClip;// Retrieves the number of bullets inside the Twin Turbos clip.
                 break;
 
-            case "Shotgun":
-                remainingBullets = PlayerManager.Instance.remainingShotgunShells;
-                bulletsInClip = PlayerManager.Instance.shotgunShells;
+            case "Shotgun":// 🔫 Case 2: The player is reloading the Shotgun.
+                remainingBullets = PlayerManager.Instance.remainingShotgunShells;// Retrieves the remaining shotgun shells from PlayerManager.
+                bulletsInClip = PlayerManager.Instance.shotgunShells;// Retrieves the number of shells inside the Shotgun clip.
                 break;
-            default:
-                Debug.Log("don't have a ammo assigned");
-                return;
-        }
-          
-        // Check if reloading is allowed (remaining bullets and not full clip)
-        if (remainingBullets <= 0 || bulletsInClip == clipSize)
-        {
-            Debug.Log($"Reload 2 remaining bullets: {remainingBullets} {bulletsInClip} {clipSize}");
-
-            return;
+            default:// ❌ Default case: If the weapon type doesn’t match Twin Turbos or Shotgun.
+                Debug.Log("don't have a ammo assigned");// Logs an error message if an incorrect weapon type is passed.
+                return;// Stops function execution immediately to prevent unintended behavior.
         }
 
-        // Trigger the "Reload" animation
-        _animator.SetTrigger("Reload");
-
-        // Calculate the number of bullets needed to fill the clip
-        int reload = clipSize - bulletsInClip;
-
-        // Perform the reload based on available bullets
-        if (remainingBullets >= reload)
+      
+        if (remainingBullets <= 0 || bulletsInClip == clipSize)// Checks if reloading is possible → Ensures the player has bullets left and that the clip is not already full.
         {
-            PlayerManager.Instance.SetBulletsInClip(weaponType, clipSize);
-            PlayerManager.Instance.AddAmmo(weaponType,-reload);
+            Debug.Log($"Reload 2 remaining bullets: {remainingBullets} {bulletsInClip} {clipSize}");// Logs a debug message showing current ammo values before stopping the reload attempt.
+      
+            return;// Stops the function execution early if:
+            // - There are **zero bullets left to reload** (`remainingBullets <= 0`).
+            // - The weapon’s clip is **already full** (`bulletsInClip == clipSize`).
+        }
+
+
+        _animator.SetTrigger("Reload");// Triggers the weapon’s reload animation using the Animator component.
+
+
+        int reload = clipSize - bulletsInClip;// Calculates how many bullets are needed to **fill the clip to max capacity**.
+
+
+        if (remainingBullets >= reload)// Checks if the player has **enough bullets** to completely reload the weapon.
+        {
+            PlayerManager.Instance.SetBulletsInClip(weaponType, clipSize);// If the player has **enough bullets** to refill the clip:
+                                                                          // - Sets the clip to max capacity (`clipSize`).
+            PlayerManager.Instance.AddAmmo(weaponType, -reload);// - Deducts the reloaded bullets from the player's total ammo.
         }
         else
         {
-            PlayerManager.Instance.SetBulletsInClip(weaponType, remainingBullets);
-            PlayerManager.Instance.AddAmmo(weaponType,-remainingBullets);
+            PlayerManager.Instance.SetBulletsInClip(weaponType, remainingBullets);// If the player **does not** have enough bullets for a full reload:
+                                                                                  // - Fills the clip only with the remaining bullets available.
+            PlayerManager.Instance.AddAmmo(weaponType, -remainingBullets);// - Deducts all remaining bullets from the player's inventory.
         }
 
     }
 
-    // Update is called once per frame
+
+
+
+
+
+
+
+
     private void Update()
     {
-        Int32 pointerID;
+        Int32 pointerID;// Declares an integer variable `pointerID`, used to track input (mouse or touch interaction).
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR// Preprocessor directive `#if UNITY_EDITOR`
+        // - Checks if the game is running inside the Unity Editor.
+        // - If true, assigns `pointerID = -1` (used for **mouse input** in the editor).
         pointerID = -1;
-#else
+#else// ✅ If the game is running on an **actual device (mobile, console, etc.)**, assigns `pointerID = 0`. // - `0` typically refers to the **primary touch input** on mobile devices.
         pointerID = 0;
 #endif
 
-        // Check for mouse button down (fire button press)
-        if (Input.GetMouseButtonDown(0))
+
+
+
+
+
+
+
+
+        //if (Input.GetMouseButtonDown(0))// 🔄 Detects if the player presses the fire button and handles shooting mechanics.
         {
-            // Check if the mouse is over a UI element
-            if (EventSystem.current.IsPointerOverGameObject(pointerID) && EventSystem.current.currentSelectedGameObject != null)
+          
+            if (EventSystem.current.IsPointerOverGameObject(pointerID) && EventSystem.current.currentSelectedGameObject != null)// Checks if the mouse or touch input is over a UI element.
+                                                                                                                                // Prevents firing while interacting with UI components like buttons.
             {
-                // Check if the clicked UI element is the "Fire Button"
-                if (EventSystem.current.currentSelectedGameObject.gameObject.name == "Fire Button")
+
+                if (EventSystem.current.currentSelectedGameObject.gameObject.name == "Fire Button")// Checks if the clicked UI element is specifically the **Fire Button**.
                 {
-                    // Check if there are bullets in the clip
-                    if (PlayerManager.Instance.bulletsInClip <= 0)
+              
+                    if (PlayerManager.Instance.bulletsInClip <= 0)// Prevents firing if there are **zero bullets left** in the clip.
                     {
-                        return;
+                        return;// Stops execution immediately (prevents shooting when out of ammo).
                     }
 
-                    // Set the firing flag to true
-                    Firing = true;
+                  
+                    Firing = true;// Enables the firing flag, allowing animations & shooting logic to run.
                 }
             }
         }
 
-        // Check for mouse button up (fire button release)
-        if (Input.GetMouseButtonUp(0))
+     
+        if (Input.GetMouseButtonUp(0))// 🔄 Detects if the player **releases** the fire button, stopping firing animations.
         {
-            // Set the firing flag to false
-            Firing = false;
+         
+            Firing = false;// Sets `Firing` to false, ensuring the weapon stops firing.
         }
 
-        // If out of bullets, stop firing
-        if (PlayerManager.Instance.bulletsInClip <= 0)
+       
+        if (PlayerManager.Instance.bulletsInClip <= 0)// 🔄 Checks if the player has run out of bullets mid-firing.
         {
-            Debug.Log("outofammo");
-            Firing = false;
+            Debug.Log("outofammo");// Logs a debug message to confirm the player is out of ammo.
+            Firing = false;// Stops firing if ammo reaches zero.
         }
 
-        // Update the Animator parameter "Firegun" based on the firing flag
-        _animator.SetBool("Firegun", Firing);
+      
+        _animator.SetBool("Firegun", Firing);// 🔄 Updates the weapon's firing animation based on whether the player is shooting.
     }
 
-    // Perform the shooting logic (Raycast to hit enemies)
-    public virtual void Shoot()
-    {
-        // Decrease bullets in the clip
-        PlayerManager.Instance.bulletsInClip--;
 
-        // Ensure non-negative number of bullets in the clip
-        if (PlayerManager.Instance.bulletsInClip < 0)
+
+
+
+
+
+
+    
+    public virtual void Shoot()// 🔫 Handles shooting mechanics when the player fires a weapon.
+    {
+        
+        PlayerManager.Instance.bulletsInClip--;// Reduces the number of bullets in the clip when the weapon is fired.
+
+
+        if (PlayerManager.Instance.bulletsInClip < 0)// Ensures the bullet count never goes below zero (prevents negative values).
         {
             PlayerManager.Instance.bulletsInClip = 0;
         }
 
-        // Update UI to display bullets in the clip
-        GameManager.UIManager.UpdateBullets(PlayerManager.Instance.bulletsInClip);
+      
+        GameManager.UIManager.UpdateBullets(PlayerManager.Instance.bulletsInClip);// Updates the UI to reflect the new bullet count after firing.
 
-        // Perform a Raycast to detect enemies
-        RaycastHit hit;
-        if (Physics.Raycast(fpsCam.position, fpsCam.forward, out hit, 1000f))
+
+        RaycastHit hit;// Creates a RaycastHit variable → Used to store information about what the bullet hits.
+        if (Physics.Raycast(fpsCam.position, fpsCam.forward, out hit, 1000f))// Performs a **Raycast** (invisible laser) from the player's camera forward, with a max range of 1000 units.
+                                                                             // If the Raycast detects a hit, it stores the collision details inside the `hit` variable.
         {
-            // Check if the hit object has an Enemy component
-            if (hit.collider && hit.collider.transform.TryGetComponent(out Enemy enemy))
+
+            if (hit.collider && hit.collider.transform.TryGetComponent(out Enemy enemy))// If the object hit has a collider and is an enemy, apply damage.
             {
-                // Deal damage to the enemy
-                enemy.TakeDamage(damage, hit);
+
+                enemy.TakeDamage(damage, hit);// Calls the enemy's **TakeDamage()** function, reducing its health.
             }
-            // Check if the hit object's parent has an Enemy component
-            else if (hit.collider.transform.parent != null)
+          
+            else if (hit.collider.transform.parent != null)// If the object hit is **part of another object** (like a limb attached to a body),
+                                                           // Check its parent object and apply damage if it’s an enemy.
             {
                 if (hit.collider.transform.parent.TryGetComponent(out Enemy enemy2))
                 {
-                    // Deal damage to the enemy's parent
-                    enemy2.TakeDamage(damage, hit);
+                 
+                    enemy2.TakeDamage(damage, hit);// Deals damage to the parent enemy object.
                 }
             }
         }
 
     }
 }
+
+
+
+// ===================== WEAPON SCRIPT SUMMARY =====================
+
+// The Weapon script NOT a singleton → Each weapon is an individual object that gets instantiated when picked up.
+// The Weapon script serves as the base class for all weapons, handling core mechanics such as shooting, reloading, and damage calculations.
+
+
+// Think of Weapon as the **foundation for all weapons**, providing core shooting mechanics while 
+// allowing individual weapons like TwinTurbos to extend and specialize their behavior! 
+// Weapon scripts works with the GameManager and the PlayerManager script to update the ammo value for the Twin Turbos

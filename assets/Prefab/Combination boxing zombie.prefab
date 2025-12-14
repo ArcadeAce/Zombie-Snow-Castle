@@ -14988,8 +14988,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c34307182ac2cb948a6c9fc586756e14, type: 2}
-  - {fileID: 0}
+  - {fileID: -6527670528093515950, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29728,12 +29727,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 3312733457900114303}
+  health: 700
+  zombieBossDamage: 50
   hitEffect: {fileID: 5074809185208266834}
+  deathExplosion: {fileID: 3312733457900114303}
   rigidBody: {fileID: 3809929138450510579}
-  health: 1
-  damage: 10
-  chaseDistance: 200
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
 --- !u!195 &6377678163395754373
 NavMeshAgent:
@@ -49485,7 +49484,7 @@ PrefabInstance:
     - target: {fileID: -4396642182433536433, guid: 471c7c1c49d25d640a420a99d798c647, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 942dad5526824d844ab2c52abe2b7f1f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d98dcc3ef95a85479a53c34dfa268fd, type: 2}
     - target: {fileID: -2671899056185573988, guid: 471c7c1c49d25d640a420a99d798c647, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -49497,7 +49496,7 @@ PrefabInstance:
     - target: {fileID: 1630794972795428178, guid: 471c7c1c49d25d640a420a99d798c647, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 942dad5526824d844ab2c52abe2b7f1f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d98dcc3ef95a85479a53c34dfa268fd, type: 2}
     - target: {fileID: 5128063986421979777, guid: 471c7c1c49d25d640a420a99d798c647, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -49698,7 +49697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823f522ba7f039f40bfe3c93815c8ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tauntAnimationName: Combination boxing zombie warming up
+  tauntAnimationName: Combination boxing zombie taunt
 --- !u!114 &5442043156038041604
 MonoBehaviour:
   m_ObjectHideFlags: 0

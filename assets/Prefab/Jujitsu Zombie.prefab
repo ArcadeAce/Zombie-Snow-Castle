@@ -51,15 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathExplosion: {fileID: 8730531420714106455}
-  hitEffect: {fileID: 6801198889705086761}
-  rigidBody: {fileID: 7070044117291453743}
-  damage: 10
   health: 100
+  zombieBossDamage: 90
+  hitEffect: {fileID: 6801198889705086761}
+  deathExplosion: {fileID: 8730531420714106455}
+  rigidBody: {fileID: 7070044117291453743}
+  zombieBossesChasingDistanceToFollowThePlayer: 300
   delay: 1
-  impactForce: 0
-  chaseDistance: 200
-  deathSound: {fileID: 0}
 --- !u!195 &793553606451948086
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -152,7 +150,7 @@ CapsuleCollider:
   m_Radius: 0.6385399
   m_Height: 2.5270147
   m_Direction: 1
-  m_Center: {x: -0.13853993, y: 1.2682176, z: 0}
+  m_Center: {x: -0.13853993, y: 1.54, z: 0}
 --- !u!1001 &4590826778276853796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,6 +367,9 @@ PrefabInstance:
       addedObject: {fileID: 3283778585156893820}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d3a38ac5ba97974b81d59f6f5166780, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 4371549068948322291}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d3a38ac5ba97974b81d59f6f5166780, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 9060981175937978416}
   m_SourcePrefab: {fileID: 100100000, guid: 9d3a38ac5ba97974b81d59f6f5166780, type: 3}
 --- !u!4 &4719421180519849123 stripped
@@ -391,6 +392,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8203015f27e7eab43800ef263c4b5b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4371549068948322291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347197878184396313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7224fe79ce189ad448f4217dff26d175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &9060981175937978416

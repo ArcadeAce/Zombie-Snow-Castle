@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 659370636263578907}
   - component: {fileID: 8920217444902169391}
   m_Layer: 6
-  m_Name: 'Shotgun firing sound pitch 1.51 and 2.30 '
+  m_Name: Shotgun firing sound pitch 2 0.49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,10 +170,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9a72c388dfa2a4344a9e49a81873a96f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f5a96b5cc76725148884037d3a750514, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.53
+  m_Pitch: 1.04
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -548,6 +548,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: acaf4aee1780d1f43acca6516ba7e14d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1002457343049051207, guid: acaf4aee1780d1f43acca6516ba7e14d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -640,6 +644,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 9157769339952852242, guid: acaf4aee1780d1f43acca6516ba7e14d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -690,12 +698,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8059a3191eb2304e81c9968a8116afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 0
-  chestweapon: 0
   damage: 20
   clipSize: 5
   totalBullets: 1
   index: 1
+  Active: 0
+  chestweapon: 0
   _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 197684299321563183}
