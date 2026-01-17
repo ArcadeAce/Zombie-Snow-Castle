@@ -700,11 +700,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   clipSize: 5
-  totalBullets: 1
+  totalBullets: 100
+  _animator: {fileID: 0}
   index: 1
   Active: 0
   chestweapon: 0
-  _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 197684299321563183}
 --- !u!114 &3862826623131179547

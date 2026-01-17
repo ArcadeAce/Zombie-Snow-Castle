@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a8fe5b1311a7f4ea76a1e65e68f4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoToAdd: 30
+  ammoToAdd: 5
   ammoType: Shotgun
 --- !u!54 &1382989604744643161
 Rigidbody:

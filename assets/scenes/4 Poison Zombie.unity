@@ -6739,7 +6739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 635792197468179008}
 --- !u!114 &635792197468179121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10370,7 +10369,7 @@ Transform:
   m_GameObject: {fileID: 1626027671061199495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -47.5, y: 0.044, z: -30.5}
+  m_LocalPosition: {x: 127.16, y: 0.48, z: -84.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17659,10 +17658,10 @@ MonoBehaviour:
   damage: 20
   clipSize: 5
   totalBullets: 1
+  _animator: {fileID: 0}
   index: 1
   Active: 0
   chestweapon: 0
-  _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 399061717552363426}
 --- !u!1 &8006142697646309364

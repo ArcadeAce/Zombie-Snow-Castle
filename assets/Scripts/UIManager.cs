@@ -148,6 +148,12 @@ public class UIManager : MonoBehaviour
         //Instance is **your access key**(making sure only one PlayerManager exists),  
         //WeaponSwitcher is **your gun holster**(knows which weapon is equipped),  
         //activeWeapon is **the gun in your hand**(ready to fire),  and Shoot() is **the trigger pull**(firing the bullet).
+
+
+
+
+
+
     }
 
     public void UpdateBullets(int amount)// Updates the displayed bullet count on the UI when the player shoots.
