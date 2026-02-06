@@ -1,13 +1,8 @@
-﻿using UnityEngine;
-// using UnityEngine;: This line imports the necessary Unity classes to use its features.
+﻿using UnityEngine;// using UnityEngine;: This line imports the necessary Unity classes to use its features.
+
 public class CodingKnowledge : MonoBehaviour { }
-
-
-
 // So, while MonoBehaviour is technically inheriting from something (it's part of Unity's scripting framework), from the perspective of your scripts, it's the base class from which they directly inherit. This means your scripts inherit all the capabilities and functionalities provided by MonoBehaviour, allowing them to interact with the Unity Engine and be attached to GameObjects in the scene.
 // In Unity, when a script's name is followed by : MonoBehaviour, it indicates that the script is inheriting from the MonoBehaviour class. This inheritance is essential for Unity scripts because MonoBehaviour is the base class for most Unity scripts that interact with GameObjects in the game world.
-
-
 // When a script inherits from MonoBehaviour, it gains access to various Unity-specific functionalities such as lifecycle methods (Start, Update, FixedUpdate, etc.), input handling, collision detection, and more.
 
 

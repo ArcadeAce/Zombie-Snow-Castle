@@ -96,25 +96,25 @@ public class WeaponSwitcher : MonoBehaviour
 
         }
     }
-    /// /// added from Copilot
+    /// /// (added from Copilot may need to work)
 
     //*public void SwitchWeapon()
     //{
-        //if (activeWeapon == slot1)
-        //{
-            //StartCoroutine(Switch(slot1, slot2));
-            //activeisslot1 = false;
-            //PlayerManager.Instance.SetActiveWeapon("Shotgun"); // ADD
-        //}
-        //else
-        //{
-            //StartCoroutine(Switch(slot2, slot1));
-            //activeisslot1 = true;
-            //PlayerManager.Instance.SetActiveWeapon("TwinTurbos"); // ADD
-        //}
+    //if (activeWeapon == slot1)
+    //{
+    //StartCoroutine(Switch(slot1, slot2));
+    //activeisslot1 = false;
+    //PlayerManager.Instance.SetActiveWeapon("Shotgun"); // ADD
+    //}
+    //else
+    //{
+    //StartCoroutine(Switch(slot2, slot1));
+    //activeisslot1 = true;
+    //PlayerManager.Instance.SetActiveWeapon("TwinTurbos"); // ADD
+    //}
     //}
 
-    /// ////////added from Copilot
+    /// ////////
 
 
     private IEnumerator Switch(Weapon oldweapon, Weapon newweapon)

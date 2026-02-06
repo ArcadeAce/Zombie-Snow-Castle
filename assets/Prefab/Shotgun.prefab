@@ -700,7 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   clipSize: 5
-  totalBullets: 100
+  totalBullets: 0
   _animator: {fileID: 0}
   index: 1
   Active: 0

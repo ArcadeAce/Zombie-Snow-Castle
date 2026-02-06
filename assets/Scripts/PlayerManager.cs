@@ -131,10 +131,24 @@ public class PlayerManager : MonoBehaviour
                 break;
 
             default:
-            
+
                 return;
         }
     }
+
+    ///copilot//////////////////////////////////////////////////////////
+    public void SaveShotgunAmmo(int current, int total)
+    {
+        shotgunShells = current;
+        remainingShotgunShells = total;
+    }
+    
+    /// ///////////////////////////////////////////////////////////////////
+    
+
+
+
+
 
     // ✅ Weapon memory functions
     public void AcquireTwinTurbos()

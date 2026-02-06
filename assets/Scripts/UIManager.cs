@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     public Button twinTurbosButton; // Button reference for Twin Turbos
     public Button shotgunButton; // Button reference for Shotgun
 
-    // to find new lines easy put these lines/////////////////////new line added below
+    // to find new lines easy, put these lines/////////////////////new line added below
     public GameObject lookSensitivityPanel;
     // //////////////////////////////////////////////////////////
 
@@ -144,15 +144,12 @@ public class UIManager : MonoBehaviour
         PlayerManager.Instance.WeaponSwitcher.activeWeapon.Shoot();
         // `PlayerManager` → The **global manager** storing the player's stats, weapons, health, and ammo.`Instance` → Since `PlayerManager` is a **singleton**, this ensures **only one** PlayerManager exists throughout the game.`WeaponSwitcher` → This manages **weapon switching**, tracking which weapon the player is currently holding.`activeWeapon` → Stores the **currently equipped weapon**, making sure the player is firing the right gun.`Shoot()` → Calls the **Shoot() function** on the active weapon, making the player fire Twin Turbos or Shotgun.
 
-        //  Think of It Like This:  PlayerManager is **your inventory hub** (it holds everything),  
-        //Instance is **your access key**(making sure only one PlayerManager exists),  
-        //WeaponSwitcher is **your gun holster**(knows which weapon is equipped),  
-        //activeWeapon is **the gun in your hand**(ready to fire),  and Shoot() is **the trigger pull**(firing the bullet).
-
-
-
-
-
+        // Think of It Like This:  
+        // PlayerManager is **your inventory hub** (it holds everything),  
+        // Instance is **your access key**(making sure only one PlayerManager exists),  
+        // WeaponSwitcher is **your gun holster**(knows which weapon is equipped),  
+        // activeWeapon is **the gun in your hand**(ready to fire),  
+        // and Shoot() is **the trigger pull**(firing the bullet).
 
     }
 

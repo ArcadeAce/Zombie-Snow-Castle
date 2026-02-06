@@ -1,7 +1,7 @@
 ﻿using UnityEngine; //using UnityEngine; is crucial because it gives your script access to all of Unity’s core features, like collisions, scene management, and physics interactions. Without it, your SceneSwitch script wouldn't function properly!//
 
 public class SceneSwitch : MonoBehaviour
-{// The first curly brace opens the door to the whole function, basically starts the function IMPORTANT TO REMEMBER THIS!
+{ // The first curly brace opens the door to the whole function, basically starts the function IMPORTANT TO REMEMBER THIS!
     public int sceneIndex; // This is for when you put a number for the player to go to what scene from the scene build
     // int only accepts whole numbers (no decimals) → Example: sceneIndex = 5; ✅, but sceneIndex = 5.5; ❌ (not allowed).
 

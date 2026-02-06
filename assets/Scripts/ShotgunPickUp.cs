@@ -2,29 +2,29 @@ using UnityEngine;
 
 public class ShotgunPickUp : MonoBehaviour
 {
-    public Weapon shotgunPrefab; // Reference to the shotgun prefab.
+    public Weapon shotgunPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the player enters the trigger zone.
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && shotgunPrefab)
         {
-            // Pick up the shotgun and equip it.
-            if (shotgunPrefab)
-            {
-                // Use the reference to the shotgun prefab.
-                PlayerManager.Instance.WeaponSwitcher.Pickup(shotgunPrefab);
+            // Equip the shotgun into slot 2
+            PlayerManager.Instance.WeaponSwitcher.Pickup(shotgunPrefab);
 
-                // Disable this shotgun object.
-                gameObject.SetActive(false);
-            }
-            else
-            {
-                Debug.LogError("Shotgun prefab is not assigned to the ShotgunPickUp script.");
-            }
+            // Set shotgun ammo instantly (no coroutine, no delay)
+            PlayerManager.Instance.shotgunShells = 5;
+            PlayerManager.Instance.remainingShotgunShells = 0;
+
+            // Update the UI instantly
+            GameManager.UIManager.ReloadGun("Shotgun", 5, 0);
+
+            // Hide the pickup object
+            gameObject.SetActive(false);
         }
     }
 }
+
+
 
 
 
