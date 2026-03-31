@@ -47,9 +47,8 @@ public class Weapon : MonoBehaviour
             }
         }
     }
- 
-    /// ////////////////////////////////////////////////////Copilot for the shotgun 5 - 0 problem the old weapon script is in discord
-  
+    /// ///////////////////////////////Copilot for the shotgun 5 - 0 problem the old weapon script is in discord
+
     private void OnEnable()
     {
         _animator = GetComponent<Animator>();
@@ -59,23 +58,21 @@ public class Weapon : MonoBehaviour
 
         if (weaponType == "Shotgun")
         {
-            // Force shotgun UI to always show 5 - 0
-            GameManager.UIManager.ReloadGun("Shotgun", 5, 0);
+            int current = PlayerManager.Instance.shotgunShells;
+            int total = PlayerManager.Instance.remainingShotgunShells;
+
+            GameManager.UIManager.ReloadGun("Shotgun", current, total);
         }
         else if (weaponType == "TwinTurbos")
         {
-            // Twin Turbos UI stays exactly as before
-            GameManager.UIManager.ReloadGun(
-                "TwinTurbos",
-                PlayerManager.Instance.bulletsInClip,
-                PlayerManager.Instance.remainingBullets
-            );
+            int current = PlayerManager.Instance.bulletsInClip;
+            int total = PlayerManager.Instance.remainingBullets;
+
+            GameManager.UIManager.ReloadGun("TwinTurbos", current, total);
         }
     }
-
- 
     /// /////////////////////////////////
- 
+
 
     public virtual void Start()
     {

@@ -2934,6 +2934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3eab3fd3a3ccd949895b47a6a881bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasShotgun: 0
+  selectedWeaponType: TwinTurbos
   PlayerHealth: 100
   curHealth: 0
   lives: 0
@@ -4560,7 +4562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 635792198879819240}
 --- !u!114 &635792198879819033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11145,7 +11146,7 @@ Transform:
   m_GameObject: {fileID: 1626027670862202159}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.04, y: -3.74, z: 82.58}
+  m_LocalPosition: {x: 61.8, y: -8.6, z: 161.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12368,8 +12369,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4422467275300189764}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.86, y: 0.736, z: 25.76}
+  m_LocalRotation: {x: -0, y: 0.99979854, z: -0, w: -0.020073172}
+  m_LocalPosition: {x: 30.06, y: 0.594, z: 86.54}
   m_LocalScale: {x: 1.0682, y: 1, z: 1.5938704}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12379,7 +12380,7 @@ Transform:
   - {fileID: 7664652351885414278}
   - {fileID: 2182325235146490419}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 182.3, z: 0}
 --- !u!65 &4422467275300031770
 BoxCollider:
   m_ObjectHideFlags: 0

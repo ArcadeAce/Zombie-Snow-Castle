@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/7 Ninja Zombie.unity
     guid: 54de5c986841b554c8bd1195b014f41c
   - enabled: 1
-    path: Assets/Scenes/8 Big Hit Zombie.unity
+    path: Assets/Scenes/25 Big Hit Zombie.unity
     guid: e231543dfac57ea498d90b88b323617d
   - enabled: 1
     path: Assets/Scenes/9 Fist smasher zombie boss.unity
@@ -66,16 +66,16 @@ EditorBuildSettings:
     path: Assets/Scenes/17 Jujitsu zombie boss.unity
     guid: 1a007897ea6771146bddf8ad4cb7c096
   - enabled: 1
-    path: Assets/Scenes/23 Samurai zombie boss.unity
+    path: Assets/Scenes/21 Samurai zombie boss.unity
     guid: a3415c0ab2d671d41919fc63ae4d3458
   - enabled: 1
-    path: Assets/Scenes/24 Wide receiver zombie boss.unity
+    path: Assets/Scenes/8 Wide receiver zombie boss.unity
     guid: 907272b1488443d4b92054dbd65119e2
   - enabled: 1
-    path: Assets/Scenes/25 Burning fist zombie boss.unity
+    path: Assets/Scenes/23 Burning fist zombie boss.unity
     guid: 4a179c78f2a5f454f9b4b185ecc2b47c
   - enabled: 1
-    path: Assets/Scenes/26 Toxic Zombie boss.unity
+    path: Assets/Scenes/24 Toxic Zombie boss.unity
     guid: e935e01d9d097ee4d97bd709a6146df7
   - enabled: 1
     path: Assets/Scenes/Ending Scene.unity
