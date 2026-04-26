@@ -25,11 +25,7 @@ public class Weapon : MonoBehaviour
     // ✅ The ONLY Shoot() method — Twin Turbos base logic
     public virtual void Shoot()
     {
-        PlayerManager.Instance.bulletsInClip--;
-        if (PlayerManager.Instance.bulletsInClip < 0)
-            PlayerManager.Instance.bulletsInClip = 0;
-
-        GameManager.UIManager.UpdateBullets(PlayerManager.Instance.bulletsInClip);
+       
 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.position, fpsCam.forward, out hit, 1000f))

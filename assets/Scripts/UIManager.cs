@@ -45,9 +45,21 @@ public class UIManager : MonoBehaviour
 
         }
 
-        twinTurbosButton.gameObject.SetActive(true);// Weapon switch button for Twin Turbos (starts active since it's the default weapon)
-        shotgunButton.gameObject.SetActive(false);// Weapon switch button for Shotgun (weapon switch button is inactive until the player picks up a shotgun)
+        /////////////////////////////////////////////////////////////////////
 
+         switch (PlayerManager.Instance.selectedWeaponType)// Checks which weapon the player has selected (Twin Turbos or Shotgun) to display the correct ammo UI when the scene loads.
+        {
+            case "TwinTurbos":
+                SwitchToTwinTurbos();// If Twin Turbos is selected, show its ammo UI and hide Shotgun's ammo UI and weapon button.
+                break;
+            case "Shotgun":
+                SwitchToShotgun();// If Shotgun is selected, show its ammo UI and hide Twin Turbos' ammo UI and weapon button.
+                break;
+            default:
+                SwitchToTwinTurbos();// Default to showing Twin Turbos UI if no weapon is selected (safety fallback).
+                break;
+        }
+        ///////////////////////////////////////////////////////////////
 
 
         twinTurbosButton.onClick.AddListener(SwitchToShotgun);// When the Twin Turbos button is clicked, switch the player's weapon to the Shotgun.
@@ -298,7 +310,7 @@ public class UIManager : MonoBehaviour
 // Think of UIManager as the **visual backbone** of your game, ensuring the 
 // player always has up-to-date ammo, health, and weapon information!
 
-
+// Going to have to add new functions when I add a new weapon, with update weapon and switch statment going have tochange when I come to them.
 
 
 

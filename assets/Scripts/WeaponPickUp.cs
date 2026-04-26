@@ -4,53 +4,49 @@ using UnityEngine;
 
 public class WeaponPickUp : MonoBehaviour
 {
-    // The weapon prefab that will be picked up
-    public Weapon Prefab;
+    
+    public Weapon Prefab; // The Twin Turbos weapon prefab that will be picked up. Make sure to assign the correct prefab in the Unity Inspector for this script to work properly.
 
-    // A visual representation of the weapon to replace when picked up
-    public GameObject fakeHandgun;
+    public GameObject fakeHandgun; // A visual representation of the Twin Turbos prop weapon to dissapear when picked up. Make sure to assign the correct Twin Turbos prop prefab GameObject in the Unity Inspector for this script to work properly. This should be a child of the Chest Wooden gameobject and should be the visual representation of the Twin Turbos in the chest. It will be destroyed when the player picks up the weapon, giving the illusion that the player took the weapon from the chest.
 
-    // Reference to the Animator component
-    private Animator Animator;
+    private Animator Animator; // Reference to the Animator component, private because nothing outside this script should ever control the chest’s animation.
 
-    // Flag to ensure interaction only happens once
-    private bool isOpen;
+    private bool isOpen; // To make sure chest does not open multiple times when player enters the trigger zone multiple times
 
     private void Awake()
     {
-        // Get the Animator component attached to this object
-        Animator = GetComponent<Animator>();
+      
+        Animator = GetComponent<Animator>();  // Get the Animator component attached to this object
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) // when player enters the box collider for the wooden chest to open
     {
-        // Check if the player enters the trigger zone and the interaction hasn't happened yet
-        if (other.CompareTag("Player") && !isOpen)
+        
+        if (other.CompareTag("Player") && !isOpen) // Check if the player enters the trigger zone and the interaction hasn't happened yet
         {
-            // Set the interaction as open to prevent multiple interactions
-            isOpen = true;
+         
+            isOpen = true; // Set the interaction as open to prevent multiple interactions
 
-            // Start the Open coroutine
-            StartCoroutine(Open());
+           
+            StartCoroutine(Open()); // Start the Open coroutine
         }
     }
 
     IEnumerator Open()
     {
-        // Trigger an "Open" animation
-        Animator.SetTrigger("Open");
+   
+        Animator.SetTrigger("Open"); // Trigger an "Open" animation
 
-        // Wait for 3 seconds before executing the following actions
-        yield return new WaitForSeconds(3f);
+     
+        yield return new WaitForSeconds(3f); // It delays the weapon pickup until the wooden chest animation is done
 
-        // Pick up the weapon and add it to the player's inventory or equip it
-        PlayerManager.Instance.WeaponSwitcher.Pickup(Prefab,true);
+        PlayerManager.Instance.WeaponSwitcher.Pickup(Prefab,true); // Pick up the weapon and add it to the player's inventory or equip it
 
-        // Destroy the visual representation of the weapon
-        Destroy(fakeHandgun);
+        
+        Destroy(fakeHandgun); // Destroys the visual representation of the Twin turbos in the wooden chest. The Twin Turbos pistols need to be a child of the Weapons gameobect, that is a child of the Chest Wooden.
 
-        // Play an audio effect for weapon pickup
-        AudioManager.Instance.PlayEffect("Weapon Pick Up");
+        
+        AudioManager.Instance.PlayEffect("Weapon Pick Up"); // Play an audio effect for Twin Turbos being picked up. Make sure to have an audio clip named "Weapon Pick Up" in your AudioManager.
     }
 }
 

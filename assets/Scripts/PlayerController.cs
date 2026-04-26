@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Transform WeaponHolder; // public Transform WeaponHolder; → Holds the location where weapons are attached to the player, ensuring guns appear in the correct place when equipped.
     public Camera cam; // public Camera cam; → Stores a reference to the player's camera, ensuring the correct viewpoint and aiming mechanics for shooting.
-    
+
     public static PlayerController Instance// public static PlayerController Instance; → This creates a global reference to PlayerController, allowing other scripts to access it
     {
         get;// get; → Allows other scripts to read the current PlayerController instance.
@@ -29,8 +29,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+
+
 // Player Controller is a Singleton
-// The three singletons in your game—GameManager, PlayerController, and SceneController—cover the core aspects of scene transitions, player control, and scene initialization.
+// The four singletons in your game—GameManager, PlayerController, Player Controller and SceneController—cover the core aspects of scene transitions, player control, and scene initialization.
 // Why Is PlayerController a Singleton? public static PlayerController Instance { get; private set; } → This ensures only ONE PlayerController instance exists across the game. if (Instance != null && Instance != this) Destroy(gameObject); → If another PlayerController exists, it removes duplicates, keeping only one. Instance = this; → If no existing instance is found, this PlayerController becomes the active instance.
 // How Does This Work with Unity Starter Assets FPS Controller? Attached to the FPS Controller (Parent Object) → Because the FPS Controller is the player itself, PlayerController exists only when the player is instantiated in a scene. Not Using DontDestroyOnLoad(gameObject); → Unlike GameManager, PlayerController does NOT persist across scenes, meaning each level gets a fresh FPS Controller instance. Each Scene Has a Specific Player Spawn Point → The PlayerController only exists where the player is placed, ensuring correct positioning in each level.
 

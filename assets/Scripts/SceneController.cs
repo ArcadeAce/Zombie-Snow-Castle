@@ -20,13 +20,13 @@ public class SceneController : MonoBehaviour
         // ✅ Verify PlayerManager exists
         if (PlayerManager.Instance != null)
         {
-            ////////////////////////////////////////////Copilot
+            //////////////////////////////////////////////////////////////////////////////Copilot
             // === Re-equip remembered weapon ===
             string rememberedWeapon = PlayerManager.lastHeldWeaponType;
             PlayerManager.Instance.WeaponSwitcher.SwitchWeaponTo(rememberedWeapon);
             UnityEngine.Debug.Log($"[SceneController] Re-equipped {rememberedWeapon}");
 
-            ////////////////////////Copilot
+            //////////////////////////////////////////////////////////////////////////////Copilot
 
 
 

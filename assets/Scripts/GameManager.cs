@@ -1,72 +1,74 @@
-﻿using UnityEngine; // Importing the UnityEngine namespace to access Unity's core functionality.
-using UnityEngine.SceneManagement;
-// Importing the UnityEngine.SceneManagement namespace to work with scene management.
-// Build Settings is where you list available scenes and assign them index numbers → Scene Manager uses those index numbers to load scenes correctly. 
+﻿using UnityEngine;
+
+
+
+using UnityEngine.SceneManagement;// this line allows you to use the SceneManager class, which is essential for loading and managing scenes in Unity. It provides functions like LoadScene() to switch between different game levels or menus.
+
+// Build Settings is where you list available scenes in your game and assign them an index. When you call SceneManager.LoadScene(index), Unity looks up that index in Build Settings to determine which scene to load. For example, if you have a Main Menu scene at index 0 and a Level 1 scene at index 1, calling LoadScene(1) will switch to Level 1. This is how your GameManager controls scene transitions based on the scene index defined in Build Settings.
 // Your GameManager uses Scene Manager functions to swap scenes based on the scene index stored in Build Settings.
 
-public class GameManager : MonoBehaviour // Declaring a public class named GameManager, inheriting from MonoBehaviour.
-                                         // MonoBehaviour is like Unity’s "passport"—any script that inherits from it can access Unity’s core features, like physics, scenes, input, and triggers!
+public class GameManager : MonoBehaviour// this line is declaring a new class called GameManager that inherits from MonoBehaviour, which is the base class for all Unity scripts. By inheriting from MonoBehaviour, GameManager can be attached to a GameObject in the Unity scene and can use Unity's event functions like Awake(), Start(), Update(), etc. This allows GameManager to control game logic, manage scenes, and interact with other components in the game.
+                                       // MonoBehaviour is like Unity’s "passport"—any script that inherits from it can access Unity’s core features, like physics, scenes, input, and triggers!
 
 {
     public static GameManager Instance;
-    // Declaring a public static variable named Instance to hold a reference to the GameManager instance
-    // Think of static like this: static is like a global radio frequency—all scripts can tune in and use it without needing a separate copy!
-    // Declaring public static properties to provide global access to UIManager and PlayerController instances
+    // Creates a single global GameManager that any script can access.
+    // This ensures there is only one GameManager in the entire game (singleton pattern).
 
-    // Instead of needing a new GameManager, other scripts can simply call GameManager.Instance globally! Used for singleton patterns → Ensures only ONE GameManager exists, controlling scene transitions, player deaths, and more
-
-    // What Instance Does: Stores a reference to the GameManager → Other scripts can call GameManager. Instance instead of creating new GameManagers.Ensures only ONE GameManager exists → Prevents duplicate GameManagers from interfering with scene transitions and player mechanics
     public static UIManager UIManager { get; set; }
-    // Public allows all scripts to access and modify the variable/property → Without public, only the script itself could use it.
-    // What static Does: Makes UIManager belong to the GameManager class itself → Instead of being tied to an individual instance, it exists globally. Ensures there’s only ONE UIManager reference → Meaning all scripts access the same UIManager rather than creating multiple instances
-    // The first UIManager → Refers to the type (the class UIManager). This tells Unity that this property stores a reference to a UIManager object. The second UIManager → Is the name of the property itself. This is how other scripts will call and interact with UIManager
-    // What get; set; does get → Allows other scripts to read/access the current value of UIManager. set → Allows other scripts to assign/change the value of UIManager
-    // The curly braces in { get; set; } define a property, allowing controlled access to the UIManager variable without directly exposing it
+    // Creates a global reference to the UIManager so any script can access the game's UI.
+    // The UIManager is stored here so GameManager can update UI elements from anywhere.
 
-    private void Awake() // Private Keeps Awake() internal to GameManager → Other scripts can’t call it directly, ensuring GameManager controls its own initialization
-                         // Indicates that the function performs an action but does NOT return anything. Used for functions that execute game logic—like initializing GameManager in Awake()
-                         // Awake Runs when the script is first loaded → Before Start(), ensuring GameManager is set up before anything else in the scene
-    {
-        if (Instance == null) // Is checking whether a GameManager instance already exists before creating a new one
+    private void Awake() // Runs before the game starts and sets up the GameManager singleton.
+{
+          if (Instance == null)
         {
-            Instance = this; // Assigns the current GameManager to Instance, making it the official reference for the entire game. Now, other scripts can access GameManager by calling GameManager.Instance instead of searching for it in the scene
-            DontDestroyOnLoad(gameObject); // Prevents GameManager from being destroyed when switching scenes → This ensures UI, player stats, and scene logic persist across levels. Without this line, GameManager would be deleted and recreated every time a new scene loads, causing UI bugs and data resets
+            Instance = this;// Makes this the one and only GameManager that all scripts can access
+            DontDestroyOnLoad(gameObject); // Keeps the GameManager alive when switching scenes so it never gets destroyed.
         }
-    }
+        else
+        {
+            Destroy(gameObject); // Prevents duplicates
+        }
+    } // <-- closes Awake() properly
 
 
-
-
-    // 
     public void OpenScene(int index)
-    // public → This means any other script can call this function. void → The function does something but doesn’t return a value. OpenScene(int index) → This function takes one number (index) as input, which tells Unity which scene to load
-    {
-        SceneManager.LoadScene(index);
-        // SceneManager.LoadScene(index); → This switches the game to a different scene, based on the number (index) stored in Build Settings. Example: If index = 2, Unity loads scene #2 from Build Settings
-    }
+// Loads a new scene using its Build Settings index.
+// This is how the game switches levels, loads the main menu, or restarts the game.
+{
+    SceneManager.LoadScene(index);
+    // Loads the scene that matches this index number from the Build Settings.
+    // This instantly switches the game to a new level, menu, or boss room.
 
-
-    public void QuitGame()// public → Allows any script to use this function. void → This function does something but doesn’t return data. QuitGame() → A function meant to close the game when called
-    {
-        Application.Quit(); // Application.Quit(); → Ends the game completely. Important: This only works in a built application (not inside Unity’s editor). Example: If the player clicks a "Quit" button, this function closes the game window!
+}
+    public void QuitGame()// Closes the game when the player chooses the Quit option from the main menu.
+{
+        Application.Quit(); 
     }
 }
 
+
+
 // ===================== GAME MANAGER SUMMARY =====================
 // The GameMananager is a singleton
-// The GameManager script acts as the central hub for controlling scene transitions, UI management, and game state persistence
-// The four singletons in your game—GameManager, PlayerController, and SceneController—cover the core aspects of scene transitions, player control, and scene initialization
-
-// 🔹 Uses the Singleton pattern → Ensures only ONE GameManager exists.
-// 🔹 Prevents GameManager from being destroyed across scenes → Keeps player stats & UI consistent
-// 🔹 Manages scene switching (`OpenScene(int index)`) → Loads scenes using Unity's SceneManager
-// 🔹 Handles quitting the game (`QuitGame()`) → Closes the application when called
-// 🔹 Provides a global reference for UIManager → Allows UI updates from any script
+// GameManager is a global singleton that persists across all scenes.
+// It provides a single place for the game to handle scene transitions,
+// quitting the game, and storing a global reference to the UIManager.
 //
-// Think of GameManager as the **overseer of the entire game**, ensuring smooth scene changes
-// UI updates, and game persistence.
+// Because it uses DontDestroyOnLoad, only one GameManager exists for the entire game, and all scripts can access it through GameManager.Instance.
+// 
+// GameManager controls:
+// - Loading new scenes using their Build Settings index
+// - Returning to the main menu or restarting the game
+// - Quitting the application on Android/PC builds
+// - Providing global access to the UIManager for UI updates
+//
+// This script acts as the central controller for scene flow and UI access,
+// ensuring smooth transitions and consistent game behavior across all levels.
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////
 
 
 // ===================== SINGLETON SYSTEM SUMMARY =====================
@@ -78,7 +80,7 @@ public class GameManager : MonoBehaviour // Declaring a public class named GameM
 //
 // The Singleton pattern ensures only ONE instance of each exists at any time
 // Prevents duplicate objects from interfering with game mechanics
-// Allows global access via GameManager.Instance, PlayerController.Instance, PlayerManager.Instance, and SceneController.Instance
+// Allows GLOBAL = means any script can access it from anywhere and access via GameManager.Instance, PlayerController.Instance, PlayerManager.Instance, and SceneController.Instance
 //
 // Think of these singletons as the backbone of your game, keeping everything stable 
 
