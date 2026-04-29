@@ -1004,7 +1004,8 @@ GameObject:
   - component: {fileID: 1927682100}
   - component: {fileID: 1927682099}
   m_Layer: 0
-  m_Name: Zombie boss removed message
+  m_Name: Zombie boss removed message adjust th Y axis in the script to make the
+    message go lower.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2756,7 +2757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 8
+  sceneIndex: 9
 --- !u!4 &1142409815736125525
 Transform:
   m_ObjectHideFlags: 0
@@ -9181,6 +9182,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &5935499996951562850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9193,7 +9195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 5935499996951562898}
 --- !u!114 &5935499996951562851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12846,6 +12847,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112642359347124}
   twinTurbosButton: {fileID: 5935499996951562865}
   shotgunButton: {fileID: 6554849469548573037}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!224 &6103112642449465004
 RectTransform:
   m_ObjectHideFlags: 0

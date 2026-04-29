@@ -86,6 +86,11 @@ public class Shotgun : Weapon
     // ⭐ FINAL FIXED SHOTGUN SHOOT()
     public override void Shoot()
     {
+        //////////////////////////////////////////////////////Copilot added
+        if (PlayerManager.Instance.shotgunShells <= 0)
+            return;
+        ////////////////////////////////////////////////////
+
         UnityEngine.Debug.Log($"[Shotgun] Shoot() called on '{name}'. About to base.Shoot() (raycast/damage logic).");
 
         // 🔫 Fire raycast + damage using Weapon.cs logic

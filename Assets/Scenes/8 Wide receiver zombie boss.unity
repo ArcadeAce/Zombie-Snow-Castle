@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 6103112642468939847}
-  customMessage: Zombie bosses removed 18
+  customMessage: Zombie bosses removed 7
 --- !u!4 &1474252137
 Transform:
   m_ObjectHideFlags: 0
@@ -4709,7 +4709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 635792198174321277}
 --- !u!114 &635792198174321294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4740,6 +4739,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &635792198174321295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5979,7 +5979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 0
+  sceneIndex: 11
 --- !u!114 &1159570993321291752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12345,6 +12345,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112641625739977}
   twinTurbosButton: {fileID: 635792198174321310}
   shotgunButton: {fileID: 34455065252974978}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!224 &6103112641625739974
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16956,7 +16957,6 @@ SceneRoots:
   - {fileID: 2141808734}
   - {fileID: 700959521}
   - {fileID: 1401948447}
-  - {fileID: 1474252137}
   - {fileID: 6103112641573506001}
   - {fileID: 3321982233354979370}
   - {fileID: 2008067773990644319}
@@ -16971,5 +16971,6 @@ SceneRoots:
   - {fileID: 5864905726352236935}
   - {fileID: 1573347596}
   - {fileID: 2017679389}
+  - {fileID: 1474252137}
   - {fileID: 236741011}
   - {fileID: 2933134972978189806}

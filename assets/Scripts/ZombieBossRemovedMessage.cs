@@ -23,9 +23,9 @@ public class ZombieBossRemovedMessage : MonoBehaviour
         messageActive = true;
 
         // Move the message down from the top of the screen
-        float startY = 250f; // Adjust this value as needed
-        float targetY = 200f; // The Y position where the message should stay
-        float moveSpeed = 1.30f; // The speed at which the message moves
+        float startY = 300f; // Adjust this value as needed
+        float targetY = 100f; // The Y position where the message should stay
+        float moveSpeed = 1.00f; // The speed at which the message moves
 
         float elapsedTime = 0f;
         while (elapsedTime < 1f / moveSpeed)

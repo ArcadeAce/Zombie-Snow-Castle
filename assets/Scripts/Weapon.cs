@@ -1,39 +1,44 @@
 ﻿using System;
-
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Debug = UnityEngine.Debug;
+
 
 public class Weapon : MonoBehaviour
 {
-    public int damage;
-    public int clipSize;
-    public int totalBullets;
-    protected Transform fpsCam;
+    public int damage;                     // How much damage this weapon deals
+    public int clipSize;                   // Max bullets in the clip
+    public int totalBullets;               // Total bullets player has for this weapon
+    protected Transform fpsCam;            // Camera reference for raycast shooting
 
-    public int index;
-    public bool Active;
-    public bool chestweapon;
+    public int index;                      // Weapon index for switching
+    public bool Active;                    // Is this weapon currently active?
+    public bool chestweapon;               // For future chest pickup logic
 
-    [HideInInspector] public Animator _animator;
+    [HideInInspector] public Animator _animator; // Animator for firing/reloading animations
 
-    private bool Firing;
+    private bool Firing;                   // Tracks if the weapon is currently firing
 
-    public string weaponType;
+    public string weaponType;              // "TwinTurbos" or "Shotgun"
+    internal int weaponIndex;              // Internal index for WeaponSwitcher
 
-    internal int weaponIndex;
 
-    // ✅ The ONLY Shoot() method — Twin Turbos base logic
+    // ===========================
+    //  BASE SHOOT() — Twin Turbos
+    // ===========================
     public virtual void Shoot()
     {
-       
-
+        // Raycast forward from the FPS camera
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.position, fpsCam.forward, out hit, 1000f))
         {
+            // Direct hit on enemy
             if (hit.collider && hit.collider.transform.TryGetComponent(out Enemy enemy))
             {
                 enemy.TakeDamage(damage, hit);
             }
+            // Hit a child object of an enemy
             else if (hit.collider.transform.parent != null)
             {
                 if (hit.collider.transform.parent.TryGetComponent(out Enemy enemy2))
@@ -43,8 +48,11 @@ public class Weapon : MonoBehaviour
             }
         }
     }
-    /// ///////////////////////////////Copilot for the shotgun 5 - 0 problem the old weapon script is in discord
 
+
+    // ===========================
+    //  ONENABLE — When weapon becomes active
+    // ===========================
     private void OnEnable()
     {
         _animator = GetComponent<Animator>();
@@ -52,6 +60,7 @@ public class Weapon : MonoBehaviour
 
         Active = true;
 
+        // Update UI based on weapon type
         if (weaponType == "Shotgun")
         {
             int current = PlayerManager.Instance.shotgunShells;
@@ -67,19 +76,25 @@ public class Weapon : MonoBehaviour
             GameManager.UIManager.ReloadGun("TwinTurbos", current, total);
         }
     }
-    /// /////////////////////////////////
 
 
+    // ===========================
+    //  START — Empty on purpose
+    // ===========================
     public virtual void Start()
     {
-        // Intentionally empty — child classes override if needed
+        // Child classes override if needed
     }
 
+
+    // ===========================
+    //  SETUP — For chest pickups
+    // ===========================
     public void Setup(bool chest)
     {
         if (chest)
         {
-            // Optional chest logic (currently disabled)
+            // Optional chest logic
         }
 
         GameManager.UIManager.ReloadGun(
@@ -89,11 +104,19 @@ public class Weapon : MonoBehaviour
         );
     }
 
+
+    // ===========================
+    //  DROP — Placeholder
+    // ===========================
     internal void Drop()
     {
-        // Placeholder for future weapon drop logic
+        // Future weapon drop logic
     }
 
+
+    // ===========================
+    //  RELOAD — Works for both weapons
+    // ===========================
     public virtual void Reload()
     {
         Debug.Log("reload problem");
@@ -139,6 +162,10 @@ public class Weapon : MonoBehaviour
         }
     }
 
+
+    // ===========================
+    //  UPDATE — FIXED FOR SHOTGUN
+    // ===========================
     private void Update()
     {
         Int32 pointerID;
@@ -149,37 +176,50 @@ public class Weapon : MonoBehaviour
         pointerID = 0;
 #endif
 
-        // Fire button pressed
-        {
-            if (EventSystem.current.IsPointerOverGameObject(pointerID) &&
-                EventSystem.current.currentSelectedGameObject != null)
-            {
-                if (EventSystem.current.currentSelectedGameObject.gameObject.name == "Fire Button")
-                {
-                    if (PlayerManager.Instance.bulletsInClip <= 0)
-                        return;
+        // 🔫 Determine correct ammo based on weapon type
+        int currentAmmo = weaponType == "Shotgun"
+            ? PlayerManager.Instance.shotgunShells
+            : PlayerManager.Instance.bulletsInClip;
 
-                    Firing = true;
-                }
+        // ===========================
+        //  FIRE BUTTON PRESSED
+        // ===========================
+        if (EventSystem.current.IsPointerOverGameObject(pointerID) &&
+            EventSystem.current.currentSelectedGameObject != null)
+        {
+            if (EventSystem.current.currentSelectedGameObject.gameObject.name == "Fire Button")
+            {
+                if (currentAmmo <= 0)
+                    return;
+
+                Firing = true;
             }
         }
 
-        // Fire button released
+        // ===========================
+        //  FIRE BUTTON RELEASED
+        // ===========================
         if (Input.GetMouseButtonUp(0))
         {
             Firing = false;
         }
 
-        // Out of ammo
-        if (PlayerManager.Instance.bulletsInClip <= 0)
+        // ===========================
+        //  OUT OF AMMO
+        // ===========================
+        if (currentAmmo <= 0)
         {
             Debug.Log("outofammo");
             Firing = false;
         }
 
+        // ===========================
+        //  UPDATE ANIMATOR
+        // ===========================
         _animator.SetBool("Firegun", Firing);
     }
 }
+
 
 
 
