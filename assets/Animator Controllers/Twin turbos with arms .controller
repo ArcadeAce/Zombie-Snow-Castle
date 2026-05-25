@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Twin turbos weapon down
+  m_Name: weapon down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -284,7 +284,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Twin turbos weapon up
+  m_Name: weapon up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

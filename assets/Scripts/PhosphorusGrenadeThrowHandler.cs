@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using System.Collections;
 using System;
@@ -26,13 +26,22 @@ namespace StarterAssets
 
 
 
-
-
-
-
-
-
         private bool isPhosphorusGrenadeThrown = false; // Boolean flag to indicate if a phosphorus grenade is currently thrown
+        
+
+      
+        /// //////////////////////////////////////////////////////////////////////////////////Copilot
+    
+        private Animator GetActiveWeaponAnimator()
+        {
+            return PlayerManager.Instance.WeaponSwitcher.activeWeapon._animator;
+        }
+
+   
+        /// //////////////////////////////////////////////////////////////////////////////////////
+      
+
+
 
 
         private void Awake()
@@ -75,6 +84,7 @@ namespace StarterAssets
             if (PlayerManager.Instance.numberOfPhosphorusGrenades > 0 && !isPhosphorusGrenadeThrown)
             {
                 isPhosphorusGrenadeThrown = true;
+
 
                 // Play the animations and throw the grenade after a delay
                 StartCoroutine(PlayTwinTurboDownThenPhosphorusGrenadeThrow());
@@ -168,9 +178,10 @@ namespace StarterAssets
             Debug.Log("Attempting to Play Twin Turbo Down Animation");
             Debug.Log("Twin Turbos weapon down animation triggered.");
             Debug.Log("Playing Twin Turbo Down Animation");
-            twinTurboAnimator = weaponholder.transform.GetComponentInChildren<Animator>(); // IMPORTANT FOR THE PHOSPHORUS GRENADE TO WORK
-            twinTurboAnimator.Play("Twin turbos weapon down");
-            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("Twin turbos weapon down"));
+            twinTurboAnimator = GetActiveWeaponAnimator(); // IMPORTANT FOR THE PHOSPHORUS GRENADE TO WORK
+
+            twinTurboAnimator.Play("weapon down");
+            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("weapon down"));
             yield return new WaitForSeconds(twinTurboAnimator.GetCurrentAnimatorStateInfo(0).length);
 
 
@@ -187,8 +198,8 @@ namespace StarterAssets
 
 
             Debug.Log("Playing Twin Turbo Up Animation");
-            twinTurboAnimator.Play("Twin turbos weapon up");
-            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("Twin turbos weapon up"));
+            twinTurboAnimator.Play("weapon up");
+            yield return new WaitUntil(() => twinTurboAnimator.GetCurrentAnimatorStateInfo(0).IsName("weapon up"));
             yield return new WaitForSeconds(twinTurboAnimator.GetCurrentAnimatorStateInfo(0).length);
 
             isPhosphorusGrenadeThrown = false;

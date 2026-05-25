@@ -30,7 +30,7 @@ namespace StarterAssets
             else
             {
                 isGrenadeThrown = true;
-                StartCoroutine(_GrenadeThrowHandler.PlayTwinTurboDownThenGrenadeThrow());
+                //StartCoroutine(_GrenadeThrowHandler.PlayTwinTurboDownThenGrenadeThrow());
             }
 
 

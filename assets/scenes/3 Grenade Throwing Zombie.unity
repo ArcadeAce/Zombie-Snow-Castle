@@ -1162,11 +1162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -85.9
+      value: -54.8
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1531,11 +1531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.128
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.6
+      value: -52.5
       objectReference: {fileID: 0}
     - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1916,6 +1916,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 1f02dc4878d63c7468a34bcb6157f0e6, type: 3}
+--- !u!1001 &881996116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -55.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
 --- !u!1001 &957051261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9881,7 +9938,7 @@ MonoBehaviour:
   throwForce: 42.9
   grenadeResetDelay: 0.5
   armAnimator: {fileID: 8895643063019816381}
-  twinTurboAnimator: {fileID: 1751801160655961021, guid: d96e1bf557b7e5245ae34566af50258e, type: 3}
+  activeWeaponAnimator: {fileID: 0}
   weaponholder: {fileID: 635792197510308919}
 --- !u!114 &2881803979199367683
 MonoBehaviour:
@@ -17964,5 +18021,6 @@ SceneRoots:
   - {fileID: 688375933}
   - {fileID: 427075104}
   - {fileID: 68011247}
+  - {fileID: 881996116}
   - {fileID: 1353005065}
   - {fileID: 7150142671580691825}

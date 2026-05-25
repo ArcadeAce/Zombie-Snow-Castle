@@ -31,6 +31,11 @@ public class PlayerManager : MonoBehaviour
     public int numberOfGrenades;// PlayerManager script needs these public variables to exist, and they need to be public, because they are the live memory that gets updated as the player moves through every scene.
     public int numberOfPhosphorusGrenades;
 
+
+
+
+
+
     // 🔄 Weapon system reference
     public WeaponSwitcher WeaponSwitcher { get; private set; }// public allows other scripts to access the WeaponSwitcher reference, while private set means only PlayerManager can assign it. This ensures controlled access to the WeaponSwitcher component, allowing other scripts to use it without directly modifying the reference.
                                                               // get allows other scripts to read/access the current value of WeaponSwitcher, while private set means only PlayerManager can assign it. This ensures controlled access to the WeaponSwitcher component, allowing other scripts to use it without directly modifying the reference.

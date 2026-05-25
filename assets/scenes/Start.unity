@@ -2946,6 +2946,8 @@ MonoBehaviour:
   remainingShotgunShells: 0
   numberOfGrenades: 0
   numberOfPhosphorusGrenades: 0
+  grenadeHandAnimator: {fileID: 8895643064385000452}
+  phosphorusHandAnimator: {fileID: 3363910483567118670}
 --- !u!4 &1940760347
 Transform:
   m_ObjectHideFlags: 0

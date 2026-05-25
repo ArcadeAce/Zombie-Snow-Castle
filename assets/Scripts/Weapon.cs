@@ -217,6 +217,7 @@ public class Weapon : MonoBehaviour
         //  UPDATE ANIMATOR
         // ===========================
         _animator.SetBool("Firegun", Firing);
+
     }
 }
 
