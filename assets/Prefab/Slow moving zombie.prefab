@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 200
   zombieBossDamage: 20
   hitEffect: {fileID: 5614901743633953848}
   deathExplosion: {fileID: 4926205011471522714}

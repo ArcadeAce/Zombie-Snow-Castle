@@ -2946,8 +2946,6 @@ MonoBehaviour:
   remainingShotgunShells: 0
   numberOfGrenades: 0
   numberOfPhosphorusGrenades: 0
-  grenadeHandAnimator: {fileID: 8895643064385000452}
-  phosphorusHandAnimator: {fileID: 3363910483567118670}
 --- !u!4 &1940760347
 Transform:
   m_ObjectHideFlags: 0
@@ -4564,6 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
 --- !u!114 &635792198879819033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5418,7 +5417,7 @@ Transform:
   m_GameObject: {fileID: 635792198879819153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.6, y: 9.06, z: -79.39}
+  m_LocalPosition: {x: -29.62, y: 8.77, z: -86.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5469,7 +5468,7 @@ Transform:
   m_GameObject: {fileID: 635792198879819138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.6, y: 10.435, z: -79.39}
+  m_LocalPosition: {x: -29.619999, y: 10.145, z: -86.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5588,7 +5587,7 @@ Transform:
   m_GameObject: {fileID: 635792198879819166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -31.6, y: 10.435, z: -79.39}
+  m_LocalPosition: {x: -29.619999, y: 10.145, z: -86.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9085,7 +9084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300048, guid: 309ac3eb4cc441349b63128366ca98b6, type: 3}
+  m_Sprite: {fileID: 21300046, guid: 309ac3eb4cc441349b63128366ca98b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9825,7 +9824,7 @@ MonoBehaviour:
   throwForce: 42.9
   grenadeResetDelay: 0.5
   armAnimator: {fileID: 8895643064385000452}
-  twinTurboAnimator: {fileID: 1751801160655961021, guid: d96e1bf557b7e5245ae34566af50258e, type: 3}
+  activeWeaponAnimator: {fileID: 0}
   weaponholder: {fileID: 635792198879819150}
 --- !u!1 &2877335615187767575
 GameObject:
@@ -10961,7 +10960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 5
+  sceneIndex: 3
 --- !u!1 &3914799472379590322
 GameObject:
   m_ObjectHideFlags: 0
@@ -11568,8 +11567,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4422467275300189764}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99979854, z: -0, w: -0.020073172}
-  m_LocalPosition: {x: 30.06, y: 0.594, z: 86.54}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 32.13, y: 0.67, z: 78.6}
   m_LocalScale: {x: 1.0682, y: 1, z: 1.5938704}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11578,7 +11577,7 @@ Transform:
   - {fileID: 4422467275299922930}
   - {fileID: 7664652351885414278}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 182.3, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &4422467275300031770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12067,8 +12066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456.9, y: 193.1}
-  m_SizeDelta: {x: 50.7, y: 78.1}
+  m_AnchoredPosition: {x: -454.1, y: 178.7}
+  m_SizeDelta: {x: 77.95, y: 50.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4613818592269056343
 GameObject:
@@ -12314,7 +12313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -25, y: -60}
+  m_AnchoredPosition: {x: -11.9, y: -60}
   m_SizeDelta: {x: 100, y: 40}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4951520821767368001

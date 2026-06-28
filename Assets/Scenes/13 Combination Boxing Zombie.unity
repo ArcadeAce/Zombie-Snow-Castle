@@ -123,6 +123,128 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: f1556354d8a432e489f9fff8bfb15fba, type: 2}
+--- !u!1001 &25647373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 475.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: phosphorusGrenadeButton
+      value: 
+      objectReference: {fileID: 2570813587374581557}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: textPhosphorusGrenadeNumber
+      value: 
+      objectReference: {fileID: 542925524753198307}
+    - target: {fileID: 5768467256221472483, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_Name
+      value: Grenade phosphorus for picking up (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+--- !u!1001 &127328220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 475.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &136645513
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +368,63 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &164704577
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 449.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
 --- !u!1 &190080179
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 0.103
       objectReference: {fileID: 0}
     - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -806,6 +985,185 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &483962539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 458.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+--- !u!1001 &540175304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 469.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -125.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+--- !u!1001 &552144310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 420.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -130.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: phosphorusGrenadeButton
+      value: 
+      objectReference: {fileID: 2570813587374581557}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: textPhosphorusGrenadeNumber
+      value: 
+      objectReference: {fileID: 542925524753198307}
+    - target: {fileID: 5768467256221472483, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_Name
+      value: Grenade phosphorus for picking up (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
 --- !u!1 &623609994
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +1239,185 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623609994}
   m_CullTransparentMesh: 0
+--- !u!1001 &844631774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 459.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: phosphorusGrenadeButton
+      value: 
+      objectReference: {fileID: 2570813587374581557}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: textPhosphorusGrenadeNumber
+      value: 
+      objectReference: {fileID: 542925524753198307}
+    - target: {fileID: 5768467256221472483, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_Name
+      value: Grenade phosphorus for picking up (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+--- !u!1001 &909997195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 462.81152
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.109
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.024765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &948378439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 445.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.024765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &1017336919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1592,63 @@ PrefabInstance:
     - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
       propertyPath: m_Name
       value: Grenade normal for picking up
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+--- !u!1001 &1168154668
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 440.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1325,6 +1919,71 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1513370014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 449.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -121.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: phosphorusGrenadeButton
+      value: 
+      objectReference: {fileID: 2570813587374581557}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: textPhosphorusGrenadeNumber
+      value: 
+      objectReference: {fileID: 542925524753198307}
+    - target: {fileID: 5768467256221472483, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_Name
+      value: Grenade phosphorus for picking up (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
 --- !u!1 &1562795033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +2090,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1001 &1624442430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 469.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
 --- !u!1 &1843932629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +2215,128 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1980845266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 430
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705593777425215014, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6604700157943507473, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+      propertyPath: m_Name
+      value: Grenade normal for picking up (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c86d06eab92fe94f98528d54ec07720, type: 3}
+--- !u!1001 &2040349430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 488.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -130.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933134973263866858, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: phosphorusGrenadeButton
+      value: 
+      objectReference: {fileID: 2570813587374581557}
+    - target: {fileID: 4530754564321348225, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: textPhosphorusGrenadeNumber
+      value: 
+      objectReference: {fileID: 542925524753198307}
+    - target: {fileID: 5768467256221472483, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
+      propertyPath: m_Name
+      value: Grenade phosphorus for picking up (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0b11ecf05d91ca4f9e9b8755ac036de, type: 3}
 --- !u!4 &56518943343039496
 Transform:
   m_ObjectHideFlags: 0
@@ -2531,6 +3369,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &435472854088510510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8578,7 +9417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7ae04d867037a64e96876fd54737180, type: 3}
+  m_Sprite: {fileID: 21300046, guid: 309ac3eb4cc441349b63128366ca98b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9186,7 +10025,7 @@ MonoBehaviour:
   throwForce: 42.9
   grenadeResetDelay: 0.5
   armAnimator: {fileID: 8478723244631952690}
-  twinTurboAnimator: {fileID: 1751801160655961021, guid: d96e1bf557b7e5245ae34566af50258e, type: 3}
+  activeWeaponAnimator: {fileID: 0}
   weaponholder: {fileID: 435472854088510648}
 --- !u!4 &2964902509304918073
 Transform:
@@ -9957,7 +10796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 17
+  sceneIndex: 16
 --- !u!1 &3521216463205120019
 GameObject:
   m_ObjectHideFlags: 0
@@ -10770,8 +11609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -465.4, y: 191.3}
-  m_SizeDelta: {x: 66.2, y: 50.4}
+  m_AnchoredPosition: {x: -457.5, y: 198.6}
+  m_SizeDelta: {x: 75, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4589479600588182760
 GameObject:
@@ -11062,7 +11901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -25, y: -60}
+  m_AnchoredPosition: {x: -11.9, y: -60}
   m_SizeDelta: {x: 100, y: 40}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4951520820456743008
@@ -12650,7 +13489,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Combination Boxing Zombie
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -12735,7 +13577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 16.800049, y: -80.39996}
+  m_AnchoredPosition: {x: 16.800049, y: -91.2}
   m_SizeDelta: {x: 350, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &6103112642264003161
@@ -12800,6 +13642,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112642484246895}
   twinTurbosButton: {fileID: 435472854088510525}
   shotgunButton: {fileID: 1054894894792677153}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!223 &6103112642394259572
 Canvas:
   m_ObjectHideFlags: 0
@@ -16256,4 +17099,18 @@ SceneRoots:
   - {fileID: 4137975286418309477}
   - {fileID: 6562067254834216149}
   - {fileID: 283828397}
+  - {fileID: 1513370014}
+  - {fileID: 844631774}
+  - {fileID: 25647373}
+  - {fileID: 2040349430}
+  - {fileID: 552144310}
   - {fileID: 1116369848}
+  - {fileID: 540175304}
+  - {fileID: 1624442430}
+  - {fileID: 483962539}
+  - {fileID: 164704577}
+  - {fileID: 1168154668}
+  - {fileID: 1980845266}
+  - {fileID: 909997195}
+  - {fileID: 948378439}
+  - {fileID: 127328220}

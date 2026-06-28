@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Scenes/12 Taekwando Zombie.unity
     guid: f79956408d5a49e4582aa4b212455ff4
   - enabled: 1
-    path: Assets/Scenes/13 Boxing Combination Zombie.unity
+    path: Assets/Scenes/13 Combination Boxing Zombie.unity
     guid: 0920a5b82c56caa478ac121f03aeabab
   - enabled: 1
     path: Assets/Scenes/14 Super combo zombie.unity
