@@ -4119,7 +4119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 14
+  MoveSpeed: 18
   SprintSpeed: 6.5
   RotationSpeed: 3
   SpeedChangeRate: 10
@@ -7092,8 +7092,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.99736077, b: 0.995283, a: 1}
-  m_Intensity: 1.2
-  m_Range: 108
+  m_Intensity: 0.8
+  m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

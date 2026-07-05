@@ -196,79 +196,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
---- !u!1001 &284145685
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.096
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Name
-      value: Twin turbos ammo clip (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Size.x
-      value: 4.2368097
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Size.y
-      value: 9.35748
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Center.x
-      value: -0.5160648
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Center.y
-      value: -2.1603017
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1001 &301688227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -554,79 +481,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c899a65807115cd4cb8c672fb53838af, type: 3}
---- !u!1001 &920187320
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Name
-      value: Twin turbos ammo clip (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Size.x
-      value: 4.2368097
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Size.y
-      value: 9.35748
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Center.x
-      value: -0.5160648
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141153755950113659, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
-      propertyPath: m_Center.y
-      value: -2.1603017
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1001 &995415581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7779,7 +7633,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 2.65
   m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7838,7 +7692,7 @@ Transform:
   m_GameObject: {fileID: 4845090416596779600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.36, y: 1.78, z: -6.8}
+  m_LocalPosition: {x: -25.38, y: 1.78, z: -6.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11224,7 +11078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 16.800049, y: -104.4}
+  m_AnchoredPosition: {x: 16.800049, y: -87}
   m_SizeDelta: {x: 350, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &7175129334458035353
@@ -14035,7 +13889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 14
+  MoveSpeed: 17
   SprintSpeed: 6.5
   RotationSpeed: 3
   SpeedChangeRate: 10
@@ -16655,15 +16509,13 @@ SceneRoots:
   - {fileID: 337294901}
   - {fileID: 8234929673193909108}
   - {fileID: 7248192555949040861}
-  - {fileID: 995415581}
-  - {fileID: 1225477252}
-  - {fileID: 301688227}
+  - {fileID: 1373023661}
+  - {fileID: 66091552}
+  - {fileID: 795487324}
+  - {fileID: 1592125583}
   - {fileID: 1863167186}
   - {fileID: 509447686}
   - {fileID: 1517308683}
-  - {fileID: 795487324}
-  - {fileID: 1592125583}
-  - {fileID: 1373023661}
-  - {fileID: 66091552}
-  - {fileID: 920187320}
-  - {fileID: 284145685}
+  - {fileID: 995415581}
+  - {fileID: 1225477252}
+  - {fileID: 301688227}

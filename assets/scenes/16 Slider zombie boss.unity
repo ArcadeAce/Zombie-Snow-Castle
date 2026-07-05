@@ -4289,7 +4289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 14
+  MoveSpeed: 18
   SprintSpeed: 6.5
   RotationSpeed: 3
   SpeedChangeRate: 10
@@ -4799,6 +4799,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &635792198174321295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8576,7 +8577,7 @@ MonoBehaviour:
   throwForce: 42.9
   grenadeResetDelay: 0.5
   armAnimator: {fileID: 8895643063679110033}
-  twinTurboAnimator: {fileID: 1751801160655961021, guid: d96e1bf557b7e5245ae34566af50258e, type: 3}
+  activeWeaponAnimator: {fileID: 0}
   weaponholder: {fileID: 635792198174321179}
 --- !u!4 &2881361470634391194
 Transform:
@@ -12404,6 +12405,7 @@ MonoBehaviour:
   ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 6103112641625739977}
   twinTurbosButton: {fileID: 635792198174321310}
   shotgunButton: {fileID: 34455065252974978}
+  lookSensitivityPanel: {fileID: 0}
 --- !u!224 &6103112641625739974
 RectTransform:
   m_ObjectHideFlags: 0

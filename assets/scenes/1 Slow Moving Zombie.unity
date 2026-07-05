@@ -1492,8 +1492,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
-  m_Range: 70
+  m_Intensity: 3.5
+  m_Range: 78.01
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7772,7 +7772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 14
+  MoveSpeed: 17
   SprintSpeed: 6
   RotationSpeed: 3
   SpeedChangeRate: 10
@@ -21332,5 +21332,5 @@ SceneRoots:
   - {fileID: 6865547725557242614}
   - {fileID: 8461392678165896060}
   - {fileID: 7150142670574068492}
-  - {fileID: 2933134972834572345}
   - {fileID: 452488779}
+  - {fileID: 2933134972834572345}
