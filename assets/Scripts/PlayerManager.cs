@@ -54,11 +54,11 @@ public class PlayerManager : MonoBehaviour
             Destroy(gameObject);// destroy checks if there is already an instance of PlayerManager in the game. If there is, it destroys the new one to prevent duplicates. This ensures that only one PlayerManager exists at any time, maintaining a consistent reference for player stats and game state across all scenes.
             return; // what return does is it exits the Awake() function early if a duplicate PlayerManager is found and destroyed. This prevents any further initialization or code execution in the new instance, ensuring that only the original PlayerManager continues to manage player stats and game state throughout the game.
         }
-
+        ///////////////////
         // ✅ Weapon memory functions
         curHealth = PlayerHealth;// cur health means that the current health of the player is set to the maximum health defined in PlayerHealth. This initializes the player's health at the start of the game or when they respawn, ensuring they begin with full health.
         lives = lives == 0 ? 3 : lives;// lives means that if the player's lives are currently set to 0, it will reset them to 3. This is useful for initializing the player's lives at the start of the game or when they respawn, ensuring they have a standard number of lives to begin with. If lives are already above 0, it keeps the existing value, allowing for persistence across scenes.
-
+        //////////////////
         WeaponSwitcher = GetComponent<WeaponSwitcher>();// This means that the PlayerManager script is trying to find and assign the WeaponSwitcher component that is attached to the same GameObject. This allows PlayerManager to access and manage weapon switching functionality through the WeaponSwitcher reference. If the WeaponSwitcher component is not found, it will log an error message to help identify the issue during development.
         if (WeaponSwitcher == null)
         {
@@ -110,19 +110,19 @@ public class PlayerManager : MonoBehaviour
     {
         AudioManager.Instance.StopAllMusic();// this line is for
         GameManager.Instance.OpenScene(0);// Loads the main menu (scene 0) so the player can restart the game. Which is scene 0 in the Build Settings. When the player dies, it stops all music and transitions back to the main menu, allowing the player to restart or exit the game.
-    Destroy(this);// This line is for destroying the PlayerManager instance when the player dies. This is important to ensure that when the player restarts the game, a new PlayerManager can be created without conflicts from the previous instance. It helps to reset the game state and allows for a fresh start when the player chooses to play again after dying.
-}
+        Destroy(this);// This line is for destroying the PlayerManager instance when the player dies. This is important to ensure that when the player restarts the game, a new PlayerManager can be created without conflicts from the previous instance. It helps to reset the game state and allows for a fresh start when the player chooses to play again after dying.
+    }
 
     public void AddAmmo(string ammoType, int ammoToAdd)// This line is for adding ammo to the player's inventory.  // Checks which weapon the ammo pickup belongs to and updates the correct ammo values.
 
     {
 
         switch (ammoType)// When player picks up an ammo pickup, this switch statement checks the type of ammo being added (e.g., "TwinTurbos" or "Shotgun") and updates the corresponding ammo counts for the player. It also calls the ReloadGun function from the UIManager to update the ammo display in the UI, ensuring that the player has accurate information about their current ammo status after picking up ammo. It also refreshes the UI so the player immediately sees the new ammo amount.
-{
+        {
             case "TwinTurbos":// this line checks if the ammo type being added is for the Twin Turbos. If it is, it adds the specified amount of ammo to the remainingBullets count for the Twin Turbos and updates the UI to reflect the new ammo status for that weapon.
-        remainingBullets += ammoToAdd;// this line adds the specified amount of ammo (ammoToAdd) to the remainingBullets count for the Twin Turbos. This updates the player's ammo inventory for that weapon when they pick up an ammo pickup.
-        GameManager.UIManager.ReloadGun(ammoType, bulletsInClip, remainingBullets);// this line calls the ReloadGun function from the UIManager, passing in the ammo type, the current bullets in the clip, and the remaining bullets. This updates the ammo display in the UI to reflect the new ammo status for the Twin Turbos after picking up ammo. It ensures that the player has accurate information about their current ammo count for that weapon.
-        break;
+                remainingBullets += ammoToAdd;// this line adds the specified amount of ammo (ammoToAdd) to the remainingBullets count for the Twin Turbos. This updates the player's ammo inventory for that weapon when they pick up an ammo pickup.
+                GameManager.UIManager.ReloadGun(ammoType, bulletsInClip, remainingBullets);// this line calls the ReloadGun function from the UIManager, passing in the ammo type, the current bullets in the clip, and the remaining bullets. This updates the ammo display in the UI to reflect the new ammo status for the Twin Turbos after picking up ammo. It ensures that the player has accurate information about their current ammo count for that weapon.
+                break;
 
             case "Shotgun":// Same as above but for shotgunammo.
                 remainingShotgunShells += ammoToAdd;
@@ -154,22 +154,22 @@ public class PlayerManager : MonoBehaviour
 
     /////////////////////////////////////////////////////////////Copilot 
     public void SaveShotgunAmmo(int current, int total)// this line is for saving the current and total shotgun ammo when the player switches away from the shotgun. This allows the player to retain their ammo count for the shotgun when they switch back to it later, ensuring that they don't lose ammo when switching weapons. It updates the PlayerManager's shotgunShells and remainingShotgunShells variables with the current ammo status for the shotgun.
-{
+    {
         shotgunShells = current;
         remainingShotgunShells = total;
     }
-    
+
     //////////////////////////////////////////////////////////////////////
-    
+
 
 
 
     // ✅ Weapon memory functions
     public void AcquireTwinTurbos()// this line is for when the player acquires the Twin Turbos weapon. It sets the selectedWeaponType and lastHeldWeaponType to "TwinTurbos", allowing the player to switch back to it later and ensuring that the game remembers that the player has acquired this weapon. This function can be called when the player picks up the Twin Turbos in the game, updating their weapon inventory and enabling them to use it in combat.
-{
+    {
         selectedWeaponType = "TwinTurbos";// this line is for setting the currently selected weapon type to "TwinTurbos" when the player acquires it. This allows the player to immediately use the Twin Turbos after picking it up, and it also updates the game state to reflect that this weapon is now active in the player's inventory.
-    lastHeldWeaponType = "TwinTurbos";// this line is for setting the last held weapon type to "TwinTurbos" when the player acquires it. This allows the game to remember that the player has acquired the Twin Turbos, enabling them to switch back to it later if they switch to another weapon. It helps maintain weapon memory and inventory management for the player as they progress through the game.
-}
+        lastHeldWeaponType = "TwinTurbos";// this line is for setting the last held weapon type to "TwinTurbos" when the player acquires it. This allows the game to remember that the player has acquired the Twin Turbos, enabling them to switch back to it later if they switch to another weapon. It helps maintain weapon memory and inventory management for the player as they progress through the game.
+    }
 
     public void AcquireShotgun()
     {
@@ -179,35 +179,40 @@ public class PlayerManager : MonoBehaviour
     }
 
     public void AcquireKnife()
-{ // Sets it as the current and last held weapon so the player can use it and switch back to it later.
-    selectedWeaponType = "Knife";// when the knife is in unity and made and added to the game, this function will be called when the player acquires the knife. It sets the selectedWeaponType and lastHeldWeaponType to "Knife", allowing the player to switch back to it later and ensuring that the game remembers that the player has acquired this weapon. This function can be called when the player picks up the knife in the game, updating their weapon inventory and enabling them to use it in combat.
-                                
-    lastHeldWeaponType = "Knife";
+    { // Sets it as the current and last held weapon so the player can use it and switch back to it later.
+        selectedWeaponType = "Knife";// when the knife is in unity and made and added to the game, this function will be called when the player acquires the knife. It sets the selectedWeaponType and lastHeldWeaponType to "Knife", allowing the player to switch back to it later and ensuring that the game remembers that the player has acquired this weapon. This function can be called when the player picks up the knife in the game, updating their weapon inventory and enabling them to use it in combat.
+
+        lastHeldWeaponType = "Knife";
     }
 
     public void AcquireBat()
-// Called when the player picks up the Baseball Bat.
-// Sets it as the current and last held weapon so the player can use it and switch back to it later.
-{
-    selectedWeaponType = "Bat";// when the baseball bat is made and added to the game, this function will be called when the player acquires the baseball bat. It sets the selectedWeaponType and lastHeldWeaponType to "Bat", allowing the player to switch back to it later and ensuring that the game remembers that the player has acquired this weapon. This function can be called when the player picks up the baseball bat in the game, updating their weapon inventory and enabling them to use it in combat.
-    lastHeldWeaponType = "Bat";
+    // Called when the player picks up the Baseball Bat.
+    // Sets it as the current and last held weapon so the player can use it and switch back to it later.
+    {
+        selectedWeaponType = "Bat";// when the baseball bat is made and added to the game, this function will be called when the player acquires the baseball bat. It sets the selectedWeaponType and lastHeldWeaponType to "Bat", allowing the player to switch back to it later and ensuring that the game remembers that the player has acquired this weapon. This function can be called when the player picks up the baseball bat in the game, updating their weapon inventory and enabling them to use it in combat.
+        lastHeldWeaponType = "Bat";
     }
 
     public void SetActiveWeapon(string weaponType) // Sets the weapon the player is currently using.
-// Also remembers it as the last held weapon so the player can switch back to it later.
+                                                   // Also remembers it as the last held weapon so the player can switch back to it later.
 
-{
-    selectedWeaponType = weaponType;
+    {
+        selectedWeaponType = weaponType;
         lastHeldWeaponType = weaponType;
     }
 }
 
 
-    // ===================== PLAYER MANAGER SUMMARY =====================
-    // Player Manager script starts in the start scene in the Inspectror Panel, and is set to DontDestroyOnLoad, so it persists across all scenes.
-    // It stores all player stats (health, ammo, lives) and weapon inventory, allowing for consistent player data across scenes.
-    // It also provides functions for taking damage, dying, adding ammo, and acquiring weapons, ensuring smooth gameplay and player progression.
-    // The PlayerManager script is a crucial component for managing the player's state and inventory throughout the game, ensuring that player stats and weapon information are maintained consistently as they progress through different levels and encounters.
+// ===================== PLAYER MANAGER SUMMARY =====================
+// Player Manager script starts in the start scene in the Inspectror Panel, and is set to DontDestroyOnLoad, so it persists across all scenes.
+// It stores all player stats (health, ammo, lives) and weapon inventory, allowing for consistent player data across scenes.
+// It also provides functions for taking damage, dying, adding ammo, and acquiring weapons, ensuring smooth gameplay and player progression.
+// The PlayerManager script is a crucial component for managing the player's state and inventory throughout the game, ensuring that player stats and weapon information are maintained consistently as they progress through different levels and encounters.
+
+
+
+
+
 
 
 

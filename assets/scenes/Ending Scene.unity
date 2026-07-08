@@ -2100,20 +2100,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\n\n\n\n\n\n\n\nMission complete!!!!!\n\nExcellent!!!!!\nYou are
-    a great player!\n\nGreat job!!!!! \nYou removed all the zombie bosses from Zombie
-    Castle!\n\n\n\n\nApp Icon:\r\n<a href=\"https://www.flaticon.com/free-icons/snow\"
-    title=\"snow icons\">Snow icons created by Freepik - Flaticon</a> \r\n\r\n\r\n\r\nProps
-    for zombies:\r\n\r\n\r\nGrenade throwing zombies grenade:\r\nChanges were made,
-    some things deleted.\r\n\"MK2 Grenade\" (https://skfb.ly/Lo8H) by Pixel is licensed
-    under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nGrenade
+  m_text: "\nProps for zombie Bosses:\r\n\r\n\r\nGrenade throwing zombies grenade:\r\nChanges
+    were made, some things deleted.\r\n\"MK2 Grenade\" (https://skfb.ly/Lo8H) by
+    Pixel is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nGrenade
     Throwing Zombies Helmet:\r\nChanges were made, some things deleted.\r\n\"Fox
     X Supreme Helmet\" (https://skfb.ly/op9YU) by Muhammad Seno Aji is licensed under
     Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nChemical
     Zombies lab coat:\r\n\"Doctor - Sketchfab Weekly - 13 Mar'23\" (https://skfb.ly/oFrH9)
-    by BrushDip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
-    Hit Zombie Bosses Baseball Cap:\r\n\r\n\"Baseball Cap\" (https://skfb.ly/6sEqr)
-    by Scott VanArsdale is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
+    by BrushDip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\nChemical
+    Zombies Test Tube was made in Blender 3D.\r\nThank you Blender!\r\nBig Hit Zombie
+    Bosses Baseball Cap:\r\n\r\n\"Baseball Cap\" (https://skfb.ly/6sEqr) by Scott
+    VanArsdale is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nBig
     Hit Zombie bosses Baseball Bat:\r\n\r\n\"Aluminum Baseball Bat\" (https://skfb.ly/6CuNG)
     by Peter Primini is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nCombination
     Boxing Zombies boxing gloves:\r\n\"Boxing Gloves - Left Handed\" (https://skfb.ly/6XOUS)
@@ -2131,7 +2128,7 @@ MonoBehaviour:
     by NintendObi-Wan (@NOW3D) [1a7346e] (sketchfab.com)\r\n\r\nSamurai Zombies sword
     (need to add as a prop in unity the sword does not go through mixamo):\r\n(Edited
     the handle of this sword in Blender 3D)\r\nhttps://sketchfab.com/3d-models/samurai-sword-2e54ac3f950c4755812852d81af4a88b
-    \r\n\r\n\r\nDragon Zombie model:\r\n\r\nZombies voices, and attack sounds:\r\n\r\n\r\nhttps://pixabay.com/sound-effects/cartoon-jump-6462/
+    \r\n\r\n\r\n\r\n\r\nZombies voices, and attack sounds:\r\n\r\n\r\nhttps://pixabay.com/sound-effects/cartoon-jump-6462/
     For Poison Zombies spit attack.\r\nFireball Whoosh 5 | Royalty-free Music - Pixabay
     Big Hit Zombies bat attack, slider/curveball zombies super baseball pitch, or
     used for sword attack.\r\nhttps://pixabay.com/sound-effects/kung-fu-scream-43668/
@@ -2154,22 +2151,19 @@ MonoBehaviour:
     For zombie attack.\r\nBig fireball explosion 2 Sound Effect - Download FREE -
     ZapSplat  Zombie Explosion sound\r\n\r\nGame music:\r\nTitle screen:\r\nhttps://www.zapsplat.com/?s=Easy+cheesy&post_type=music&sound-effect-category-id=
     Title screen\r\nhttps://www.zapsplat.com/music/game-tone-retro-laser-repeat-level-complete-1/
-    Play button start music, this is a sound effect.\r\nSnowy Level:\r\nhttps://www.zapsplat.com/music/cinematic-trailer-music-fairytale-style-melody-celesta-only/  
-    For snowy scene (maybe)\r\nLevel:\r\n\r\nBoss room music:\r\nhttps://www.zapsplat.com/music/game-music-action-skill-fast-paced-energetic-electronica/
-    Boss room music renamed\r\n\r\n8-Bit Music On | Royalty-free Music - Pixabay
-    Slow moving zombie boss music\r\n\r\nhttps://www.zapsplat.com/music/black-fedora-sneaky-jazz/
-    Boss room 3 music, or level music.\r\n\r\nhttps://www.zapsplat.com/music/never-late-ver-2-smooth-jazz-loop-with-electric-piano-bass-and-percussion-2/
-    Boss room 4 music.\r\n\r\nGameshow Quiz Music Bed \u2013 dark and tense electronica
-    with atmospheric synth pads and arpeggio Sound Effect - Download FREE - ZapSplat
-    Boss music 5\r\n\r\nGhosts Walk Here \u2013 weird, haunting, slow paced electric
-    piano driven music, with acoustic guitar, bass and warm synthesizer pads and
-    drums Sound Effect - Download FREE - ZapSplat Poison Zombie boss music and for
-    other zombie bosses after.\r\n\r\n9 Kick Off | Battle Game BGM | Royalty-free
-    Music - Pixabay Boss music 6\r\n\r\nPassword Infinity | Royalty-free Music -
-    Pixabay Ninja zombie boss music.\r\n\r\nSpooky | Royalty-free Music - Pixabay
-    Boss music 8 (spooky)\r\n\r\nGameshow Quiz Music Bed \u2013 electronic, dark
-    and tense with a bright melody and airy atmospheric pads Sound Effect - Download
-    FREE - ZapSplat Boss music 9\r\n\r\nhttps://pixabay.com/music/beats-floating-abstract-142819/ 
+    Play button start music, this is a sound effect.\r\nThanks to Retropical Records
+    for the music track Midnight Resevation for the title screen music.\r\n\r\n\r\nSnowy
+    Level:\r\n\r\nRetropical Music allowed me to use this music, used it for the
+    snow scene. \r\n\uFF33\uFF49\uFF45\uFF52\uFF52\uFF41 \uFF2D\uFF49\uFF52\uFF41\uFF47\uFF45
+    \uFF07\uFF19\uFF11\r\n\r\nLevel:\r\n\r\nBoss room music:\r\n\r\n\r\nhttps://www.zapsplat.com/music/black-fedora-sneaky-jazz/ 
+    level through passageway music\r\n\r\n\r\nGhosts Walk Here \u2013 weird, haunting,
+    slow paced electric piano driven music, with acoustic guitar, bass and warm synthesizer
+    pads and drums Sound Effect - Download FREE - ZapSplat Poison Zombie boss music
+    and Chemical Zombie Boss music.\r\n\r\n9 Kick Off | Battle Game BGM | Royalty-free
+    Music - Pixabay Boss music \r\n\r\nPassword Infinity | Royalty-free Music - Pixabay
+    Ninja zombie boss music.\r\n\r\n\r\nGameshow Quiz Music Bed \u2013 electronic,
+    dark and tense with a bright melody and airy atmospheric pads Sound Effect -
+    Download FREE - ZapSplat Boss music 9\r\n\r\nhttps://pixabay.com/music/beats-floating-abstract-142819/ 
     Crazy Zombie boss music.\r\n\r\nPolice Pursuit \u2013 TV or film music, fast
     paced action good for police chase, high octane etc Sound Effect - Download FREE
     - ZapSplat Boss music 10\r\n\r\nhttps://www.zapsplat.com/music/game-music-action-mildly-aggressive-electro-breakbeat-growling-bass-synth-electronic-rhythms/
@@ -2193,35 +2187,20 @@ MonoBehaviour:
     great pistol shot, modified.\r\nhttps://pixabay.com/sound-effects/9mm-pistol-shot-6349/
     good pistol shot modified.\r\nFreesound - \"explosion_big_02.ogg\" by derplayer
     Twin Turbos gunshot sound.\r\n\r\ntangcomplete | Royalty-free Music - Pixabay
-    Reload, and ammo pick up sound.\r\n\r\nShotgun\r\nhttps://pixabay.com/sound-effects/shotgun-firing-4-6746/
-    shotgun sound 4 effect, modified\r\nhttps://pixabay.com/sound-effects/080902-shotgun-39753/
-    shotgun sound effect 5, modified\r\nReload:\r\n\r\nPen Click | Royalty-free Music
-    - Pixabay Shotgun reload.\r\n\r\n\r\nAlien gun blue plasma\r\n<a href=\"https://www.flaticon.com/free-icons/alien\"
-    title=\"alien icons\">Alien icons created by Bharat Icons - Flaticon</a> Icon
-    for alien gun weapon switch.\r\n\r\nhttps://pixabay.com/sound-effects/laser-zap-90575/
-    alien gun shot great.\r\nFreesound - \"ClassicLaser.WAV\" by Snipperbes alien
-    gun shot, modified\r\nBLASTER 2 | Royalty-free Music - Pixabay  alien gun.\r\nReload\r\nhttps://pixabay.com/sound-effects/charging-laser-106217/
-    Alien gun reload, modify \r\n\r\nAlien gun green plasma\r\nexplosion Icon - Free
-    PNG & SVG 394990 - Noun Project (thenounproject.com)\r\n\r\n\r\nM9 Bayonet\r\nM9
-    Bayonet - Download Free 3D model by FJH (@FJH) [933c897]\r\n\r\nBaseball bat\r\n?\r\nBaseball
-    bat icon Search results for Baseball bat - Flaticon\r\n\r\n\r\nGrenades:\r\n\r\nGrenade\r\n\r\nBig
+    Reload, and ammo pick up sound.\r\n\r\nBlast ya some mo shotgun\r\n\r\nDesigned
+    large heavy explosion with a shockwave 4 Sound Effect - Download FREE - ZapSplat
+    shotgun sound\r\n\r\n\r\nReload:\r\nPen Click | Royalty-free Music - Pixabay\r\n\r\n\r\nGrenades:\r\n\r\nGrenade\r\n\r\nBig
     fireball explosion 2 Sound Effect - Download FREE - ZapSplat Grenade explosion
-    and zombie explosion.\r\n\r\n\r\n\r\nPhosphorus Grenade\r\n\r\nhttps://freesound.org/people/Robinhood76/sounds/94762/
-    very weak sounding phosphorous sound, modify.\r\n\r\nhttps://pixabay.com/sound-effects/muffled-distant-explosion-7104/
-    maybe old phosphorous explosion, modify\r\n\r\nhttps://www.zapsplat.com/music/claymore-antipersonnel-mine-one-sharp-low-blast-with-echo-roll-off-and-debris-fall-at-tail-close-up-perspective-explosion/\r\nGood
-    phosphorous sound with after effects sound.\r\n\r\nGrenade pick up:\r\nhttps://www.zapsplat.com/music/game-tone-science-fiction-style-pick-up-or-collect-item-version-2/
-    grenade pick up sound \r\n\r\n\r\n\r\nWeapon and ammo pick up sounds: \r\nhttps://www.fesliyanstudios.com/royalty-free-sound-effects-download/clothing-foley-63
+    and zombie explosion.\r\n\r\n\r\nPhosphorus Grenade\r\n  Explosion SFX \u2014
+    sourced from free sound libraries.  \r\n\r\n\r\n\r\n\r\nAmmo and weapon pick
+    up sounds: \r\nhttps://www.fesliyanstudios.com/royalty-free-sound-effects-download/clothing-foley-63
     \r\nPicking Up Clothing A4 Sound Effect  weapon pick up sound.\r\n\r\nSpecial
-    effects:\r\n\r\n\r\nhttps://pixabay.com/sound-effects/dream-sound-effect-downscale-7134/
-    secret room\r\n\r\nhttps://pixabay.com/sound-effects/swoosh-142322/ Special attack\r\n\r\nhttps://pixabay.com/sound-effects/woosh-low-long01-98755/
-    Special attack 2\r\n\r\nOther Sounds:\r\n\r\nCave wall falling in level:\r\nhttps://www.zapsplat.com/music/8bit-medium-explosion-bomb-boom-or-blast-cannon-retro-old-school-classic-cartoon/\r\nCave
+    effects:\r\n\r\n\r\n\r\nOther Sounds:\r\n\r\nCave wall falling in level:\r\nhttps://www.zapsplat.com/music/8bit-medium-explosion-bomb-boom-or-blast-cannon-retro-old-school-classic-cartoon/\r\nCave
     door regular, and zombie castle titles sound.\r\nBoss room cave wall falling:\r\nhttps://pixabay.com/sound-effects/distant-explosion-47562/
     Boss room cave door closing great.\r\nhttps://www.zapsplat.com/music/big-powerful-internal-explosion-1/ 
     Cave door closing sound 2\r\nhttps://www.zapsplat.com/music/gas-explosion-airy-designed-boom-1/ 
-    Boss room cave door closing sound 3\r\nHealth pick up:\r\nhttps://freesound.org/people/AbbasGamez/sounds/411443/
-    health pick up used\r\nhttps://freesound.org/people/MATRIXXX_/sounds/523651/
-    health pick up sound 2 (may have used)\r\n\n\rSpecial Thanks to Timps for helping
-    me make this game and the people of discord help servers.\n\r\n\r\n"
+    Boss room cave door closing sound 3\r\n\r\n\r\n\rSpecial Thanks to Timps and
+    Fuzzy for helping me make this game and the people of discord help servers.\n\r\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

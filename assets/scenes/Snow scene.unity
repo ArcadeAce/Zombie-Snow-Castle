@@ -5260,8 +5260,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.24279688, g: 0.0115254605, b: 0.3490566, a: 1}
-  m_Intensity: 0
+  m_Color: {r: 0.5558432, g: 0.29036137, b: 0.7075472, a: 1}
+  m_Intensity: 0.73
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15507,7 +15507,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1520670130}
   m_Layer: 0
-  m_Name: 'Notes: For fast FPS Controller at front of the door its X513 Y30 Z1403'
+  m_Name: 'Notes: For fast FPS Controller at front of the door its X513 Y30 Z1403
+    the FPS controller must be backward and up in the air to give time for the snow
+    to fall.'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39959,7 +39961,7 @@ Transform:
   m_GameObject: {fileID: 784798388054736409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.580017, y: 75.355, z: -87.380005}
+  m_LocalPosition: {x: -59.580017, y: 36.975, z: -87.380005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40497,7 +40499,7 @@ Transform:
   m_GameObject: {fileID: 3104489295937400270}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.58, y: 73.98, z: -87.38}
+  m_LocalPosition: {x: -59.58, y: 35.6, z: -87.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41833,7 +41835,7 @@ Transform:
   m_GameObject: {fileID: 7672414690579518668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.580017, y: 75.355, z: -87.380005}
+  m_LocalPosition: {x: -59.580017, y: 36.975, z: -87.380005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42140,8 +42142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704546471737186358}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 491, y: -41.5, z: 1383.3}
+  m_LocalRotation: {x: 0, y: -0.99932843, z: 0, w: 0.036643766}
+  m_LocalPosition: {x: 368.6, y: 33.08, z: 1223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42150,7 +42152,7 @@ Transform:
   - {fileID: 2332455848093792116}
   - {fileID: 2167179760128164705}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -175.8, z: 0}
 --- !u!23 &8690589649806843520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42214,14 +42216,14 @@ SceneRoots:
   m_Roots:
   - {fileID: 1898678602}
   - {fileID: 1520670130}
+  - {fileID: 705507995}
+  - {fileID: 680319723}
   - {fileID: 8619991366773476006}
   - {fileID: 4105207010966412782}
   - {fileID: 1113328689}
   - {fileID: 2963782424489945781}
   - {fileID: 4072395819890725266}
   - {fileID: 1719996555}
-  - {fileID: 680319723}
-  - {fileID: 705507995}
   - {fileID: 2527341417910219876}
   - {fileID: 89691056}
   - {fileID: 2008086288}
