@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Falling cave door boss room twentythree
+  m_Name: Falling cave door boss room Samurai
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: CloseDoor
@@ -61,7 +61,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Boss room cave door closing twentythree
+  m_Name: Boss room cave door closing Samurai
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -94,7 +94,7 @@ AnimatorStateMachine:
     m_Position: {x: 336, y: 257, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 726402650450490059}
-    m_Position: {x: 320, y: 90, z: 0}
+    m_Position: {x: 330, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 6285129958083367821}

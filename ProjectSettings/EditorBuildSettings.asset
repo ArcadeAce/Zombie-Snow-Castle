@@ -54,6 +54,18 @@ EditorBuildSettings:
     path: Assets/Scenes/13 Combination Boxing Zombie.unity
     guid: 0920a5b82c56caa478ac121f03aeabab
   - enabled: 1
+    path: Assets/Scenes/20 Samurai zombie boss.unity
+    guid: a3415c0ab2d671d41919fc63ae4d3458
+  - enabled: 1
+    path: Assets/Scenes/21 Big Hit Zombie.unity
+    guid: e231543dfac57ea498d90b88b323617d
+  - enabled: 1
+    path: Assets/Scenes/22 Burning fist zombie boss.unity
+    guid: 4a179c78f2a5f454f9b4b185ecc2b47c
+  - enabled: 1
+    path: Assets/Scenes/23 Broken leg zombie boss.unity
+    guid: 020c5ced59e76ba4fa2de48b43c04407
+  - enabled: 1
     path: Assets/Scenes/14 Super combo zombie.unity
     guid: fcafa1b8a8d1eb84ea85eab802134fc7
   - enabled: 1
