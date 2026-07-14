@@ -8552,7 +8552,7 @@ GameObject:
   - component: {fileID: 2610680442721332634}
   - component: {fileID: 2907063262634725941}
   m_Layer: 0
-  m_Name: Scene switch closing cave door twentyfive
+  m_Name: Scene switch closing cave door burning fist zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14508,7 +14508,7 @@ GameObject:
   - component: {fileID: 7687393819051217155}
   - component: {fileID: 7405023173056163500}
   m_Layer: 0
-  m_Name: Boss room cave door closing twentyfive
+  m_Name: Boss room cave door burning fist zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15684,7 +15684,7 @@ GameObject:
   - component: {fileID: 8390802486080310932}
   - component: {fileID: 8390802486080310922}
   m_Layer: 0
-  m_Name: Falling cave door boss room twentyfive
+  m_Name: ' Boss room cave door for burning fist zombie'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15931,7 +15931,7 @@ Animator:
   m_GameObject: {fileID: 2907063262634725946}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76b5b052c502f1b4aaa68bfb8d69994b, type: 2}
+  m_Controller: {fileID: 9100000, guid: fe36ed1d91c5fbd44af5387d2e12fbe1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15975,8 +15975,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0678055, y: 2.888939, z: 0.3125546}
-  m_Center: {x: -0.021899303, y: -2.045222, z: 4.641921}
+  m_Size: {x: 2.0678055, y: 2.888939, z: 1.7066742}
+  m_Center: {x: -0.0218993, y: -2.045222, z: 4.9020476}
 --- !u!82 &8469358327308964219
 AudioSource:
   m_ObjectHideFlags: 0

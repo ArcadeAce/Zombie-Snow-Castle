@@ -84,11 +84,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 23
-  zombieBossDamage: 0
+  zombieBossDamage: 30
   hitEffect: {fileID: 4117991666433663710, guid: db8a5533533627540a476f19c9d6204f, type: 3}
   deathExplosion: {fileID: 8579814004934997281}
   rigidBody: {fileID: 4055680669743711932}
-  zombieBossesChasingDistanceToFollowThePlayer: 0
+  zombieBossesChasingDistanceToFollowThePlayer: 9
   delay: 1
 --- !u!195 &2919810529384897323
 NavMeshAgent:
@@ -158,8 +158,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12.882425, y: 1.1527888, z: 31.154747}
-  m_Center: {x: -1.6917622, y: 5.6418567, z: 5.6465435}
+  m_Size: {x: 12.882425, y: 2.709693, z: 31.154747}
+  m_Center: {x: -1.6917622, y: 4.863407, z: 5.6465435}
 --- !u!136 &2776814086698602552
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -31890,7 +31890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 400
-  zombieBossDamage: 1
+  zombieBossDamage: 20
   hitEffect: {fileID: 380082399427049986}
   deathExplosion: {fileID: 4439564863789048540}
   rigidBody: {fileID: 4150635816903032693}

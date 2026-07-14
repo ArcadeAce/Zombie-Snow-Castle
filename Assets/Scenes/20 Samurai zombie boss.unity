@@ -7492,7 +7492,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.99736077, b: 0.995283, a: 1}
   m_Intensity: 0.8
-  m_Range: 100
+  m_Range: 53.2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8837,7 +8837,7 @@ GameObject:
   - component: {fileID: 2610680442721332634}
   - component: {fileID: 2907063262634725941}
   m_Layer: 0
-  m_Name: Scene switch closing cave door twentythree
+  m_Name: Scene switch closing cave door Samurai zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10096,7 +10096,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 61.8
+  m_Range: 16.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -10154,7 +10154,7 @@ Transform:
   m_GameObject: {fileID: 4184183682265383028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.91, y: 1.93, z: 7.81}
+  m_LocalPosition: {x: -26.91, y: 3.67, z: 7.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10964,7 +10964,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 100
+  m_Range: 57.7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -13501,7 +13501,7 @@ Transform:
   m_GameObject: {fileID: 6315019908286411921}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.48, y: 2.88, z: 3.79}
+  m_LocalPosition: {x: -24.48, y: 2.88, z: 1.94}
   m_LocalScale: {x: 18.535826, y: 9.708924, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14795,7 +14795,7 @@ GameObject:
   - component: {fileID: 7687393819051217155}
   - component: {fileID: 7405023173056163500}
   m_Layer: 0
-  m_Name: Boss room cave door closing Samurai
+  m_Name: Boss room cave door Samurai Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15787,7 +15787,7 @@ Transform:
   m_GameObject: {fileID: 2907063262634725946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -60.21, y: 15.09, z: 0.6079197}
+  m_LocalPosition: {x: -59.79, y: 14.59, z: 0.61}
   m_LocalScale: {x: 12.62409, y: 4.3385506, z: 1.7841}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15971,7 +15971,7 @@ GameObject:
   - component: {fileID: 8390802486080310932}
   - component: {fileID: 8390802486080310922}
   m_Layer: 0
-  m_Name: Falling cave door boss room Samurai
+  m_Name: Boss room cave door for Samurai Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16218,7 +16218,7 @@ Animator:
   m_GameObject: {fileID: 2907063262634725946}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b559457bb6fa51041a9dd632e76451e6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16262,8 +16262,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0678055, y: 2.888939, z: 0.3125546}
-  m_Center: {x: -0.021899303, y: -2.045222, z: 4.641921}
+  m_Size: {x: 2.0678055, y: 2.888939, z: 1.3915237}
+  m_Center: {x: -0.0218993, y: -2.045222, z: 4.6293373}
 --- !u!82 &8469358327308964219
 AudioSource:
   m_ObjectHideFlags: 0

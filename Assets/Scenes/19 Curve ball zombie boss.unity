@@ -1988,7 +1988,7 @@ GameObject:
   - component: {fileID: 2610680442721332634}
   - component: {fileID: 2907063262634725941}
   m_Layer: 0
-  m_Name: Scene switch closing cave door (then number)
+  m_Name: Scene switch cave door for curveball zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2029,9 +2029,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 4872367755201154657, guid: 597e4bc7805bcd24e9b61d676971db4b, type: 3}
-  bossMusic: 
-  distance: 5
   BossRoomCaveDoorOpen: {fileID: 0}
+  bossMusic: 
+  DistanceZombieBossAppearsFromThePlayer: 0
 --- !u!65 &2967160248081552243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4218,7 +4218,7 @@ GameObject:
   - component: {fileID: 7701056732367047658}
   - component: {fileID: 6847471713813618035}
   m_Layer: 0
-  m_Name: Opening boss room cave door (then put the zombie name)
+  m_Name: Opening boss room cave door curveball zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4286,7 +4286,7 @@ GameObject:
   - component: {fileID: 7687393819051217155}
   - component: {fileID: 7405023173056163500}
   m_Layer: 0
-  m_Name: Boss room  cave door closing (then number)
+  m_Name: Boss room falling cave door for curveball zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4650,7 +4650,7 @@ GameObject:
   - component: {fileID: 8390802486080310932}
   - component: {fileID: 8390802486080310922}
   m_Layer: 0
-  m_Name: Falling cave door boss room (then put the number)
+  m_Name: Boss room door for curveball zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
