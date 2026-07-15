@@ -34,17 +34,6 @@ public class PoisonSpit : MonoBehaviour
     }
 
 
-  
-
-
-
-
-
-
-
-
-
-
     //3. Poison spit if hits the wall stays at the wall if possible, and continues with its lifetime animation till it dies//
 
 
