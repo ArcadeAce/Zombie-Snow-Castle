@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10492,7 +10491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 3
+  sceneIndex: 4
 --- !u!4 &2190091072037398919
 Transform:
   m_ObjectHideFlags: 0
@@ -13666,7 +13665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 2705068628570221113, guid: 6a7946be02a70e941b1fcda85a2683fc, type: 3}
   BossRoomCaveDoorOpen: {fileID: 1711650885}
-  bossMusic: Boss music
+  bossMusic: Boss music best
   DistanceZombieBossAppearsFromThePlayer: 9
 --- !u!4 &3909925892092248634
 Transform:
