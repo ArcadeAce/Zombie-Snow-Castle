@@ -1142,7 +1142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1029286068034449262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1648,7 +1648,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2286082887755048310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2028,9 +2028,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 4872367755201154657, guid: 597e4bc7805bcd24e9b61d676971db4b, type: 3}
-  BossRoomCaveDoorOpen: {fileID: 0}
-  bossMusic: Boss music best
-  DistanceZombieBossAppearsFromThePlayer: 0
+  BossRoomCaveDoorOpen: {fileID: 7400347598001206349}
+  bossMusic: Boss music
+  DistanceZombieBossAppearsFromThePlayer: 8.14
 --- !u!65 &2967160248081552243
 BoxCollider:
   m_ObjectHideFlags: 0

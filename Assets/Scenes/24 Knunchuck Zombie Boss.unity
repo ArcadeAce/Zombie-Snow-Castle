@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5826,7 +5825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1013624718595101355
 Transform:
   m_ObjectHideFlags: 0
@@ -8602,7 +8601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 4872367755201154657, guid: 597e4bc7805bcd24e9b61d676971db4b, type: 3}
   BossRoomCaveDoorOpen: {fileID: 0}
-  bossMusic: 
+  bossMusic: Boss music
   DistanceZombieBossAppearsFromThePlayer: 0
 --- !u!65 &2967160248081552243
 BoxCollider:
@@ -8930,7 +8929,7 @@ Transform:
   m_GameObject: {fileID: 1626027671767325370}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 117, y: 0.35, z: 65.3}
+  m_LocalPosition: {x: 111.07, y: 0.35, z: 63.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

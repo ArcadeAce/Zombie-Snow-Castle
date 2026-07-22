@@ -5301,7 +5301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 8544580526886984608, guid: 3521b5b00b5858541a9003e4e2e84bf3, type: 3}
   BossRoomCaveDoorOpen: {fileID: 8662028199409616948}
-  bossMusic: Best boss music vzion
+  bossMusic: Boss music
   DistanceZombieBossAppearsFromThePlayer: 7
 --- !u!65 &2967160248081552243
 BoxCollider:
@@ -15480,7 +15480,7 @@ Transform:
   m_GameObject: {fileID: 5484583778781362773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7660445, z: -0, w: -0.6427876}
-  m_LocalPosition: {x: 185.49986, y: 0.26, z: 63.50495}
+  m_LocalPosition: {x: 179.48, y: 0.26, z: 62.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

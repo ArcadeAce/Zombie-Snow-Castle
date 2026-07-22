@@ -2289,17 +2289,11 @@ MonoBehaviour:
   - audioclip: {fileID: 8300000, guid: f7e44587eb1f33e48a2939570b295e87, type: 3}
     pitch: 1
     threeD: 1
-  - audioclip: {fileID: 8300000, guid: c84a8f492aa8e6c4196a2dbd6987ce98, type: 3}
-    pitch: 0.7
-    threeD: 1
-  - audioclip: {fileID: 8300000, guid: 3df2c36b013e60343be88ca3244977d7, type: 3}
-    pitch: 0.7
-    threeD: 1
   musics:
   - audioclip: {fileID: 8300000, guid: b54fb7fda49121f41b21d6ed649ebf6c, type: 3}
     pitch: 1
     threeD: 0
-  - audioclip: {fileID: 8300000, guid: b24b341628e571c439dc68a4a79c96a6, type: 3}
+  - audioclip: {fileID: 8300000, guid: 58be3211be1ebbf46a0f4a11b1dde591, type: 3}
     pitch: 1
     threeD: 0
   - audioclip: {fileID: 8300000, guid: cff193b69e4147e458cbb744cdf0dc7e, type: 3}
@@ -2317,13 +2311,7 @@ MonoBehaviour:
   - audioclip: {fileID: 8300000, guid: 51dbf1f3de78dba4eb2abb7bb77ce99c, type: 3}
     pitch: 1
     threeD: 0
-  - audioclip: {fileID: 8300000, guid: 5ada7b831e224bb4fb61027ff26979b2, type: 3}
-    pitch: 1
-    threeD: 0
-  - audioclip: {fileID: 8300000, guid: 58be3211be1ebbf46a0f4a11b1dde591, type: 3}
-    pitch: 1
-    threeD: 0
-  - audioclip: {fileID: 8300000, guid: 07a97f3dcfa17fa478e0743ed1520479, type: 3}
+  - audioclip: {fileID: 8300000, guid: b24b341628e571c439dc68a4a79c96a6, type: 3}
     pitch: 1
     threeD: 0
   - audioclip: {fileID: 8300000, guid: 5ada7b831e224bb4fb61027ff26979b2, type: 3}

@@ -153,9 +153,9 @@ public class Enemy : MonoBehaviour
             // If this enemy is a boss, handle boss-related actions
             GameManager.UIManager.TurnNameOff();
             AudioManager.Instance.StopMusic("Boss music");
-
-            //use AudioManager.Instance.PlayEffect("example"); for adding all sounds.
             
+            //use AudioManager.Instance.PlayEffect("example"); for adding all sounds.
+
             AudioManager.Instance.PlayEffect("Boss death music");
             AudioManager.Instance.PlayEffect("Grenade explosion sound and zombie exploding sound");
 

@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.034794625, g: 0.23082665, b: 0.39047313, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15497,39 +15496,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1520670129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1520670130}
-  m_Layer: 0
-  m_Name: 'Notes: For fast FPS Controller at front of the door its X513 Y30 Z1403
-    the FPS controller must be backward and up in the air to give time for the snow
-    to fall.'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1520670130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520670129}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 414.6477, y: -10.152023, z: 1438.385}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719996552
 GameObject:
   m_ObjectHideFlags: 0
@@ -15587,6 +15553,7 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -39961,7 +39928,7 @@ Transform:
   m_GameObject: {fileID: 784798388054736409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.580017, y: 36.975, z: -87.380005}
+  m_LocalPosition: {x: -59.579987, y: 36.975, z: -87.37998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41835,7 +41802,7 @@ Transform:
   m_GameObject: {fileID: 7672414690579518668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.580017, y: 36.975, z: -87.380005}
+  m_LocalPosition: {x: -59.579987, y: 36.975, z: -87.37998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42142,8 +42109,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704546471737186358}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.99932843, z: 0, w: 0.036643766}
-  m_LocalPosition: {x: 368.6, y: 33.08, z: 1223}
+  m_LocalRotation: {x: 0, y: 0.043619223, z: -0, w: -0.99904823}
+  m_LocalPosition: {x: 542.6, y: 2.35, z: 1470.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42152,7 +42119,7 @@ Transform:
   - {fileID: 2332455848093792116}
   - {fileID: 2167179760128164705}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -175.8, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -365, z: 0}
 --- !u!23 &8690589649806843520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42215,7 +42182,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1898678602}
-  - {fileID: 1520670130}
   - {fileID: 705507995}
   - {fileID: 680319723}
   - {fileID: 8619991366773476006}

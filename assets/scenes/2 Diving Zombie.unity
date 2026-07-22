@@ -12258,7 +12258,7 @@ Transform:
   m_GameObject: {fileID: 1626027671256242330}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.28, y: 0.04, z: -75.98}
+  m_LocalPosition: {x: 4.43, y: 0.04, z: -74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18386,7 +18386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 5313283723412648743, guid: b6cd902885331a046968099270f028cd, type: 3}
   BossRoomCaveDoorOpen: {fileID: 6676315938791505736}
-  bossMusic: Boss music best
+  bossMusic: Boss music
   DistanceZombieBossAppearsFromThePlayer: 20
 --- !u!1 &7623416121537163338
 GameObject:
