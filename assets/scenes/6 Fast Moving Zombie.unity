@@ -5301,7 +5301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 8544580526886984608, guid: 3521b5b00b5858541a9003e4e2e84bf3, type: 3}
   BossRoomCaveDoorOpen: {fileID: 8662028199409616948}
-  bossMusic: Boss music
+  bossMusic: Boss music best
   DistanceZombieBossAppearsFromThePlayer: 7
 --- !u!65 &2967160248081552243
 BoxCollider:

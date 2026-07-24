@@ -9949,7 +9949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 40
   zombieBossDamage: 40
   hitEffect: {fileID: 954447369132642815}
   deathExplosion: {fileID: 6385468872516001201}

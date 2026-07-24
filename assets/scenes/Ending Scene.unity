@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1150,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe8bb115508310428855c4793eeb6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 1
+  scrollSpeed: 4
 --- !u!1 &1381821804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,12 +2099,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nProps for zombie Bosses:\r\n\r\n\r\nGrenade throwing zombies grenade:\r\nChanges
-    were made, some things deleted.\r\n\"MK2 Grenade\" (https://skfb.ly/Lo8H) by
-    Pixel is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nGrenade
-    Throwing Zombies Helmet:\r\nChanges were made, some things deleted.\r\n\"Fox
-    X Supreme Helmet\" (https://skfb.ly/op9YU) by Muhammad Seno Aji is licensed under
-    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nChemical
+  m_text: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProps for zombie Bosses:\r\n\r\n\r\nGrenade
+    throwing zombies grenade:\r\nChanges were made, some things deleted.\r\n\"MK2
+    Grenade\" (https://skfb.ly/Lo8H) by Pixel is licensed under Creative Commons
+    Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nGrenade Throwing
+    Zombies Helmet:\r\nChanges were made, some things deleted.\r\n\"Fox X Supreme
+    Helmet\" (https://skfb.ly/op9YU) by Muhammad Seno Aji is licensed under Creative
+    Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\n\r\nChemical
     Zombies lab coat:\r\n\"Doctor - Sketchfab Weekly - 13 Mar'23\" (https://skfb.ly/oFrH9)
     by BrushDip is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\r\nChemical
     Zombies Test Tube was made in Blender 3D.\r\nThank you Blender!\r\nBig Hit Zombie

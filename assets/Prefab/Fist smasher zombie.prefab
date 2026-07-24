@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.16361882, y: 0.042021897, z: 0.026527667, w: 0.9852712}
   m_LocalPosition: {x: -0, y: 1.5523188, z: 0.0000000029134708}
-  m_LocalScale: {x: 1, y: 1, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1.29}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7931376695115714323}
@@ -5534,7 +5534,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.16362314, y: 0.0422882, z: 0.0260504, w: 0.9852719}
   m_LocalPosition: {x: -0, y: 1.3582819, z: 0.0000000023285158}
-  m_LocalScale: {x: 1, y: 1, z: 1.26}
+  m_LocalScale: {x: 1, y: 1, z: 1.09}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5373720294764240776}
@@ -21379,7 +21379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 270
+  health: 40
   zombieBossDamage: 40
   hitEffect: {fileID: 500652540849775555}
   deathExplosion: {fileID: 2901841190029140639}

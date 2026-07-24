@@ -8886,7 +8886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombieBoss: {fileID: 1576350769821109140, guid: dd1475e586814ad4eb0115f889d8a00f, type: 3}
   BossRoomCaveDoorOpen: {fileID: 7400347598001206349}
-  bossMusic: Boss music
+  bossMusic: Boss music 3
   DistanceZombieBossAppearsFromThePlayer: 8
 --- !u!65 &2967160248081552243
 BoxCollider:
@@ -13543,8 +13543,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2839416, y: 1, z: 2.029031}
-  m_Center: {x: -0.040288355, y: 0, z: -2.0854461}
+  m_Size: {x: 1.2839416, y: 1, z: 4.222716}
+  m_Center: {x: -0.040288355, y: 0, z: 3.0541894}
 --- !u!4 &6331121915750247678
 Transform:
   m_ObjectHideFlags: 0

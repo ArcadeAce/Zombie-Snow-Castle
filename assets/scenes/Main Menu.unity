@@ -2317,6 +2317,9 @@ MonoBehaviour:
   - audioclip: {fileID: 8300000, guid: 5ada7b831e224bb4fb61027ff26979b2, type: 3}
     pitch: 1
     threeD: 0
+  - audioclip: {fileID: 8300000, guid: 07a97f3dcfa17fa478e0743ed1520479, type: 3}
+    pitch: 1
+    threeD: 0
 --- !u!1 &2048816670
 GameObject:
   m_ObjectHideFlags: 0
