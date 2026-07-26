@@ -31889,7 +31889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 400
   zombieBossDamage: 20
   hitEffect: {fileID: 380082399427049986}
   deathExplosion: {fileID: 4439564863789048540}
@@ -31905,7 +31905,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7851888405818413949}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.07
+  m_Radius: 0.3
   m_Speed: 3.8
   m_Acceleration: 200
   avoidancePriority: 50
@@ -31914,7 +31914,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.77
+  m_Height: 0.6
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
