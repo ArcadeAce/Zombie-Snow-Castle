@@ -8,20 +8,22 @@ public class SliderZombie : Enemy
     [Header("Pitch Settings")]
     public float weakPitchDistance = 20f;
     public float powerfulPitchDistance = 40f;
-    public float attackCooldown = 2f;
 
-    private float attackTimer;
+    [Header("Pitch Cooldown")]
+    public float pitchCooldown = 12f;   // Throws every 12 seconds
+    private float pitchTimer = 0f;
 
     public override void Update()
     {
         base.Update(); // Keep chasing logic from Enemy.cs
 
-        attackTimer -= Time.deltaTime;
+        pitchTimer += Time.deltaTime;
 
-        // If player is in range AND cooldown finished
-        if (playerInRange && attackTimer <= 0f)
+        // Only throw every 12 seconds AND only if player is in range
+        if (playerInRange && pitchTimer >= pitchCooldown)
         {
             DecidePitchType();
+            pitchTimer = 0f; // Reset timer
         }
     }
 
@@ -38,19 +40,17 @@ public class SliderZombie : Enemy
         {
             ThrowWeakPitch();
         }
-
-        attackTimer = attackCooldown;
     }
 
     private void ThrowWeakPitch()
     {
-        Animator.SetTrigger("WeakPitch");
+        Animator.SetTrigger("WeakPitch"); // Plays "Slider zombie slow pitching"
         sliderZombieThrow.useSuperPitch = false;
     }
 
     private void ThrowPowerfulPitch()
     {
-        Animator.SetTrigger("PowerfulPitch");
+        Animator.SetTrigger("PowerfulPitch"); // Plays "Slider zombie powerful pitch"
         sliderZombieThrow.useSuperPitch = true;
     }
 }

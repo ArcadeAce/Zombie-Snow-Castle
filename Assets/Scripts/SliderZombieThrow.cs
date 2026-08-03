@@ -3,46 +3,45 @@ using UnityEngine;
 public class SliderZombieThrow : MonoBehaviour
 {
     [Header("Baseball Prefabs")]
-    public GameObject weakBaseballPrefab;     // The normal baseball the zombie throws
-    public GameObject superBaseballPrefab;    // The flame baseball for the super pitch
+    public GameObject weakBaseballPrefab;     // Normal baseball
+    public GameObject superBaseballPrefab;    // Super baseball
 
     [Header("Spawn Point")]
-    public Transform baseballSpawnPoint;      // Empty object on the zombie's hand where the baseball appears
+    public Transform baseballSpawnPoint;      // Empty on the zombie's hand
 
     [Header("Pitch Speeds")]
-    public float weakPitchSpeed = 20f;        // Speed of the weak baseball
-    public float superPitchSpeed = 40f;       // Speed of the super baseball
+    public float weakPitchSpeed = 20f;        // Weak baseball speed
+    public float superPitchSpeed = 40f;       // Super baseball speed
 
     [Header("Attack Settings")]
-    public bool useSuperPitch = false;        // True = super pitch, False = weak pitch
+    public bool useSuperPitch = false;        // True = super pitch
 
-    private Animator animator;                // Reference to the Animator on the zombie
+    private Animator animator;
 
     private void Start()
     {
-        // Get the Animator from the same GameObject this script is attached to
         animator = GetComponent<Animator>();
     }
 
-    // This function is called by the animation event at the exact release frame
+    // Called by animation event at the exact throw frame
     public void SpawnBaseball()
     {
-        // Choose which baseball to throw based on the attack type
+        // Pick correct baseball prefab
         GameObject prefabToThrow = useSuperPitch ? superBaseballPrefab : weakBaseballPrefab;
 
-        // Create the baseball at the hand's spawn point
+        // Spawn baseball at the hand
         GameObject baseball = Instantiate(prefabToThrow, baseballSpawnPoint.position, baseballSpawnPoint.rotation);
 
-        // Get the Rigidbody so we can make it move
+        // Move baseball toward the player
         Rigidbody rb = baseball.GetComponent<Rigidbody>();
 
-        // The forward direction of the hand (where the baseball should fly)
-        Vector3 direction = baseballSpawnPoint.forward;
+        // Direction from zombie hand to player
+        Vector3 direction = (PlayerController.Instance.cam.transform.position - baseballSpawnPoint.position).normalized;
 
-        // Pick the correct speed depending on weak or super pitch
+        // Pick correct speed
         float speed = useSuperPitch ? superPitchSpeed : weakPitchSpeed;
 
-        // Make the baseball fly forward using velocity
+        // Launch baseball
         rb.velocity = direction * speed;
     }
 }

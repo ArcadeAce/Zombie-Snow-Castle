@@ -29728,7 +29728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2400
-  zombieBossDamage: 50
+  zombieBossDamage: 19
   hitEffect: {fileID: 5074809185208266834}
   deathExplosion: {fileID: 3312733457900114303}
   rigidBody: {fileID: 3809929138450510579}
@@ -39518,7 +39518,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44421,7 +44420,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: fafa06e8ef8c7fb4eac7a74c65cf3a06, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
