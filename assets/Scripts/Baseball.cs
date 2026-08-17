@@ -13,7 +13,7 @@ public class Baseball : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject, 20f); // Destroy after 5 seconds if it doesn't hit the player
+            Destroy(gameObject, 20f); // Destroy after 20 seconds if it doesn't hit the player
         }
     }
 }

@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9542984ee99d5240a186033e91a2097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
-  zombieBossDamage: 90
+  health: 400
+  zombieBossDamage: 1
   hitEffect: {fileID: 6801198889705086761}
   deathExplosion: {fileID: 8730531420714106455}
   rigidBody: {fileID: 7070044117291453743}
@@ -147,10 +147,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6385399
-  m_Height: 2.5270147
+  m_Radius: 0.76
+  m_Height: 2.38
   m_Direction: 1
-  m_Center: {x: -0.13853993, y: 1.54, z: 0}
+  m_Center: {x: -0.27, y: 1.36, z: 0}
 --- !u!1001 &4590826778276853796
 PrefabInstance:
   m_ObjectHideFlags: 0

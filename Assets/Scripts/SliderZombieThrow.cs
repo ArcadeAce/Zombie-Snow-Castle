@@ -1,48 +1,40 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SliderZombieThrow : MonoBehaviour
 {
     [Header("Baseball Prefabs")]
-    public GameObject weakBaseballPrefab;     // Normal baseball
-    public GameObject superBaseballPrefab;    // Super baseball
+    public GameObject weakBaseballPrefab;
+    public GameObject superBaseballPrefab;
 
-    [Header("Spawn Point")]
-    public Transform baseballSpawnPoint;      // Empty on the zombie's hand
+    [Header("Spawn Points")]
+    public Transform weakSpawnPoint;
+    public Transform superSpawnPoint;
 
     [Header("Pitch Speeds")]
-    public float weakPitchSpeed = 20f;        // Weak baseball speed
-    public float superPitchSpeed = 40f;       // Super baseball speed
+    public float weakPitchSpeed = 20f;
+    public float superPitchSpeed = 40f;
 
     [Header("Attack Settings")]
-    public bool useSuperPitch = false;        // True = super pitch
+    public bool useSuperPitch = false;
 
-    private Animator animator;
-
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    // Called by animation event at the exact throw frame
+    // Animation event
     public void SpawnBaseball()
     {
-        // Pick correct baseball prefab
         GameObject prefabToThrow = useSuperPitch ? superBaseballPrefab : weakBaseballPrefab;
+        Transform spawnPoint = useSuperPitch ? superSpawnPoint : weakSpawnPoint;
 
-        // Spawn baseball at the hand
-        GameObject baseball = Instantiate(prefabToThrow, baseballSpawnPoint.position, baseballSpawnPoint.rotation);
-
-        // Move baseball toward the player
+        GameObject baseball = Instantiate(prefabToThrow, spawnPoint.position, spawnPoint.rotation);
         Rigidbody rb = baseball.GetComponent<Rigidbody>();
+        Debug.Break();
 
-        // Direction from zombie hand to player
-        Vector3 direction = (PlayerController.Instance.cam.transform.position - baseballSpawnPoint.position).normalized;
-
-        // Pick correct speed
+        Vector3 direction = (PlayerController.Instance.cam.transform.position - spawnPoint.position).normalized;
         float speed = useSuperPitch ? superPitchSpeed : weakPitchSpeed;
 
-        // Launch baseball
         rb.velocity = direction * speed;
+
+        Destroy(baseball, 20f);
     }
 }
+
+
 

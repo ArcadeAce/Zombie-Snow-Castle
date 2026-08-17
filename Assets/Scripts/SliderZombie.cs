@@ -5,13 +5,11 @@ public class SliderZombie : Enemy
     [Header("Slider Zombie Throw Script")]
     public SliderZombieThrow sliderZombieThrow;
 
-    [Header("Pitch Settings")]
-    public float weakPitchDistance = 20f;
-    public float powerfulPitchDistance = 40f;
-
-    [Header("Pitch Cooldown")]
-    public float pitchCooldown = 12f;   // Throws every 12 seconds
+    [Header("Pitch Timing")]
+    public float pitchInterval = 10f;   // Every 10 seconds
     private float pitchTimer = 0f;
+
+    private bool nextIsSuper = false;   // Controls the cycle
 
     public override void Update()
     {
@@ -19,39 +17,32 @@ public class SliderZombie : Enemy
 
         pitchTimer += Time.deltaTime;
 
-        // Only throw every 12 seconds AND only if player is in range
-        if (playerInRange && pitchTimer >= pitchCooldown)
+        if (pitchTimer >= pitchInterval)
         {
-            DecidePitchType();
-            pitchTimer = 0f; // Reset timer
+            PlayNextPitch();
+            pitchTimer = 0f;
         }
     }
 
-    private void DecidePitchType()
+    private void PlayNextPitch()
     {
-        float distance = Vector3.Distance(transform.position, PlayerController.Instance.cam.transform.position);
-
-        // Powerful pitch if far away
-        if (distance > weakPitchDistance)
+        if (nextIsSuper)
         {
-            ThrowPowerfulPitch();
+            // Powerful pitch
+            sliderZombieThrow.useSuperPitch = true;
+            Animator.SetTrigger("PowerfulPitch");
+            nextIsSuper = false; // Next time will be weak
         }
         else
         {
-            ThrowWeakPitch();
+            // Weak pitch
+            sliderZombieThrow.useSuperPitch = false;
+            Animator.SetTrigger("WeakPitch");
+            nextIsSuper = true; // Next time will be super
         }
     }
-
-    private void ThrowWeakPitch()
-    {
-        Animator.SetTrigger("WeakPitch"); // Plays "Slider zombie slow pitching"
-        sliderZombieThrow.useSuperPitch = false;
-    }
-
-    private void ThrowPowerfulPitch()
-    {
-        Animator.SetTrigger("PowerfulPitch"); // Plays "Slider zombie powerful pitch"
-        sliderZombieThrow.useSuperPitch = true;
-    }
 }
+
+
+
 
