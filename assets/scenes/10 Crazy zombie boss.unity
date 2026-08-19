@@ -7997,7 +7997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb8b20af31eb9044a0c4d46628d6c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadeCountText: {fileID: 702420358851767526}
+  grenadeCountText: {fileID: 6712111139594759836}
   grenadePrefab: {fileID: 8947915845958003508, guid: e3c25e97c0e063b4488831daf60a3766, type: 3}
   grenadeButton: {fileID: 635792197298530334}
   throwPoint: {fileID: 8226591681366147078}
@@ -14747,7 +14747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec97d84f8c4425a45a3744a560cd8dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phosphorusGrenadeCountText: {fileID: 702420358851767526}
+  phosphorusGrenadeCountText: {fileID: 956020121993989076}
   phosphorusGrenadePrefab: {fileID: 8954102797998202907, guid: f630f1e10285f1646af3d1c8ccbf94cc, type: 3}
   phosphorusGrenadeButton: {fileID: 8794895922868140465}
   phosphorusGrenadeThrowPoint: {fileID: 8647036339003537684}

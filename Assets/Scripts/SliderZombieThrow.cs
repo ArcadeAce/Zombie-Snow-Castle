@@ -11,8 +11,8 @@ public class SliderZombieThrow : MonoBehaviour
     public Transform superSpawnPoint;
 
     [Header("Pitch Speeds")]
-    public float weakPitchSpeed = 20f;
-    public float superPitchSpeed = 40f;
+    public float weakPitchSpeed = 57f;
+    public float superPitchSpeed = 57f;
 
     [Header("Attack Settings")]
     public bool useSuperPitch = false;
@@ -25,14 +25,14 @@ public class SliderZombieThrow : MonoBehaviour
 
         GameObject baseball = Instantiate(prefabToThrow, spawnPoint.position, spawnPoint.rotation);
         Rigidbody rb = baseball.GetComponent<Rigidbody>();
-        Debug.Break();
+       
 
         Vector3 direction = (PlayerController.Instance.cam.transform.position - spawnPoint.position).normalized;
         float speed = useSuperPitch ? superPitchSpeed : weakPitchSpeed;
 
         rb.velocity = direction * speed;
 
-        Destroy(baseball, 20f);
+        Destroy(baseball, 7f);
     }
 }
 
