@@ -5219,7 +5219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ad1e233447de6409d34af0d2326b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 2000
   zombieBossDamage: 20
   hitEffect: {fileID: 3449046550558757135}
   deathExplosion: {fileID: 3529881778164707530}
@@ -5253,7 +5253,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!195 &1230110469654917686
 NavMeshAgent:
@@ -20650,7 +20650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakBaseballPrefab: {fileID: 729084729455324428, guid: a01e18706201cad42967bf5eb646d13d, type: 3}
-  superBaseballPrefab: {fileID: 1040180891909358141}
+  superBaseballPrefab: {fileID: 3712745287776081787, guid: 3116f320daf380e4eb64643064aeef17, type: 3}
   weakSpawnPoint: {fileID: 1423428599632443699}
   superSpawnPoint: {fileID: 4591202349814635890}
   weakPitchSpeed: 57

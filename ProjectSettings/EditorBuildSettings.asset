@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/17 Jujitsu zombie boss.unity
     guid: 1a007897ea6771146bddf8ad4cb7c096
   - enabled: 1
+    path: Assets/Scenes/19 Curve ball zombie boss.unity
+    guid: 92d5cec9584750448bb6324adedcbc86
+  - enabled: 1
     path: Assets/Scenes/20 Samurai zombie boss.unity
     guid: a3415c0ab2d671d41919fc63ae4d3458
   - enabled: 1
