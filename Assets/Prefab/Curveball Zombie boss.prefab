@@ -12340,8 +12340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c217b81f994b2f4388ee67a04da8412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1700
-  zombieBossDamage: 30
+  health: 1500
+  zombieBossDamage: 20
   hitEffect: {fileID: 6706715798332598807}
   deathExplosion: {fileID: 7557254557434050910}
   rigidBody: {fileID: 2366048259369017500}

@@ -13,7 +13,7 @@ public class SliderZombiesBaseball : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject, 7f); // Destroy after 20 seconds if it doesn't hit the player
+            Destroy(gameObject, 7f); // Destroy the baseball after 7 seconds if it doesn't hit the player
         }
     }
 }

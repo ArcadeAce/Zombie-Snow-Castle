@@ -10464,7 +10464,7 @@ Transform:
   m_GameObject: {fileID: 1626027670862202159}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.3, y: -13.7, z: 199.4}
+  m_LocalPosition: {x: 90.2, y: -20.9, z: 272.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11081,7 +11081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea96548cb5e1aa4899f58851e808bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 18
+  sceneIndex: 19
 --- !u!1 &3914799472379590322
 GameObject:
   m_ObjectHideFlags: 0
@@ -11726,7 +11726,7 @@ Transform:
   m_GameObject: {fileID: 4422467275300189764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.52, y: 0.751, z: 67.51}
+  m_LocalPosition: {x: 33, y: 0.751, z: 78.9}
   m_LocalScale: {x: 1.0682, y: 1, z: 1.5938704}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13877,6 +13877,7 @@ MonoBehaviour:
   twinTurbosButton: {fileID: 635792198879819019}
   shotgunButton: {fileID: 34455066694569495}
   lookSensitivityPanel: {fileID: 5148874640018012210}
+  chargeUpButton: {fileID: 0}
 --- !u!114 &6103112641490292052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16386,6 +16387,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 399061719362963466}
+  barrelRotationSpeed: 200
 --- !u!4 &8016411758991837298
 Transform:
   m_ObjectHideFlags: 0
