@@ -184,15 +184,38 @@ public class UIManager : MonoBehaviour
             chargeUpButton.SetActive(false);
     }
 
-    // ⭐ NEW — Charge‑Up Button OnClick handler
+    // ⭐ Disable charge-up button (after charging once)
+    public void DisableChargeUpButton()
+    {
+        if (chargeUpButton != null)
+        {
+            var btn = chargeUpButton.GetComponent<UnityEngine.UI.Button>();
+            if (btn != null)
+                btn.interactable = false;
+        }
+    }
+
+    // ⭐ Enable charge-up button (after firing)
+    public void EnableChargeUpButton()
+    {
+        if (chargeUpButton != null)
+        {
+            var btn = chargeUpButton.GetComponent<UnityEngine.UI.Button>();
+            if (btn != null)
+                btn.interactable = true;
+        }
+    }
+
+    // ⭐ Charge‑Up Button OnClick handler
     public void OnChargeUpPressed()
     {
         if (PlayerManager.Instance.WeaponSwitcher.activeWeapon is Shotgun shotgun)
         {
-            shotgun.SpinBarrel();   // This rotates the barrel –70° on Z
+            shotgun.SpinBarrel();   // Barrel rotates once
         }
     }
 }
+
 
 
 

@@ -10,9 +10,9 @@ public class Shotgun : Weapon
     public float barrelRotationSpeed = 200f;   // Adjustable in Inspector
     private bool isSpinning = false;
 
-    // Charge-up system
+    // ⭐ Charge-up system
     private int chargeLevel = 0;
-    private const int maxCharge = 3;
+    private bool chargeLocked = false; // Prevents more than one charge
 
     public override void Start()
     {
@@ -30,6 +30,10 @@ public class Shotgun : Weapon
     // ===========================
     public void SpinBarrel()
     {
+        // ⭐ Prevent charging more than once
+        if (chargeLocked)
+            return;
+
         if (barrel == null || isSpinning)
             return;
 
@@ -40,9 +44,15 @@ public class Shotgun : Weapon
         // Smooth rotation coroutine
         StartCoroutine(SmoothSpin());
 
-        // Increase charge level
-        if (chargeLevel < maxCharge)
-            chargeLevel++;
+        // ⭐ Set charge level to 1 (only one charge allowed for now)
+        chargeLevel = 1;
+
+        // ⭐ Lock the charge-up system
+        chargeLocked = true;
+
+        // ⭐ Disable the charge-up button visually
+        if (GameManager.UIManager != null)
+            GameManager.UIManager.DisableChargeUpButton();
     }
 
     private IEnumerator SmoothSpin()
@@ -113,10 +123,16 @@ public class Shotgun : Weapon
         else
             Debug.LogWarning("[Shotgun] UIManager is NULL — cannot update UI.");
 
-        // Reset charge after firing
+        // ⭐ Reset charge system after firing
         chargeLevel = 0;
+        chargeLocked = false;
+
+        // ⭐ Re-enable the charge-up button
+        if (GameManager.UIManager != null)
+            GameManager.UIManager.EnableChargeUpButton();
     }
 }
+
 
 
 

@@ -71937,6 +71937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5038820087566355954}
   - component: {fileID: 8761224427549567020}
+  - component: {fileID: 7004194300503342049}
   - component: {fileID: 5638726713635226239}
   m_Layer: 0
   m_Name: Samurai Zombie model
@@ -71991,6 +71992,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8203015f27e7eab43800ef263c4b5b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7004194300503342049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667406849613141832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc2c4bac2c3e34419c486b630bf5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &5638726713635226239
