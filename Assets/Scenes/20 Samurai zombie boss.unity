@@ -122,6 +122,234 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &37380794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &45621078
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -39.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &148654243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &171971579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &236741009
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +895,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &770515401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 43.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &839558879
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +1164,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2536216617148612004, guid: 86c635b1119d0ce4fb315249f5714b50, type: 3}
+--- !u!1001 &978075897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &1214288496
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1335,120 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 161.45381, y: 150.4057}
   m_EdgeRadius: 0
+--- !u!1001 &1315411987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &1338479075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &1374306569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,6 +1606,63 @@ PrefabInstance:
     - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
       propertyPath: m_Name
       value: Twin turbos ammo clip (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &1397129737
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -44.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1318,6 +1831,63 @@ Transform:
   - {fileID: 1374306570}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1626019042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &1727400218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +2051,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &1869470093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &1948585050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +2214,120 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2536216617148612004, guid: 86c635b1119d0ce4fb315249f5714b50, type: 3}
+--- !u!1001 &1971252247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -38.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 43.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+--- !u!1001 &1992952476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150142670988150302, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525999092479876260, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
+      propertyPath: m_Name
+      value: Twin turbos ammo clip (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 221f0d66d959a6545a210789a9e0a8a4, type: 3}
 --- !u!1 &2017679387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +2569,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7509174181791410127}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6103112641573506005}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToShotgun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &58702847962366670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4658,8 +5411,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6103112642897466907, guid: 7df881b22e870414e822f0d9d028591e, type: 3}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 6103112641573506005}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
@@ -5225,9 +5978,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SwitchWeapon
+      - m_Target: {fileID: 6103112641573506005}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToTwinTurbos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17770,3 +18523,16 @@ SceneRoots:
   - {fileID: 1382509688}
   - {fileID: 1796968384}
   - {fileID: 627274432}
+  - {fileID: 1338479075}
+  - {fileID: 1315411987}
+  - {fileID: 171971579}
+  - {fileID: 148654243}
+  - {fileID: 1869470093}
+  - {fileID: 770515401}
+  - {fileID: 1971252247}
+  - {fileID: 1397129737}
+  - {fileID: 45621078}
+  - {fileID: 978075897}
+  - {fileID: 1992952476}
+  - {fileID: 37380794}
+  - {fileID: 1626019042}

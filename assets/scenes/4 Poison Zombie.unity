@@ -417,67 +417,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 1f02dc4878d63c7468a34bcb6157f0e6, type: 3}
---- !u!1001 &159462461
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580484540491872627, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208121698227839945, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_Name
-      value: Shotgun
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208121698227839945, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e9e278beb1942e844a7d3ca669112c5f, type: 3}
 --- !u!1 &297809191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +2937,6 @@ GameObject:
   - component: {fileID: 1478478222}
   - component: {fileID: 1478478221}
   - component: {fileID: 1478478220}
-  - component: {fileID: 1478478223}
   m_Layer: 5
   m_Name: Charge up button
   m_TagString: Untagged
@@ -3070,7 +3008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1478478223}
+      - m_Target: {fileID: 8041667010000476128}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnChargeUpPressed
         m_Mode: 1
@@ -3120,31 +3058,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478478218}
   m_CullTransparentMesh: 1
---- !u!114 &1478478223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478478218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c47ce7a0cce334390782522873e441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthBar: {fileID: 0}
-  pauseDisplay: {fileID: 0}
-  ForZombieBossNameCurrentlyFighting: {fileID: 0}
-  TwinTurbosCurrentBullets: {fileID: 0}
-  TwinTurbosTotalBullets: {fileID: 0}
-  ShotgunCurrentBullets: {fileID: 0}
-  ShotgunTotalBullets: {fileID: 0}
-  TwinTurbosBulletsGoingDownWhenFired: {fileID: 0}
-  ForTwinTurbosTotalBulletsRemainingToGoDown: {fileID: 0}
-  twinTurbosButton: {fileID: 0}
-  shotgunButton: {fileID: 0}
-  lookSensitivityPanel: {fileID: 0}
-  chargeUpButton: {fileID: 0}
 --- !u!1 &1530048700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,7 +4658,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7509174182158878706}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8041667010000476128}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToShotgun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &42969516529485448
 GameObject:
   m_ObjectHideFlags: 0
@@ -7725,9 +7650,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SwitchWeapon
+      - m_Target: {fileID: 8041667010000476128}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToTwinTurbos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8158,8 +8083,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6103112642897466907, guid: 7df881b22e870414e822f0d9d028591e, type: 3}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 8041667010000476128}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
@@ -19435,6 +19360,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 399061717552363426}
+  barrelRotationSpeed: 200
 --- !u!1 &8006142697646309364
 GameObject:
   m_ObjectHideFlags: 0
@@ -22035,4 +21961,3 @@ SceneRoots:
   - {fileID: 667914265}
   - {fileID: 1434478988}
   - {fileID: 1132798943}
-  - {fileID: 159462461}

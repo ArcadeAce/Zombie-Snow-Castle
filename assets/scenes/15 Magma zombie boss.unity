@@ -5313,6 +5313,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 5245335052342545689}
+  barrelRotationSpeed: 200
 --- !u!4 &2569967362323934553
 Transform:
   m_ObjectHideFlags: 0
@@ -14900,8 +14901,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6103112642897466907, guid: 7df881b22e870414e822f0d9d028591e, type: 3}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 7261063936938899041}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
@@ -15124,9 +15125,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SwitchWeapon
+      - m_Target: {fileID: 7261063936938899041}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToTwinTurbos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18132,7 +18133,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2699660409341705545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7261063936938899041}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SwitchToShotgun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &5567272624307541344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20099,6 +20112,7 @@ MonoBehaviour:
   twinTurbosButton: {fileID: 5012547438539206680}
   shotgunButton: {fileID: 5564342783513496324}
   lookSensitivityPanel: {fileID: 5506106154111546430}
+  chargeUpButton: {fileID: 0}
 --- !u!114 &7261063936938899044
 MonoBehaviour:
   m_ObjectHideFlags: 0
