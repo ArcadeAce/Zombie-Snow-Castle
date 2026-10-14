@@ -3924,7 +3924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444092, y: 0.0000104904175}
+  m_AnchoredPosition: {x: 13.7, y: 45.32}
   m_SizeDelta: {x: 659.7, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &307746592331685043
@@ -4537,33 +4537,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!54 &729733636638782178
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!224 &811499330435296643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7424,33 +7397,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4078928982723869038}
   m_CullTransparentMesh: 1
---- !u!54 &2707830118301838562
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2738540972126095860
 GameObject:
   m_ObjectHideFlags: 0
@@ -9660,48 +9606,6 @@ Transform:
   - {fileID: 1435088840492687203}
   m_Father: {fileID: 3051818629799578145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &4715543886733091248
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ad9dbf7f0ef23e340a77e99e2ecc0a9d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!222 &4732203990814705804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10735,14 +10639,6 @@ RectTransform:
   m_AnchoredPosition: {x: 25, y: 9.9}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0, y: 0.5}
---- !u!33 &5269388184631069562
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  m_Mesh: {fileID: -4404790747583470383, guid: 4c589d54834464c488412e4734d5f448, type: 3}
 --- !u!222 &5280214140750233196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11016,27 +10912,6 @@ Transform:
   - {fileID: 7584011263312484147}
   m_Father: {fileID: 5908839281224682424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5537836522811473850
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.2368097, y: 17.148136, z: 2.6660662}
-  m_Center: {x: -0.5160648, y: -1.1245027, z: 0.1673078}
 --- !u!4 &5544500789926838311
 Transform:
   m_ObjectHideFlags: 0
@@ -11068,20 +10943,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5595440573912383364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a8fe5b1311a7f4ea76a1e65e68f4f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoToAdd: 20
-  ammoType: TwinTurbos
 --- !u!4 &5598690977597194093
 Transform:
   m_ObjectHideFlags: 0
@@ -11312,21 +11173,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677035882635121798}
   m_Mesh: {fileID: -7429937956110996719, guid: acaf4aee1780d1f43acca6516ba7e14d, type: 3}
---- !u!4 &5853508479853157087
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 67.79511, y: 0.203, z: -0.3}
-  m_LocalScale: {x: -0.23072353, y: -0.097904675, z: -0.48656216}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &5854161562632523181
 Transform:
   m_ObjectHideFlags: 0
@@ -13246,27 +13092,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &6516715663310061669
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5853508479853157087}
-  - component: {fileID: 7066801248718348676}
-  - component: {fileID: 7391547627565569402}
-  - component: {fileID: 4715543886733091248}
-  - component: {fileID: 2707830118301838562}
-  - component: {fileID: 5537836522811473850}
-  m_Layer: 0
-  m_Name: Twin turbos ammo clip (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &6545832526596793717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13530,7 +13355,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 97.1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6741602793234289474
 GameObject:
@@ -13995,20 +13820,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8059843489223663231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7066801248718348676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a8fe5b1311a7f4ea76a1e65e68f4f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoToAdd: 20
-  ammoType: TwinTurbos
 --- !u!1 &7081310980341194697
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,27 +13868,6 @@ Transform:
   - {fileID: 5908839281224682424}
   m_Father: {fileID: 9191732327322111372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7164933708252881338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.2368097, y: 17.148136, z: 2.6660662}
-  m_Center: {x: -0.5160648, y: -1.1245027, z: 0.1673078}
 --- !u!1 &7167197524439032169
 GameObject:
   m_ObjectHideFlags: 0
@@ -14281,14 +14071,6 @@ RectTransform:
   m_AnchoredPosition: {x: 15, y: 9.9}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 1, y: 0.5}
---- !u!33 &7391547627565569402
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516715663310061669}
-  m_Mesh: {fileID: -4404790747583470383, guid: 4c589d54834464c488412e4734d5f448, type: 3}
 --- !u!1 &7400347598001206346
 GameObject:
   m_ObjectHideFlags: 0
@@ -15029,48 +14811,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &7981601107954876336
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ad9dbf7f0ef23e340a77e99e2ecc0a9d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &8007837287646338163
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15786,27 +15526,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &8486096281895968357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9119643250739397855}
-  - component: {fileID: 5595440573912383364}
-  - component: {fileID: 5269388184631069562}
-  - component: {fileID: 7981601107954876336}
-  - component: {fileID: 729733636638782178}
-  - component: {fileID: 7164933708252881338}
-  m_Layer: 0
-  m_Name: Twin turbos ammo clip (12)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &8489297766839190048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19331,21 +19050,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6380699848676666492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &9119643250739397855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486096281895968357}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 75.52, y: 0.194, z: -0.1}
-  m_LocalScale: {x: -0.23072353, y: -0.097904675, z: -0.48656216}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &9127541456126008588
 Transform:
   m_ObjectHideFlags: 0
@@ -19471,5 +19175,3 @@ SceneRoots:
   - {fileID: 355155872}
   - {fileID: 1681381215}
   - {fileID: 1422159331}
-  - {fileID: 5853508479853157087}
-  - {fileID: 9119643250739397855}

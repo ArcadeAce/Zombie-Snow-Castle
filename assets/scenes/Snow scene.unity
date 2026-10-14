@@ -42978,7 +42978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444092, y: 0.0000104904175}
+  m_AnchoredPosition: {x: 10.1, y: 56.67}
   m_SizeDelta: {x: 659.7, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &4422874580026857955
@@ -44554,11 +44554,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Tip: If your lookpad feels slow, press the yellow Pause button in the
-    bottom right corner of this screen and adjust Look Sensitivity.
+    bottom right corner of this screen and adjust the Look Sensitivity.
 
     On some
     smartphone devices the lookpad (for looking around) can be too slow and needs
-    to be adusted in the pause menu with the look sensitivity slider.'
+    to be adjusted in the pause menu with the look sensitivity slider.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -45109,7 +45109,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 102.3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7140798196933481274
 MonoBehaviour:
@@ -45860,7 +45860,7 @@ Transform:
   m_GameObject: {fileID: 5704546471737186358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 491.1, y: 38.196, z: 1379.5}
+  m_LocalPosition: {x: 491, y: 38.6, z: 1379.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

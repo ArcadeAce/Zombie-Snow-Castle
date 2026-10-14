@@ -8007,7 +8007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb8b20af31eb9044a0c4d46628d6c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadeCountText: {fileID: 702420358092344839}
+  grenadeCountText: {fileID: 6335044444352203764}
   grenadePrefab: {fileID: 8947915845958003508, guid: e3c25e97c0e063b4488831daf60a3766, type: 3}
   grenadeButton: {fileID: 635792198620007167}
   throwPoint: {fileID: 8226591680615621351}
@@ -8506,7 +8506,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 91.2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &3321982234941499645
 Transform:
@@ -12410,7 +12410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6103112643094053309
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14796,7 +14796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec97d84f8c4425a45a3744a560cd8dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phosphorusGrenadeCountText: {fileID: 702420358092344839}
+  phosphorusGrenadeCountText: {fileID: 542925524109094588}
   phosphorusGrenadePrefab: {fileID: 8954102797998202907, guid: f630f1e10285f1646af3d1c8ccbf94cc, type: 3}
   phosphorusGrenadeButton: {fileID: 8794895923627055952}
   phosphorusGrenadeThrowPoint: {fileID: 8647036340333403125}
@@ -15580,7 +15580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444092, y: 0.0000104904175}
+  m_AnchoredPosition: {x: -0.000011444092, y: 36.2}
   m_SizeDelta: {x: 659.7, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8446131655436811021
@@ -16551,6 +16551,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 2141808734}
   - {fileID: 1615094295}
+  - {fileID: 6103112641225474600}
+  - {fileID: 3321982234941499645}
   - {fileID: 2008067773990644319}
   - {fileID: 9167585887796089906}
   - {fileID: 1819331218126182108}
@@ -16564,5 +16566,3 @@ SceneRoots:
   - {fileID: 337294901}
   - {fileID: 8234929673193909108}
   - {fileID: 7248192555949040861}
-  - {fileID: 6103112641225474600}
-  - {fileID: 3321982234941499645}

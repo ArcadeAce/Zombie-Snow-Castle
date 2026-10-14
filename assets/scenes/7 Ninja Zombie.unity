@@ -7124,7 +7124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444092, y: 0.0000104904175}
+  m_AnchoredPosition: {x: 8.9, y: 20.63}
   m_SizeDelta: {x: 659.7, y: 92.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &4121964157871779099
@@ -10244,8 +10244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 17
-  SprintSpeed: 6.5
+  MoveSpeed: 24.7
+  SprintSpeed: 9.1
   RotationSpeed: 3
   SpeedChangeRate: 10
   minHorizontalAngle: -55
@@ -14280,7 +14280,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 102.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6956839621372897853
 MeshRenderer:

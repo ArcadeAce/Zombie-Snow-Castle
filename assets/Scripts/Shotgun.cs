@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+
 using UnityEngine;
 
 public class Shotgun : Weapon
@@ -98,40 +99,46 @@ public class Shotgun : Weapon
     // ===========================
     public override void Shoot()
     {
-        // No ammo? No firing.
         if (PlayerManager.Instance.shotgunShells <= 0)
             return;
 
-        Debug.Log($"[Shotgun] Shoot() called on '{name}'. Using base raycast logic.");
+        // ⭐ CHARGED BLAST (player pressed charge-up once)
+        if (chargeLevel == 1)
+        {
+            Debug.Log("[Shotgun] Playing 2x blast animation.");
 
-        // Fire raycast + damage using Weapon.cs logic
+            // Play the charged animation
+            _animator.Play("Shotgun charge 2 times blast");
+
+            // Fire raycast + damage
+            base.Shoot();
+
+            // Consume ammo
+            PlayerManager.Instance.shotgunShells--;
+            GameManager.UIManager.UpdateShotgunShells(PlayerManager.Instance.shotgunShells);
+
+            // Reset charge system
+            chargeLevel = 0;
+            chargeLocked = false;
+            GameManager.UIManager.EnableChargeUpButton();
+
+            return;   // ⭐ Prevent normal blast from playing
+        }
+
+        // ⭐ NORMAL BLAST (no charge-up)
+        _animator.Play("Shotgun firing");
+
         base.Shoot();
 
-        // Consume ammo
-        int before = PlayerManager.Instance.shotgunShells;
         PlayerManager.Instance.shotgunShells--;
+        GameManager.UIManager.UpdateShotgunShells(PlayerManager.Instance.shotgunShells);
 
-        if (PlayerManager.Instance.shotgunShells < 0)
-            PlayerManager.Instance.shotgunShells = 0;
-
-        int after = PlayerManager.Instance.shotgunShells;
-        Debug.Log($"[Shotgun] Ammo consumed: {before} -> {after}");
-
-        // Update UI
-        if (GameManager.UIManager != null)
-            GameManager.UIManager.UpdateShotgunShells(after);
-        else
-            Debug.LogWarning("[Shotgun] UIManager is NULL — cannot update UI.");
-
-        // ⭐ Reset charge system after firing
         chargeLevel = 0;
         chargeLocked = false;
-
-        // ⭐ Re-enable the charge-up button
-        if (GameManager.UIManager != null)
-            GameManager.UIManager.EnableChargeUpButton();
+        GameManager.UIManager.EnableChargeUpButton();
     }
 }
+
 
 
 

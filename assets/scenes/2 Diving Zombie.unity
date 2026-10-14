@@ -15370,6 +15370,7 @@ MonoBehaviour:
   twinTurbosButton: {fileID: 635792197680081086}
   shotgunButton: {fileID: 34455065764254626}
   lookSensitivityPanel: {fileID: 1105122442494698821}
+  chargeUpButton: {fileID: 0}
 --- !u!114 &6103112641150989044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19561,6 +19562,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   weaponType: Shotgun
   barrel: {fileID: 399061717357401535}
+  barrelRotationSpeed: 200
 --- !u!23 &8019072073481832575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20990,7 +20992,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 76.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &9141153755029620914
 BoxCollider:
