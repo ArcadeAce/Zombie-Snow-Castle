@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Debug = UnityEngine.Debug;
 
-
 public class Weapon : MonoBehaviour
 {
     public int damage;                     // How much damage this weapon deals
