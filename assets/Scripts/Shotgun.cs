@@ -99,6 +99,7 @@ public class Shotgun : Weapon
     // ===========================
     public override void Shoot()
     {
+        Debug.Log("[Shotgun] Shoot() called. ChargeLevel: " + chargeLevel);
         if (PlayerManager.Instance.shotgunShells <= 0)
             return;
 
@@ -110,6 +111,7 @@ public class Shotgun : Weapon
             // Play the charged animation
             _animator.Play("Shotgun charge 2 times blast");
 
+_animator.SetBool("Firegun", false);
             // Fire raycast + damage
             base.Shoot();
 
