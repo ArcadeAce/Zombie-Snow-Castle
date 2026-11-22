@@ -191,7 +191,7 @@ public class Weapon : MonoBehaviour
                 if (currentAmmo <= 0)
                     return;
 
-                Firing = true;
+                Firing = true; // Start firing when the fire button is pressed
             }
         }
 
@@ -212,10 +212,10 @@ public class Weapon : MonoBehaviour
             Firing = false;
         }
 
-        // ===========================
-        //  UPDATE ANIMATOR
-        // ===========================
-        _animator.SetBool("Firegun", Firing);
+   // ===========================
+//  UPDATE ANIMATOR
+// ===========================
+      _animator.SetBool("Firegun", Firing);  // Update the animator with the current firing state
 
     }
 }

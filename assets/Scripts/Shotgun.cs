@@ -111,7 +111,7 @@ public class Shotgun : Weapon
             // Play the charged animation
             _animator.Play("Shotgun charge 2 times blast");
 
-_animator.SetBool("Firegun", false);
+            _animator.SetBool("Firegun", false);
             // Fire raycast + damage
             base.Shoot();
 

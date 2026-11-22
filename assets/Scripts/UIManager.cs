@@ -100,7 +100,7 @@ public class UIManager : MonoBehaviour
 
     public void FireWeapon()
     {
-        PlayerManager.Instance.WeaponSwitcher.activeWeapon.Shoot();
+        //PlayerManager.Instance.WeaponSwitcher.activeWeapon.Shoot();// ////////////////////////////////////
     }
 
     public void UpdateBullets(int amount)
